@@ -39,79 +39,81 @@ Not Changing Default Credentials:
 10. Define risk in your own words?
 
 11. Define threat in your own words?
+12. Define Compliance?
+13. Define Governance?
 
-12. What is the MITRE ATT&CK framework and what is it used for?
+14. What is the MITRE ATT&CK framework and what is it used for?
 
-13. Explain Two-Factor Authentication (2FA) in your own words?
+15. Explain Two-Factor Authentication (2FA) in your own words?
 
-14. What was your last project? Tell me what you did and how you deployed it?
+16. What was your last project? Tell me what you did and how you deployed it?
 
-15. What is the C.I.A triad?
+17. What is the C.I.A triad?
 
-16. What is an Indicator of Compromise?
+18. What is an Indicator of Compromise?
 
-17. What's the difference between a true positive and a false positive alert?
+19. What's the difference between a true positive and a false positive alert?
 
-18. What is DHCP?
+20. What is DHCP?
 
-19. What is the difference between IDS and IPS?
+21. What is the difference between IDS and IPS?
 
-20. How many OWASP top 10 can you name and can you explain how any of them work?
+22. How many OWASP top 10 can you name and can you explain how any of them work?
 
-21. Can you explain SQL injection?
+23. Can you explain SQL injection?
 
-22. Can you explain Cross-Site Scripting?
+24. Can you explain Cross-Site Scripting?
 
-23. How is a Web Application Firewall different from a regular Firewall?
+25. How is a Web Application Firewall different from a regular Firewall?
 
-24. What is the difference between encoding, encryption, and hashing?
+26. What is the difference between encoding, encryption, and hashing?
 
-25. If you were going to going to encrypt a file, would you compress it before or after you encrypt it?
+27. If you were going to going to encrypt a file, would you compress it before or after you encrypt it?
 
-26. Explain salted hashes?
+28. Explain salted hashes?
 
-27. How does an attacker gain persistence when they've successfully entered?
+29. How does an attacker gain persistence when they've successfully entered?
 
-28. Can you name the three major windows event log types?
+30. Can you name the three major windows event log types?
 
-29. Name a sandbox that you like?
+31. Name a sandbox that you like?
 
-30. What is the difference between static and dynamic malware analysis?
+32. What is the difference between static and dynamic malware analysis?
 
-31. What is a SIEM? Tell me when you've used one
+33. What is a SIEM? Tell me when you've used one
 
-32. Name a few online tools you use for security analysis?
+34. Name a few online tools you use for security analysis?
 
-33. What are the three major RFC 1918 address spaces?
+35. What are the three major RFC 1918 address spaces?
 
-34. Do you know anything about Zero Trust?
+36. Do you know anything about Zero Trust?
 
-35. Do you have any experience with PCI or another compliance body?
+37. Do you have any experience with PCI or another compliance body?
 
-36. What is the difference between TCP and UDP?
+38. What is the difference between TCP and UDP?
 
-37. Explain your experience with Azure and AWS?
+39. Explain your experience with Azure and AWS?
 
-38. What is port 80?
+40. What is port 80?
 HTTP
-39. What is port 443?
+41. What is port 443?
 HTTPS
-40. Is a VPN necessary? Why or why not?
+42. Is a VPN necessary? Why or why not?
 
-41. What is port 22?
+43. What is port 22?
 SSH (Secure Shell)
-42. What is port 3389?
+44. What is port 3389?
 Remote Desktop Protocol (RDP)
-43. What is port 445 and what malware is notorious for flooding it?
+45. What is port 445 and what malware is notorious for flooding it?
 
-44. Are source ports good for anything in an investigation?
+46. Are source ports good for anything in an investigation?
 
-45. When you type in your computer google.com tell me what happens on your computer to get you the website?
+47. When you type in your computer google.com tell me what happens on your computer to get you the website?
 
-46. What is DNS?
+48. What is DNS?
 
-47. Data exfiltration
-48. 
+49. Data exfiltration
+50. 
 
 # Never leave an interview without asking them questions at the end
 
