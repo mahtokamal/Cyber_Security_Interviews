@@ -1,6 +1,7 @@
 # Most commonly Cyber Security Interview Questions?
 
-1. How do you stay updated with Information Security?
+## How do you stay updated with Information Security?
+I follow Cyber Security experts, newsletter, online articles, attending webinar, youtube channels, LinkedIn groups etc.
 
 2. Explain Black Hat, White Hat, and Gray Hat Hackers?
 
