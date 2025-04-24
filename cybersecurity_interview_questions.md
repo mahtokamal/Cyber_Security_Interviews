@@ -11,13 +11,19 @@ White Hat(Ethical hacker) having without malicious intent are hackers, to protec
 Gray hat hackers fall somewhere in the category between white hat and black hat hackers. They are not legally authorized hackers. They work with both good and bad intentions, they can use their skills for personal gain. It all depends upon the hacker.
 
 **Other Types of Hackers** <br>
-- Script Kiddies
-- State/Nation Sponsored Hackers:
-- Hacktivist: 
-- Malicious Insider or Whistleblower: 
-- Blue Hat Hackers:
-- Red Hat Hackers: 
-- Green Hat Hackers:
+- Script Kiddies: They are young juvenile and unskilled hackers, who uses online availble free tools or scripts provided by hackers to compromise or disrupt the system and their sole purpose is to gain attention from Friends and Societies.
+
+- State/Nation Sponsored Hackers: They are highy-skilled, appointed, funded and supported by their Governments to gain confidential information through cyber attack to stay ahead of their competitior party or to avoid any kind of danger or threat to their own country.
+
+- Hacktivist: These are also called the online versions of the activists. Hacktivist is a hacker or a group of anonymous hackers who gain unauthorized access to government’s computer files and networks for further social or political ends.
+  
+- Malicious Insider or Whistleblower: A malicious insider or a whistleblower could be an employee of a company or a government agency with a grudge or a strategic employee who becomes aware of any illegal activities happening within the organization and can blackmail the organization for his/her personal gain.
+
+- Blue Hat Hackers: They are much like the white hat hackers, they work for companies for security testing of their software right before the product launch. Blue hat hackers are outsourced by the company unlike white hat hackers which are employed by the (part of the) company.
+
+- Red Hat Hackers: They are also known as the eagle-eyed hackers. Like white hat hackers, red hat hackers also aims to halt the black hat hackers. There is a major difference in the way they operate. They become ruthless while dealing with malware actions of the black hat hackers. Red hat hacker will keep on attacking the hacker aggressively that the hacker may know it as well have to replace the whole system.
+  
+- Green Hat Hackers: They are also amateurs in the world of hacking but they are bit different from script kiddies. They care about hacking and strive to become full-blown hackers. They are inspired by the hackers and ask them few questions about. While hackers are answering their question they will listen to its novelty.
 
 # What is Port Scanning?
 
