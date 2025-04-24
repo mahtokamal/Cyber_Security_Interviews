@@ -27,7 +27,7 @@ Gray hat hackers fall somewhere in the category between white hat and black hat 
 
 # What is Port Scanning?
 
-4. Do you know any programming language?
+# Do you know any programming language?
 
 5. Define Red Team and Blue Team?
 
