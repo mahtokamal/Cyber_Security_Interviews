@@ -3,9 +3,23 @@
 ## How do you stay updated with Information Security?
 I follow Cyber Security experts, newsletter, online articles, attending webinar, youtube channels, LinkedIn groups etc.
 
-2. Explain Black Hat, White Hat, and Gray Hat Hackers?
+## Explain Black Hat, White Hat, and Gray Hat Hackers?
+Black Hat(Unethical hacker) having malicious intent are hackers, to gain unauthorized and illegal access to the computer system for the purpose of personal gain(stealing data).
 
-3. What is Port Scanning?
+White Hat(Ethical hacker) having without malicious intent are hackers, to protect the system and report it to the companies withing legal boundaries.
+
+Gray hat hackers fall somewhere in the category between white hat and black hat hackers. They are not legally authorized hackers. They work with both good and bad intentions, they can use their skills for personal gain. It all depends upon the hacker.
+
+**Other Types of Hackers** <br>
+- Script Kiddies
+- State/Nation Sponsored Hackers:
+- Hacktivist: 
+- Malicious Insider or Whistleblower: 
+- Blue Hat Hackers:
+- Red Hat Hackers: 
+- Green Hat Hackers:
+
+# What is Port Scanning?
 
 4. Do you know any programming language?
 
