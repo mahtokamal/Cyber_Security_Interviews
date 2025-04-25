@@ -53,15 +53,65 @@ Directory Listings Enabled:
 
 Not Changing Default Credentials:
 
-8. Define vulnerability in your own words*
+## Define vulnerability in your own words?
+Vulnerability is a loophole, weakness, flaw or other shortcomings presents in a System (infrastructure, database, hardware & software), however it can also exist in a process, a set of controls, or simply just the way that something has been implemented or deployed.
 
-9. Define Exploits?
+Different types of Vulnerabilities available, but it is divided on two categories:
+- Technical Vulnerabilities: Hardware, Software or bugs in code or errors. in 2022, according to Positive Technologies, 72% of vulnerabilities were related to flaws in web application code.
+- Human Vulnerabilities: such as employees falling for phishing, smishing or other common attacks. The goal of 85% of these attacks is data theft.
 
-10. Define risk in your own words?
+## Define Exploits?
+In Cybersecurity, a exploit is any tools or techniques or piece of codes that attacker use to take advantge of vulnerability.
+ Often, an exploit is delivered via a piece of code built to target that vulnerability such as (remote exploits, local exploits(physical system access ) or zero-days exploits)
+ 
+## Define threat in your own words?
+In Cybersecurity, anything that could exploit a vulnerability, which could affect the confidentiality, integrity or availability of your systems, data, people, and more.
 
-11. Define threat in your own words?
-12. Define Compliance?
-13. Define Governance?
+A more advanced definition of threat is when an adversary or attacker has the opportunity, capability and intent to bring a negative impact upon your operations, assets, workforce and/or customers. Examples of this can include malware, ransomware, phishing attacks and more — and the types of threats out there will continue to evolve.
+
+For example, your organization may have no vulnerabilities to exploit due to a solid patch management program or strong network segmentation policies that prevent access to critical systems. However, in the real world, chances are extremely likely that you do have vulnerabilities, so let’s consider the risk factor.
+
+## Define risk in your own words?
+In general, Risk = Likelihood × Impact. Vulnerability and threat are the sources for a risks.
+
+![Screenshot (456)](https://github.com/user-attachments/assets/a71df272-33ec-4e29-a96f-b4ad6adec98b)
+
+
+Risk is the probability of a negative (harmful) event occurring as well as the potential of scale of that harm. Your organizational risk fluctuates over time, sometimes even on a daily basis, due to both internal and external factors.
+
+In order for organizations to begin risk mitigation and risk management, you first need to understand your vulnerabilities and the threats to those vulnerabilities.
+
+**Real-world example**<br>
+Your organization might be looking to protect all its data, likely through data encryption methods and other approaches. But this approach is incredibly expensive, so you must pare down which ones to protect the best.<br>
+
+You could think about the risk involved in this way: if the mechanism for protecting certain data fails in some way, you’ll have one or more vulnerabilities. And if there is a threat actor who finds and exploits this vulnerability, the threat is realized.<br>
+
+Here, your risk is how valuable it would be to lose that data to the threat actor.<br>
+
+NOTE: Risk comes with universal truth: you cannot eliminate or entirely protect against all threats, no matter how advanced your systems are.
+
+## Vulnerability vs threat vs risk
+These terms are frequently used together, but they do explain three separate components of cybersecurity. In short, we can see them as a spectrum:
+
+First, a **vulnerability(weakness or flaw)** exposes your organization to threats.
+A **threat(causes harm, damage or loss)** is a malicious or negative event that takes advantage of a vulnerability.
+Finally, the **risk** is the potential for loss and damage when the threat does occur.
+
+## Impact
+ It refers to the negative consequences that occur when a cyberattack or security incident successfully compromises the confidentiality, integrity, or availability of an organization's or individual's digital assets.
+ 
+- Technical Impact: (Hardware system, software, servers)
+- Business Impact: (losing trust of customer, reputational damage)
+
+Consequences and types of the impact:
+- Financial Impact
+- Reputational Impact
+- Operational Impact (System Downtime or unavailability of services)
+
+
+## Define Governance?
+## Define Compliance?
+
 
 14. What is the MITRE ATT&CK framework and what is it used for?
 
