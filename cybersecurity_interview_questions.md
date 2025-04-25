@@ -94,7 +94,9 @@ NOTE: Risk comes with universal truth: you cannot eliminate or entirely protect 
 These terms are frequently used together, but they do explain three separate components of cybersecurity. In short, we can see them as a spectrum:
 
 First, a **vulnerability(weakness or flaw)** exposes your organization to threats.
+
 A **threat(causes harm, damage or loss)** is a malicious or negative event that takes advantage of a vulnerability.
+
 Finally, the **risk** is the potential for loss and damage when the threat does occur.
 
 ## Impact
