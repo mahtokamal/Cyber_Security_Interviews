@@ -1,7 +1,6 @@
 # Cloud Security
 
 ## Fundamentals of Cloud Security
-
 **Benefits of Cloud Migration**<br>
 - Resource pooling: You can take benefits of resource such as hardware infrastructure, network, computing etc.
 - Self Service: It refers the kind of service you use for personal or oraganizations and if requirements gets increased in time you can add more on-demand service.
@@ -9,7 +8,6 @@
 - 
 
 ## Cloud Computing Models
-
 **Coud Service Modes**<br>
 - Software as a Service:
 - Platform as a Service: Developer doesn't have to take care of Operation System platforms, 
@@ -22,4 +20,32 @@
 - Community Cloud: Platform where liked-minded community or professional interact.
 - Multi-Cloud: It leverages to use more one cloud platforms from various cloud service providers(Amazon AWS, Microsoft Azure, Google Cloud Platform(GCP))
 
+## Cloud Service Providers
+Followig are the main Cloud Service Providers (CSP) based on currrent cloud market trends:
+- Amazon Web Services(AWS)
+- Microsoft Azure
+- Google Cloud Platforms(GCP)
+- Alibaba Cloud: China and south Asia
+- IBM Cloud: Specialized for providing bare-metal service trageting private cloud deployment models
+- Oracle Cloud: Known for Database Services.
 
+**How to choose Cloud Service Providers?**
+The decision of choosing cloud service providers depends on various factors such as budget, business requirements, infrastructure, application etc. 
+- Support:
+- Service Levels(SLA):
+- Costs:
+- Security:
+- Compliance(standards):
+- Data Residency (geographical data storage and management):
+
+## Risks in Cloud Security
+
+- Lack of cloud security skills:
+- Misconfigurations:
+- Increased attack surface:
+- Lack of focus in security cloud identities:
+- Lack of standardization and visibility:
+- Data leakage:
+- Data privacy and compliance:
+- Data sovereignty, residence, and control:
+- Incident response in the cloud:
