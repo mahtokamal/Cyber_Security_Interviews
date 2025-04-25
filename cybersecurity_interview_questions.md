@@ -110,7 +110,16 @@ Consequences and types of the impact:
 
 
 ## Define Governance?
+GRC stands for governance, risk (management), and compliance.
+
+Governance is the set of policies, rules, or frameworks that a company uses to achieve its business goals. It defines the responsibilities of key stakeholders, such as the board of directors and senior management.
+
 ## Define Compliance?
+Compliance is the act of following rules, laws, standards and regulations. It applies to legal and regulatory requirements set by industrial bodies and also for internal corporate policies. In GRC, compliance involves implementing procedures to ensure that business activities comply with the respective regulations.
+For example, healthcare organizations must comply with laws like HIPAA that protect patients' privacy.
+
+GDPR(Genera Data Protection Regulations) (to maintain data confidentiality and privacy of individuals), is a European Union regulation on information privacy in the European Union and the European Economic Area.
+
 
 
 14. What is the MITRE ATT&CK framework and what is it used for?
