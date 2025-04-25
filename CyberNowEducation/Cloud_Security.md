@@ -11,15 +11,15 @@
 ## Cloud Computing Models
 
 **Coud Service Modes**<br>
-- Software as a Service
-- Platform as a Service
-- Infrastructure as a Service
+- Software as a Service:
+- Platform as a Service: Developer doesn't have to take care of Operation System platforms, 
+- Infrastructure as a Service:
 
 **Cloud Deployment Models**<br>
-- Public Cloud
-- Private Cloud
-- Hybrid Cloud
-- Community Cloud
-- Multi-Cloud
+- Public Cloud: aceessible and available to everyone
+- Private Cloud: aceessible and available within organization boundaries
+- Hybrid Cloud: Combination of Public and Private Cloud
+- Community Cloud: Platform where liked-minded community or professional interact.
+- Multi-Cloud: It leverages to use more one cloud platforms from various cloud service providers(Amazon AWS, Microsoft Azure, Google Cloud Platform(GCP))
 
 
