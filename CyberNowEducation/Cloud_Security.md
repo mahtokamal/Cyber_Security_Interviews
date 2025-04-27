@@ -41,9 +41,9 @@ The decision of choosing cloud service providers depends on various factors such
 ## Risks in Cloud Security
 
 - Lack of cloud security skills:
-- Misconfigurations:
+- Misconfigurations: Data breaches,
 - Increased attack surface:
-- Lack of focus in security cloud identities:
+- Lack of focus in security cloud identities: SSO
 - Lack of standardization and visibility:
 - Data leakage:
 - Data privacy and compliance:
