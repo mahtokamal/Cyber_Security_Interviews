@@ -76,3 +76,18 @@ Cloud Security are tools, technologies, process and control that are implemented
 - Threat Intelligence
 
 ## Cloud Security Governance
+
+**What is cloud Security Governance?** <br>
+Cloud Security Governance is not:<br>
+- A tool or commercial product which you implement
+- A policy that you write and then forget about after passing an audit:
+- A checklist
+- A standard
+- A certification which you acquire.
+
+Cloud Security Governance refers to a formal management model / framework you put into place to make sure all the cloud security processes remain working and functional
+
+**Cloud Security Policy and Standards** <br>
+
+
+
