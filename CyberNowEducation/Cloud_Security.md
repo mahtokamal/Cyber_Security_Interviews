@@ -49,3 +49,30 @@ The decision of choosing cloud service providers depends on various factors such
 - Data privacy and compliance:
 - Data sovereignty, residence, and control:
 - Incident response in the cloud:
+
+## Cloud Security Principles
+**What is Cloud Security?** <br>
+Cloud Security are tools, technologies, process and control that are implemented to secure your cloud environmnets.
+
+**What Cloud Security is Not ?** <br>
+- On-Premise security happening in a new environments.
+- A product that you buy and forget!
+- A sub-task that the cybersecurity team does when they are free.
+- A standard that you get certified against.
+- A policy that gets approved and put on the employee portal and forgotten
+
+**The Cloud Security Models?** <br>
+1. Cloud Security Principles
+2. Cloud Securtiy Governance Frameworks
+
+**Cloud Security Principles**
+- Shared Responsibility
+- The Identity perimeter
+- Zero Trust Architecture: The term coined in 2010, Zero Trust is not a product or tools, it's a concept. Zero Trust means, that you do not trust anything i.e. service or user either within or outside the network and verify everything.
+- Security as Code
+ **API calls** <br>
+ **Serverless** <br>
+- Automation in Incident Response
+- Threat Intelligence
+
+## Cloud Security Governance
