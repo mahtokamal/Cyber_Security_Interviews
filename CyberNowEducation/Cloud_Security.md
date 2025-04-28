@@ -176,8 +176,42 @@ Two ways to find jobs:
   Misconfigurations<br>
 
 - Do you have any experience with Infrastructure as Code (IaC)?
+ 
  ## Sign UP for AWS and Azure acounts
+**Sign-up for Amazon Web Services** <br>
+![Screenshot (461)](https://github.com/user-attachments/assets/375b9644-4be0-4331-aaa6-ecfdf767708b)
 
+![Screenshot (463)](https://github.com/user-attachments/assets/57eefead-493a-4700-bd17-7c97c6f0ec88)
+
+![Screenshot (464)](https://github.com/user-attachments/assets/ea701bcf-10ab-452c-8fb8-c7e8c868b0aa)
+
+![Screenshot (465)](https://github.com/user-attachments/assets/e9215e33-f2c9-4d85-a3e5-6fd972a83d9d)
+
+![Screenshot (466)](https://github.com/user-attachments/assets/4cbfa968-27e5-4d7b-b910-e9e8f2076c3e)
+
+![Screenshot (467)](https://github.com/user-attachments/assets/a3edae05-33d2-4989-8cee-0619c159e6d8)
+
+![Screenshot (468)](https://github.com/user-attachments/assets/f13b886a-d47b-48fb-b67e-89560aab3c81)
+
+![Screenshot (469)](https://github.com/user-attachments/assets/0939bbee-4686-4af4-afae-5902be92c7f8)
+
+![Screenshot (470)](https://github.com/user-attachments/assets/76d0f10a-a260-4b1e-b185-0202dedda5bb)
+
+![Screenshot (471)](https://github.com/user-attachments/assets/7d4ab44b-7c50-4167-9bd4-a07cd2d67cc6)
+
+![Screenshot (472)](https://github.com/user-attachments/assets/beccf543-ef7d-4baa-a973-8c17d6517f7f)
+
+![Screenshot (473)](https://github.com/user-attachments/assets/88d5a348-17cd-4f21-8f6e-c5c191498b50)
+
+![Screenshot (474)](https://github.com/user-attachments/assets/fd86962a-208a-4538-bb64-ee45ad1ac064)
+
+![Screenshot (475)](https://github.com/user-attachments/assets/cc752c62-b713-4f73-aecb-99c8c9ca35b5)
+
+![Screenshot (476)](https://github.com/user-attachments/assets/218f071c-ef04-4f00-8940-b3e01aa12fc2)
+
+![Screenshot (478)](https://github.com/user-attachments/assets/74364f5f-6660-49f2-bd5b-cdaa8c232abe)
+
+**Sign-up for Microsoft Azure** <br>
 ## Intro Infrastructure as Code (IaC)
 
 **Benefits of IaC** <br>
@@ -228,6 +262,35 @@ terraform -help <br>
 
 ## IAC-Hands-on with Terraform
 
+
+## IAC- Scanning for Misconfigurations
+
+## Serverless Computing: Introduction
+
+**What are Backend Services**<br>
+Servers, Database and handling application files and data. <br>
+
+**Benefits of Serverless**<br>
+
+**Advantages of Serverless computing** <br>
+- Lower costs
+- Simplified Scalability
+- Quicker Turnaround
+
+Comparison with other cloud Backend Models: <br>
+- Paas
+- Iaas
+- Saas
+
+**Difference between Serverless and Containers** <br>
+
+**Serverless Vendors** <br>
+- Amazon AWS
+- Microsoft Azure
+- Google GCP
+- 
+
+## Serverless Functions - AWS Lambda
 
 
 
