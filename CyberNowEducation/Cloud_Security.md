@@ -201,3 +201,37 @@ State Management <br>
 Commercial Version <br>
 
 ## IAC - installing Terraform
+
+**Installing Terraform to MaC** <br>
+**step 1: Open terminal**<br>
+type: brew install terraform <b>
+
+**step 2: To verify**<br>
+type: terraform -help <br>
+type: terraform -help plan <br>
+type: terraform -install-autocomplete
+
+**Installing Terraform on Windows** <br>
+Step 1: Open Powershell<br>
+powerhsell: curl.exe -o https://releases.hashicorp.com/terraform/0.12.26/terrafrom_0.12.26_windows_amd64.zip <br>
+powerhsell: Expand-Archive terrafrom_0.12.26_windows_amd64.zip <br>
+powerhsell: Rename-Item -path .\terrafrom_0.12.26_windows_amd64\ .\terraform <br>
+powerhsell: cd \terraform <br>
+powerhsell: cd \terraform pwd <br>
+Then copy the path of terraform and paste it on environments variables <br>
+
+Now, you'll be able to run terraform command from anywhere in a file system <br>
+
+type: terraform <br>
+cd C:\ (hit enter) <br>
+terraform -help <br>
+
+## IAC-Hands-on with Terraform
+
+
+
+
+
+
+
+
