@@ -177,3 +177,27 @@ Two ways to find jobs:
 
 - Do you have any experience with Infrastructure as Code (IaC)?
  ## Sign UP for AWS and Azure acounts
+
+## Intro Infrastructure as Code (IaC)
+
+**Benefits of IaC** <br>
+- Easy environment duplication
+- Reduced Configuration Errors
+- Iterate on Best-Practice Environments
+
+## How does IaC work?
+
+Immutable Vs mutable infrastructure
+- Immutable infrastructure is favored for cloud and microservices environments.
+
+**Approaches to Iac** <br>
+There are two approaches to Iac:<br>
+- Declarative
+- Imperative
+
+
+Provisioning Tool <br>
+State Management <br>
+Commercial Version <br>
+
+## IAC - installing Terraform
