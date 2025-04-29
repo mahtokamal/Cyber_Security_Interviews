@@ -134,7 +134,7 @@ Cloud Security Governance refers to a formal management model / framework you pu
 - Microsoft Azure Security Engineer Associate
 - Google Cloud Security Engineer
 
-## Landling the Job
+## Landing the Job
 - Getting Cloud Security experience without a job
 - Polishing up your profile
 - Creating your brand in the industry
@@ -247,11 +247,11 @@ type: terraform -install-autocomplete
 
 **Installing Terraform on Windows** <br>
 Step 1: Open Powershell<br>
-powerhsell: curl.exe -o https://releases.hashicorp.com/terraform/0.12.26/terrafrom_0.12.26_windows_amd64.zip <br>
-powerhsell: Expand-Archive terrafrom_0.12.26_windows_amd64.zip <br>
-powerhsell: Rename-Item -path .\terrafrom_0.12.26_windows_amd64\ .\terraform <br>
-powerhsell: cd \terraform <br>
-powerhsell: cd \terraform pwd <br>
+powerhsell: curl.exe -O https://releases.hashicorp.com/terraform/0.12.26/terraform_0.12.26_windows_amd64.zip <br>
+powerhsell: Expand-Archive terraform_0.12.26_windows_amd64.zip <br>
+powerhsell: Rename-Item -path .\terraform_0.12.26_windows_amd64\ .\terraform <br>
+powerhsell: cd terraform <br>
+powerhsell: pwd <br>
 Then copy the path of terraform and paste it on environments variables <br>
 
 Now, you'll be able to run terraform command from anywhere in a file system <br>
@@ -259,6 +259,27 @@ Now, you'll be able to run terraform command from anywhere in a file system <br>
 type: terraform <br>
 cd C:\ (hit enter) <br>
 terraform -help <br>
+
+![Screenshot (482)](https://github.com/user-attachments/assets/a0f29cce-1b05-47df-8b4e-6556ae9c26e1)
+
+![Screenshot (483)](https://github.com/user-attachments/assets/3d56e119-7657-4d04-918d-d4a6076d856b)
+
+![Screenshot (484)](https://github.com/user-attachments/assets/517611f5-7889-4e19-94d1-84697c7b22cf)
+
+![Screenshot (485)](https://github.com/user-attachments/assets/ea71caee-fef1-48c8-a1a2-7cdb0378b720)
+
+![Screenshot (487)](https://github.com/user-attachments/assets/baae7de9-ab99-4527-bd2f-e76afc33abb3)
+
+![Screenshot (489)](https://github.com/user-attachments/assets/4226ae59-3476-4ba9-997a-fab38afe143d)
+
+![Screenshot (490)](https://github.com/user-attachments/assets/8a9baa36-c171-4225-83e9-b41e3389586c)
+
+![Screenshot (493)](https://github.com/user-attachments/assets/25bef8cb-be73-4eb7-a3c2-d0f64607bc5d)
+
+![Screenshot (494)](https://github.com/user-attachments/assets/52662541-ed47-4b60-ab30-08c3d65ec8d3)
+
+![Screenshot (495)](https://github.com/user-attachments/assets/f8fc309d-f0ed-46c2-a718-31372907070f)
+
 
 ## IAC-Hands-on with Terraform
 
