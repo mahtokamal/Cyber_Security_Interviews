@@ -26,6 +26,7 @@ Gray hat hackers fall somewhere in the category between white hat and black hat 
 - Green Hat Hackers: They are also amateurs in the world of hacking but they are bit different from script kiddies. They care about hacking and strive to become full-blown hackers. They are inspired by the hackers and ask them few questions about. While hackers are answering their question they will listen to its novelty.
 
 # What is Port Scanning?
+Port scanning is a method used to identify open ports and services running on a host. It's used in reconnaissance by attackers and during vulnerability assessments by defenders.This information helps an attacker (or a security analyst) understand what services are running on the target and potentially identify vulnerabilities associated with those services.
 
 # Do you know any programming language?
 
