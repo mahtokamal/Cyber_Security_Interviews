@@ -192,7 +192,16 @@ Remote Desktop Protocol (RDP)
 48. What is DNS?
 
 49. Data exfiltration
-50. 
+## Cyber Kill Chain (Rec, Weap, Del, Expl, Inst, C2, Act)
+
+**Phases of Cyber Kill Chain** <br>
+**1. Reconnaissance** <br>
+**2. Weaponization** <br>
+**3. Delivery** <br>
+**4. Exploitation** <br>
+**5. Installation** <br>
+**6. Command & Control (C2)** <br>
+**7. Action on Objectives** <br>
 
 # Never leave an interview without asking them questions at the end
 
