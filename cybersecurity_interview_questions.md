@@ -25,34 +25,30 @@ Gray hat hackers fall somewhere in the category between white hat and black hat 
   
 - Green Hat Hackers: They are also amateurs in the world of hacking but they are bit different from script kiddies. They care about hacking and strive to become full-blown hackers. They are inspired by the hackers and ask them few questions about. While hackers are answering their question they will listen to its novelty.
 
-# What is Port Scanning?
+## What is Port Scanning?
 Port scanning is a method used to identify open ports and services running on a host. It's used in reconnaissance by attackers and during vulnerability assessments by defenders.This information helps an attacker (or a security analyst) understand what services are running on the target and potentially identify vulnerabilities associated with those services.
 
-# Do you know any programming language?
+## Do you know any programming language?
+Yes, I have foundational knowledge of Python that I used in Cyber Forensic Intern at Cyber Dosti for my project file signature analysis using Python-Magic Library. Apart this, I also have basic hands-on experience with BASH and Powershell scripting languages.
 
-5. Define Red Team and Blue Team?
+## Define Red Team and Blue Team?
+Red Team (simulates the offensive techniques) plays the role of attacking the system to gain unauthorized access.
 
-6. What is a Firewall?
+Blue Team (simulates the defensive techniques) plays the role of protecting and safeguards the system from Red Team as well as from real-world attacks.
 
-7. Is a Security Misconfiguration a Vulnerability?
+## What is a Firewall?
+Firewall can be Hardware / Software, used to monitors and filters the inbound and outbound network traffics based on predefined security rules or policy. On the basis of rules, it can allow, deny and block the traffics that goes to or exit from the system.
 
+## Is a Security Misconfiguration a Vulnerability?
 yes, Security misconfiguration is one of the common vulnerabilities that may happen to systems, applications, and infrastructure and let organizations be exposed to possible cyberattacks. These security misconfigurations involve human error, security settings overlooked, or best practices not put into place. Some of the most common security misconfiguration examples  are mentioned here, along with an example of their causes possibly:
-
-Unnecessary Open Ports
-
-Unpatched Security Patches
-
-Overly Permissive Access:
-
-HTTPS Not Enabled
-
-Configuration Settings Not Changed:
-
-Poorly Configured Firewalls:
-
-Directory Listings Enabled:
-
-Not Changing Default Credentials:
+- Unnecessary Open Ports
+- Unpatched Security Patches
+- Overly Permissive Access:
+- HTTPS Not Enabled
+- Configuration Settings Not Changed:
+- Poorly Configured Firewalls:
+- Directory Listings Enabled:
+- Not Changing Default Credentials:
 
 ## Define vulnerability in your own words?
 Vulnerability is a loophole, weakness, flaw or other shortcomings presents in a System (infrastructure, database, hardware & software), however it can also exist in a process, a set of controls, or simply just the way that something has been implemented or deployed.
