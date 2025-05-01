@@ -114,14 +114,22 @@ GRC stands for governance, risk (management), and compliance.
 Governance is the set of policies, rules, or frameworks that a company uses to achieve its business goals. It defines the responsibilities of key stakeholders, such as the board of directors and senior management.
 
 ## Define Compliance?
-Compliance is the act of following rules, laws, standards and regulations. It applies to legal and regulatory requirements set by industrial bodies and also for internal corporate policies. In GRC, compliance involves implementing procedures to ensure that business activities comply with the respective regulations.
+Compliance is the act of following rules, laws, standards and regulations realted to information security . It applies to legal and regulatory requirements set by industrial bodies and also for internal corporate policies. In GRC, compliance involves implementing procedures to ensure that business activities comply with the respective regulations.
 For example, healthcare organizations must comply with laws like HIPAA that protect patients' privacy.
 
 GDPR(Genera Data Protection Regulations) (to maintain data confidentiality and privacy of individuals), is a European Union regulation on information privacy in the European Union and the European Economic Area.
 
 
 
-14. What is the MITRE ATT&CK framework and what is it used for?
+## What is the MITRE ATT&CK framework and why is it used for?
+MITRE ATT&CK(Adversarial Tactics, Techniques, and Common Knowledge) framework, is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. It helps to map and understand attacker behaviors during the kill chain.
+
+It is a guideline for classifying and describing cyberattacks and intrusions. It was created by the Mitre Corporation and released in 2013 and used for threat modeling and profiling.
+The framework is an alternative to the cyber kill chain developed by Lockheed Martin.
+
+|Tactics|Techniques|
+|----|---|
+|Reconnaissance|Active Scanning, Phishing for information|
 
 15. Explain Two-Factor Authentication (2FA) in your own words?
 
