@@ -131,9 +131,11 @@ The framework is an alternative to the cyber kill chain developed by Lockheed Ma
 |----|---|
 |Reconnaissance|Active Scanning, Phishing for information|
 
-15. Explain Two-Factor Authentication (2FA) in your own words?
+## Explain Two-Factor Authentication (2FA) in your own words?
+In simple terms, 2FA is a two-way of identifying yourself before getting access to a system (can be a password along with biometric or one time code).
+2FA adds an extra layer of security by requiring two forms of verification: something you know (password) and something you have (authenticator app or device). This makes it much harder for attackers to gain unauthorized access, even if they manage to steal your password.
 
-16. What was your last project? Tell me what you did and how you deployed it?
+## What was your last project? Tell me what you did and how you deployed it?
 
 17. What is the C.I.A triad?
 
