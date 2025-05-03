@@ -202,6 +202,9 @@ Remote Desktop Protocol (RDP)
 48. What is DNS?
 
 49. Data exfiltration
+
+## What is DMZ(Demilitarized Zone) in Cyber Security?
+
 ## Cyber Kill Chain (Rec, Weap, Del, Expl, Inst, C2, Act)
 
 **Phases of Cyber Kill Chain** <br>
