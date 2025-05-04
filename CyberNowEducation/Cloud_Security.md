@@ -283,6 +283,74 @@ terraform -help <br>
 
 ## IAC-Hands-on with Terraform
 
+**1. Terraform with Azure** <br>
+First create Microsoft Azure account <br>
+Install Terraform on Windows OS <br>
+Install Azure CLI <br>
+
+![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
+
+![Screenshot (530)](https://github.com/user-attachments/assets/d1997b34-7590-4143-9dc8-7bf7318379a6)
+
+![Screenshot (531)](https://github.com/user-attachments/assets/127db038-d18a-4c96-8379-87ba99370c09)
+
+![Screenshot (532)](https://github.com/user-attachments/assets/24aa2e99-1e24-4c05-a64f-1b108196e661)
+
+![Screenshot (533)](https://github.com/user-attachments/assets/cdc02d03-0ce8-414a-b89e-f67e166d2803)
+
+![Screenshot (534)](https://github.com/user-attachments/assets/f185c508-f1d0-4184-92ac-093cc3fc5fe1)
+
+Environment Variables <br>
+
+![Screenshot (535)](https://github.com/user-attachments/assets/45ac22fd-e22a-4d02-a12d-6f37bab019c0)
+
+Now, verify the environment variable<br>
+
+Install Visual Studio <br>
+
+create a directory that contains our terraform configuration file (.tf) format <br>
+
+![Screenshot (536)](https://github.com/user-attachments/assets/03d9164f-683d-4006-a662-479b076fc4b2)
+
+![Screenshot (537)](https://github.com/user-attachments/assets/b4a57e47-2ee3-477a-8b7a-7a04246c80cd)
+
+![Screenshot (538)](https://github.com/user-attachments/assets/246fa1f0-ef37-419e-8511-e12b78e1fa93)
+
+![Screenshot (539)](https://github.com/user-attachments/assets/5cae4a8e-286e-4985-af8f-e29cd3a7c404)
+
+Initialize terraform configuration <br>
+
+![Screenshot (540)](https://github.com/user-attachments/assets/92ff820b-2a42-4706-803c-dca6047ee646)
+
+
+terraform format <br>
+![Screenshot (541)](https://github.com/user-attachments/assets/a4fdb827-8084-4c21-ad84-005583d7e85b)
+
+terraform validate<br>
+
+![Screenshot (542)](https://github.com/user-attachments/assets/a6a89f26-ccd0-4ce2-b75a-98c7f27a4e3c)
+
+terraform apply <br>
+![Screenshot (543)](https://github.com/user-attachments/assets/472e5dac-785a-49f4-9cae-5a7698197e54)
+
+![Screenshot (544)](https://github.com/user-attachments/assets/713778b0-6ca3-4354-bd0f-1eebb926879d)
+
+(navigate to the azure portal to verfiy if resource group is created or not) <br>
+
+![Screenshot (545)](https://github.com/user-attachments/assets/a42b6399-d06d-4f0f-84ba-753705672e61)
+
+![Screenshot (546)](https://github.com/user-attachments/assets/0a86dd55-ae76-4bd2-a39d-623ac9246c62)
+
+Inspect your state<br>
+![Screenshot (547)](https://github.com/user-attachments/assets/4a979106-a0b7-4c10-a818-2cdd3cc416ab)
+![Screenshot (548)](https://github.com/user-attachments/assets/8cda327d-03d3-4f77-90fb-bda3e201d79e)
+![Screenshot (549)](https://github.com/user-attachments/assets/ade11a40-92f3-4675-a129-4218606ddeb6)
+
+Destroy terraform<br>
+
+
+
+**2. Terraform with AWS** <br>
 
 ## IAC- Scanning for Misconfigurations
 
