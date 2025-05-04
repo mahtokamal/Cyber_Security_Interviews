@@ -212,6 +212,16 @@ Two ways to find jobs:
 ![Screenshot (478)](https://github.com/user-attachments/assets/74364f5f-6660-49f2-bd5b-cdaa8c232abe)
 
 **Sign-up for Microsoft Azure** <br>
+First Visit, [Microsoft Azure portal](https://azure.microsoft.com/en-us/get-started/azure-portal)and sign up for an account if you didn’t have. Once done, You will get $200 free credits added to your account and this will be enough for this project.
+
+![image](https://github.com/user-attachments/assets/48404e67-04be-4d77-9f41-00f83fd2d66f)
+
+![image](https://github.com/user-attachments/assets/8c75f2d6-56ac-43da-91b8-d0a12473cf05)
+
+![image](https://github.com/user-attachments/assets/0433a323-d99d-4e63-84d8-6360154e0720)
+
+![image](https://github.com/user-attachments/assets/fc08c1fb-0a77-42dd-b564-7265be1bef8b)
+
 ## Intro Infrastructure as Code (IaC)
 
 **Benefits of IaC** <br>
@@ -285,6 +295,45 @@ terraform -help <br>
 
 **1. Terraform with Azure** <br>
 First create Microsoft Azure account <br>
+
+First Visit, [Microsoft Azure portal](https://azure.microsoft.com/en-us/get-started/azure-portal)and sign up for an account if you didn’t have. Once done, You will get $200 free credits added to your account and this will be enough for this project.
+
+![image](https://github.com/user-attachments/assets/48404e67-04be-4d77-9f41-00f83fd2d66f)
+
+![image](https://github.com/user-attachments/assets/8c75f2d6-56ac-43da-91b8-d0a12473cf05)
+
+![image](https://github.com/user-attachments/assets/0433a323-d99d-4e63-84d8-6360154e0720)
+
+![image](https://github.com/user-attachments/assets/fc08c1fb-0a77-42dd-b564-7265be1bef8b)
+
+Once your account creation is done, just follows the following steps: <br>
+
+![image](https://github.com/user-attachments/assets/31b38bb6-296f-4841-87d4-60e9c8d5e2e7)
+
+After logging into azure portal, now you have to add payment method to become eligible for Azure's Free trial "$200 free credit" with a period of 30 days. Click on Start button and follows each step carefully: <br>
+
+![Screenshot (329)](https://github.com/user-attachments/assets/4b5d42ba-7b60-47d1-ae24-d8fbea7636fc)
+
+![Screenshot (331)](https://github.com/user-attachments/assets/d1846502-484a-4a62-be6f-84ccb64407fe)
+
+![Screenshot (334)](https://github.com/user-attachments/assets/58055ce2-5358-48f8-a841-ab42172a41ee)
+
+![Screenshot (335)](https://github.com/user-attachments/assets/d98787c7-65bd-4b6f-8f31-69a91b8fc99f)
+
+![Screenshot (337)](https://github.com/user-attachments/assets/394e6835-cb04-4d94-8c97-5b4fd2f09b7b)
+
+![Screenshot (341)](https://github.com/user-attachments/assets/4edafae7-5229-4042-be46-468c680609b8)
+
+![Screenshot (342)](https://github.com/user-attachments/assets/e93c12f3-2fee-49ae-a73a-3d7abbc7457f)
+
+![Screenshot (344)](https://github.com/user-attachments/assets/ad8a9364-86d1-47d3-8343-ac0915aef3ed)
+
+Next, Click on "Go to Azure Portal" and it will direct to the Microsoft Azure platfrom, where you can start using services for 30 days. <br>
+
+![Screenshot (345)](https://github.com/user-attachments/assets/a135b696-f336-4bb6-b7cb-85edb0dceb64)
+
+![image](https://github.com/user-attachments/assets/76309c1d-1e09-4875-8a49-1e8f408b77f9)
+
 Install Terraform on Windows OS <br>
 
 ![Screenshot (553)](https://github.com/user-attachments/assets/a373357b-9f37-4954-a531-4c02f9d8afaa)
