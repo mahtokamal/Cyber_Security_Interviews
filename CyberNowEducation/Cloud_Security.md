@@ -406,6 +406,27 @@ Install Terraform on Windows OS <br>
 
 Install Azure CLI <br>
 
+![Screenshot (577)](https://github.com/user-attachments/assets/4969b7bf-c032-4178-bcb3-1e0e2cd05b73)
+
+![Screenshot (578)](https://github.com/user-attachments/assets/c4cad774-497b-4de6-854d-0b998814c56c)
+
+![Screenshot (579)](https://github.com/user-attachments/assets/75f7a3db-575d-487a-bef5-92b464ba4297)
+
+![Screenshot (580)](https://github.com/user-attachments/assets/1d2a0039-ee19-47de-a3f3-e7307f235ad5)
+
+![Screenshot (581)](https://github.com/user-attachments/assets/2982bfd9-1a82-4ca1-880e-77e665722867)
+
+![Screenshot (582)](https://github.com/user-attachments/assets/8345b020-892e-459f-a8d0-ec6f5f0eb911)
+
+![Screenshot (584)](https://github.com/user-attachments/assets/f0a4f391-0743-438f-bb53-3cf6bccce629)
+![Screenshot (585)](https://github.com/user-attachments/assets/64df5390-1cf6-4ba5-bab3-cfe1fd3a466e)
+![Screenshot (586)](https://github.com/user-attachments/assets/d6cf43b2-5aa2-44ed-b9b8-51da7e62c42d)
+
+Verifying azure CLI installation <br>
+![Screenshot (587)](https://github.com/user-attachments/assets/16c75a62-d5af-4a37-bbb6-bb248083a3eb)
+
+![Screenshot (588)](https://github.com/user-attachments/assets/45a0f35f-fce9-4975-afe8-c5e2f4c09119)
+
 ![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
 
 ![Screenshot (530)](https://github.com/user-attachments/assets/d1997b34-7590-4143-9dc8-7bf7318379a6)
