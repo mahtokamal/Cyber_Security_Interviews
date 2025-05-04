@@ -628,7 +628,14 @@ Recommend to not to use root user to sign in to AWS console(use IAM user) <br>
 
 ![Screenshot (672)](https://github.com/user-attachments/assets/28e81f47-f9d9-4ba7-bc54-361f04ceea6a)
 
+Destroying AWS terraform <br>
+![Screenshot (673)](https://github.com/user-attachments/assets/4516dd36-cd4a-43a4-8d78-0d8c3bbc8602)
+![Screenshot (674)](https://github.com/user-attachments/assets/90cb2ac3-e8cf-4f18-a05b-7f6e187d2e78)
+![Screenshot (675)](https://github.com/user-attachments/assets/b26cc547-eea8-44f5-b1c4-a348bd18f267)
+
 ## IAC- Scanning for Misconfigurations
+**Checking for Misconfigurations with Checkov** <br>
+
 
 ## Serverless Computing: Introduction
 
@@ -658,7 +665,22 @@ Comparison with other cloud Backend Models: <br>
 ## Serverless Functions - AWS Lambda
 
 
+- open the function page with lambda console
+- Then, create function
+- select author from scratch
+- Under Function name"myLambdaFunction"
+- Runtime "Python 3.12"
+- Architecture default x86_x64
+- create function
+- return a function "Hello From Lambda"
 
+
+  code source pan "Test"<br>
+  select create new event <br>
+  Event name "myTestEvent"<br>
+
+  Event JSON
+  
 
 
 
