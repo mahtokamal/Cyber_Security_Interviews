@@ -347,10 +347,13 @@ Inspect your state<br>
 ![Screenshot (549)](https://github.com/user-attachments/assets/ade11a40-92f3-4675-a129-4218606ddeb6)
 
 Destroy terraform<br>
-![Screenshot (551)](https://github.com/user-attachments/assets/e73e57c7-1673-4588-8ecf-3ce60182bd04)
+![Screenshot (550)](https://github.com/user-attachments/assets/7965ce24-b6dc-42f1-bcd8-89e0f430c850)
+
 
 ![Screenshot (551)](https://github.com/user-attachments/assets/6dc9823c-30d1-4f10-8d57-a15cb09ae177)
 
+![Screenshot (545)](https://github.com/user-attachments/assets/a42b6399-d06d-4f0f-84ba-753705672e61)
+![Screenshot (552)](https://github.com/user-attachments/assets/f9371d9a-bda6-4499-99ac-df811b9eb44f)
 
 **2. Terraform with AWS** <br>
 
