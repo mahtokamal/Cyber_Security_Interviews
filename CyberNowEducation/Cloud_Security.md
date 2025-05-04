@@ -286,6 +286,75 @@ terraform -help <br>
 **1. Terraform with Azure** <br>
 First create Microsoft Azure account <br>
 Install Terraform on Windows OS <br>
+
+![Screenshot (553)](https://github.com/user-attachments/assets/a373357b-9f37-4954-a531-4c02f9d8afaa)
+
+![Screenshot (554)](https://github.com/user-attachments/assets/c81743a6-667f-4918-aa9e-f29bfed48c13)
+
+![Screenshot (555)](https://github.com/user-attachments/assets/33bbd7c2-0cd3-4bfb-829f-eaf8281e994b)
+
+![Screenshot (556)](https://github.com/user-attachments/assets/330fb696-2b07-4218-bbeb-d2a69030b9ab)
+
+![Screenshot (557)](https://github.com/user-attachments/assets/73708383-c0c3-4455-bbdf-cc389c615f12)
+
+![Screenshot (558)](https://github.com/user-attachments/assets/367f6cf9-afe3-4486-bf3e-1d868dfbb9b8)
+
+![Screenshot (559)](https://github.com/user-attachments/assets/1c48f782-79a4-4e11-a34e-a64120cae5c1)
+
+![Screenshot (560)](https://github.com/user-attachments/assets/a1e53f5e-5c19-47c7-962c-b9937124abca)
+
+![Screenshot (561)](https://github.com/user-attachments/assets/bfc2b55d-94ce-4af1-9f14-15d44ae9232d)
+
+![Screenshot (562)](https://github.com/user-attachments/assets/05aabd2e-6b0b-4a95-981b-133806ef4017)
+
+![Screenshot (563)](https://github.com/user-attachments/assets/082cd4ac-fe20-46a3-b021-9d5a6c887636)
+
+![Screenshot (564)](https://github.com/user-attachments/assets/f554d946-3a1a-4541-b4ca-e86e20781ab7)
+
+![Screenshot (565)](https://github.com/user-attachments/assets/f9b3e5dc-5bd4-4c73-b1f1-5459f7174c65)
+
+![Screenshot (566)](https://github.com/user-attachments/assets/b85506f3-b14d-4b8c-8e3d-f9c9ab57cab3)
+
+![Screenshot (567)](https://github.com/user-attachments/assets/fc267409-4453-418f-9f5a-cd288faec6ee)
+
+![Screenshot (568)](https://github.com/user-attachments/assets/e765ba48-d62d-4f26-966f-18086560532d)
+
+![Screenshot (569)](https://github.com/user-attachments/assets/957d271a-9876-4307-8eee-892542c977d5)
+
+![Screenshot (570)](https://github.com/user-attachments/assets/c46ff4ea-5121-4ab8-8fa3-803e172a1253)
+
+![Screenshot (571)](https://github.com/user-attachments/assets/422e61c1-cfe4-43c9-8efe-9e650c621c10)
+
+![Screenshot (572)](https://github.com/user-attachments/assets/60114e64-9d96-4f56-a3a8-ed11c78f8576)
+
+![Screenshot (573)](https://github.com/user-attachments/assets/1143f71a-bb65-401d-87f0-25a81cfb731f)
+
+![Screenshot (574)](https://github.com/user-attachments/assets/4af37175-bd33-492e-bec0-5a8d85622b03)
+
+![Screenshot (575)](https://github.com/user-attachments/assets/6743efa5-7264-4b05-9861-485a12f38e7b)
+
+![Screenshot (576)](https://github.com/user-attachments/assets/19b33225-8eea-4f6a-ae95-272c7b114579)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Install Azure CLI <br>
 
 ![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
