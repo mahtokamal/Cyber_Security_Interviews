@@ -496,6 +496,138 @@ Destroy terraform<br>
 
 **2. Terraform with AWS** <br>
 
+![Screenshot (589)](https://github.com/user-attachments/assets/dd171f20-c943-42f5-9de4-ce660f80a9e0)
+
+![Screenshot (590)](https://github.com/user-attachments/assets/cd34c31a-9a13-46b2-87ad-5528d7be9855)
+
+![Screenshot (591)](https://github.com/user-attachments/assets/f21b54ce-4bb3-4bee-b81a-a766df24769f)
+
+![Screenshot (592)](https://github.com/user-attachments/assets/6e0915ce-21d7-4451-9c19-84e992985a42)
+
+![Screenshot (593)](https://github.com/user-attachments/assets/fdcc2c3a-4119-494a-953d-b12c5898c65e)
+
+![Screenshot (594)](https://github.com/user-attachments/assets/aca3581b-3c2f-42b6-a68c-55c48ff50ba0)
+
+![Screenshot (595)](https://github.com/user-attachments/assets/04987634-0999-43f9-8d0f-de11ab5bb236)
+
+![Screenshot (596)](https://github.com/user-attachments/assets/b4620319-3ec6-4db9-b81c-c3a3301da86b)
+
+![Screenshot (597)](https://github.com/user-attachments/assets/445873e9-6e12-4a81-a047-2cf73b19b0c3)
+
+![Screenshot (598)](https://github.com/user-attachments/assets/637b4dc8-c306-447c-b8a0-85398ceb06a4)
+
+![Screenshot (599)](https://github.com/user-attachments/assets/728d76ae-d00b-46e8-89d1-2d03d442c7df)
+
+![Screenshot (600)](https://github.com/user-attachments/assets/78339f32-9977-491d-a4f2-0be9c506e40f)
+
+![Screenshot (601)](https://github.com/user-attachments/assets/c89ed59a-e4da-4bf5-9832-fd8834ad96b4)
+
+
+
+
+Recommend to not to use root user to sign in to AWS console(use IAM user) <br>
+
+![Screenshot (603)](https://github.com/user-attachments/assets/10e3506f-fdd1-4030-9334-b1bbae0c9124)
+
+![Screenshot (604)](https://github.com/user-attachments/assets/1e3e3fe2-3076-40ca-b5fe-ea40b36dbe7d)
+
+![Screenshot (605)](https://github.com/user-attachments/assets/9817512a-50b3-4479-887b-a0f29a9753f3)
+
+![Screenshot (606)](https://github.com/user-attachments/assets/855e19a8-e7d1-4fd9-94fa-224bda1d80a1)
+
+![Screenshot (608)](https://github.com/user-attachments/assets/17c0d2d4-1731-4c06-8ffe-70fa3fdf4a93)
+
+![Screenshot (622)](https://github.com/user-attachments/assets/d9bcd72c-a315-4846-9c6a-f5ebd158811f)
+
+![Screenshot (623)](https://github.com/user-attachments/assets/df030ce8-76ab-4e64-ac5e-3f4587aa8a3c)
+
+![Screenshot (624)](https://github.com/user-attachments/assets/3159b737-561f-470b-bfe2-11be51f61106)
+
+![Screenshot (625)](https://github.com/user-attachments/assets/285936cf-5a56-4568-8fd5-078118f9ed29)
+
+![Screenshot (626)](https://github.com/user-attachments/assets/23514f59-e5b8-4ada-a2b7-e920aa9160a0)
+
+![Screenshot (627)](https://github.com/user-attachments/assets/b52a5a76-53da-432d-9a4c-33e1cc138a28)
+
+![Screenshot (631)](https://github.com/user-attachments/assets/1e20d8ea-81ad-4eca-8f72-28e76d289443)
+
+![Screenshot (632)](https://github.com/user-attachments/assets/0613d220-ec54-44ed-beaa-fc6ece29c5fd)
+
+![Screenshot (633)](https://github.com/user-attachments/assets/d4704896-bf76-4403-ad0c-8908514fd184)
+
+![Screenshot (634)](https://github.com/user-attachments/assets/4f8057bc-98d5-4092-8739-32964017de61)
+
+![Screenshot (635)](https://github.com/user-attachments/assets/6b8382bf-0604-4a9a-ae9c-54f5a844f242)
+
+![Screenshot (636)](https://github.com/user-attachments/assets/1a88cdc0-1deb-4ea9-b467-515d9784fbff)
+
+![Screenshot (637)](https://github.com/user-attachments/assets/5963809f-fb26-4c49-97e0-d139dea787c4)
+
+![Screenshot (638)](https://github.com/user-attachments/assets/6eff1ad0-6958-4e18-b806-a254ae21d899)
+
+![Screenshot (639)](https://github.com/user-attachments/assets/7936dcda-1329-42a5-9083-53e2cd169837)
+
+![Screenshot (641)](https://github.com/user-attachments/assets/2b459b10-1b28-48d7-8e55-8f89ebe1bc1d)
+
+![Screenshot (642)](https://github.com/user-attachments/assets/7cdf025a-49c6-4638-9a42-c08af529c67e)
+
+![Screenshot (643)](https://github.com/user-attachments/assets/69165e7d-077a-48b0-bcfc-d262160f9945)
+
+![Screenshot (645)](https://github.com/user-attachments/assets/7a41b378-1fdf-4444-b910-b1f1719ff9aa)
+
+![Screenshot (646)](https://github.com/user-attachments/assets/f0a6e374-1b22-4d26-82e7-5fcac6fd6bfd)
+
+![Screenshot (647)](https://github.com/user-attachments/assets/d37f4904-76a5-4805-95f5-ebcc2a13f119)
+
+![Screenshot (648)](https://github.com/user-attachments/assets/45503170-aea6-473b-a210-4963661d0471)
+
+![Screenshot (649)](https://github.com/user-attachments/assets/2eb53814-99f9-46ff-b77a-5a5ec7f14984)
+
+![Screenshot (650)](https://github.com/user-attachments/assets/5026e4bc-fb34-4a99-b16f-f3df82a87425)
+
+![Screenshot (651)](https://github.com/user-attachments/assets/6d36745d-1dbe-404b-b5a1-49922ad064c1)
+
+![Screenshot (652)](https://github.com/user-attachments/assets/aedff595-cbab-4ac3-afa6-a553f074872e)
+
+![Screenshot (653)](https://github.com/user-attachments/assets/e4d3c6ca-7bcb-4c94-a12c-af1a7fa794b1)
+
+![Screenshot (654)](https://github.com/user-attachments/assets/5df92c76-3158-4e37-af23-79afd42ddd45)
+
+![Screenshot (655)](https://github.com/user-attachments/assets/1d2e98e6-18cf-4c38-910d-2a84d07de005)
+
+![Screenshot (656)](https://github.com/user-attachments/assets/0cb791f6-a41a-463c-bfc0-7ba9f34d4fa5)
+
+![Screenshot (658)](https://github.com/user-attachments/assets/906dc26a-52c9-4904-b031-52915fa0acca)
+
+
+![Screenshot (659)](https://github.com/user-attachments/assets/6ed5f0d0-a79c-4d66-a7f7-f80d20da9036)
+
+![Screenshot (660)](https://github.com/user-attachments/assets/4545ce03-ed77-42f4-9884-9216385636ae)
+
+![Screenshot (661)](https://github.com/user-attachments/assets/72256534-f13b-4c3f-93b2-8e7e4785e2a9)
+
+![Screenshot (662)](https://github.com/user-attachments/assets/4320ab52-c8a6-4309-8f46-23ef44acafc1)
+
+![Screenshot (663)](https://github.com/user-attachments/assets/0df1e1a4-88a3-4732-a6c2-e1c7e6f7d5da)
+
+![Screenshot (664)](https://github.com/user-attachments/assets/0e6cd8a3-c944-4499-8727-2b8c3ecb7183)
+
+![Screenshot (665)](https://github.com/user-attachments/assets/2f60d0c1-2568-46e4-a1af-7885eaf002f4)
+
+![Screenshot (666)](https://github.com/user-attachments/assets/0301231e-fd14-4a09-afc5-8d97feb589b9)
+
+![Screenshot (667)](https://github.com/user-attachments/assets/89ea7ee6-4278-41a9-9c53-bb08645e97c3)
+
+![Screenshot (668)](https://github.com/user-attachments/assets/7a67f9ef-af85-4410-8525-8cc4398caae7)
+
+![Screenshot (669)](https://github.com/user-attachments/assets/d9e3eabe-55ac-4fc4-9792-e533d5683766)
+
+![Screenshot (670)](https://github.com/user-attachments/assets/1b88ba8e-4d4b-4eee-9962-0dc732f0c9ca)
+
+![Screenshot (671)](https://github.com/user-attachments/assets/b69dd171-66b4-490b-9a9d-852efe449647)
+
+![Screenshot (672)](https://github.com/user-attachments/assets/28e81f47-f9d9-4ba7-bc54-361f04ceea6a)
+
 ## IAC- Scanning for Misconfigurations
 
 ## Serverless Computing: Introduction
