@@ -137,7 +137,10 @@ In simple terms, 2FA is a two-way of identifying yourself before getting access 
 
 ## What was your last project? Tell me what you did and how you deployed it?
 
-17. What is the C.I.A triad?
+## What is the C.I.A triad?
+- Confidentiality (C): Ensure data privacy and prevent unauthorized access.
+- Integrity (I): Ensure (tampering-proof, without alteratin of data)data isn't altered.
+- Availability (A): Ensure services/data are accessible when needed.
 
 18. What is an Indicator of Compromise?
 
