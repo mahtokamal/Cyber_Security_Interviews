@@ -9,7 +9,9 @@ It is a guideline for classifying and describing cyberattacks and intrusions. It
 |Reconnaissance|Active Scanning, Phishing for information|
 
 ## HIPPA (Health Insurance Portability and Accountability Act)
-Healthcare, health insurance, medical research
+Healthcare, health insurance, medical research.
+
+HIPAA (Health Insurance Portability and Accountability Act) is a federal law that the U.S. passed in 1996 for the healthcare industry. Its main aim is to protect the privacy and security of a patient’s health information. 
 
 ## GDPR (General Data Protection Regulation)
 Any organization handling EU citizen personal data
