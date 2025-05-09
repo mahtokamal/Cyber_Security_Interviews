@@ -142,7 +142,8 @@ In simple terms, 2FA is a two-way of identifying yourself before getting access 
 - Integrity (I): Ensure (tampering-proof, without alteratin of data)data isn't altered.
 - Availability (A): Ensure services/data are accessible when needed.
 
-18. What is an Indicator of Compromise?
+## What is an Indicator of Compromise (IoCs)?
+Indicator of Compromise(IoCs) acts as a sign or proof that a system has been compromised of cyber attack. IOCs can include things like unusual network traffic, suspicious file hashes,IP addresses, unexpected registry entries, the presence of known malware signatures, or anomalous login attempts. Security analysts use IOCs to detect past or ongoing intrusions and to inform their threat hunting efforts.
 
 19. What's the difference between a true positive and a false positive alert?
 
