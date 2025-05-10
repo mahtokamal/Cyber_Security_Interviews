@@ -145,9 +145,19 @@ In simple terms, 2FA is a two-way of identifying yourself before getting access 
 ## What is an Indicator of Compromise (IoCs)?
 Indicator of Compromise(IoCs) acts as a sign or proof that a system has been compromised of cyber attack. IOCs can include things like unusual network traffic, suspicious file hashes,IP addresses, unexpected registry entries, the presence of known malware signatures, or anomalous login attempts. Security analysts use IOCs to detect past or ongoing intrusions and to inform their threat hunting efforts.
 
-19. What's the difference between a true positive and a false positive alert?
+## What's the difference between a true positive and a false positive alert?
 
-20. What is DHCP?
+True Positive (TP): A True Positive result is a correct identification of a threat or vulnerability by a system or tool. This means that the system has correctly detected and identified a potential threat or vulnerability, and has taken the appropriate action to mitigate or eliminate it. For example, if an intrusion detection system (IDS) correctly detects and reports an attempted cyber-attack, it would be considered a True Positive. This type of result is crucial in ensuring the safety and security of computer systems and networks. <br>
+
+True Negative(TN): A True Negative result is a correct determination that no threat or vulnerability exists by a system or tool. This means that the system has determined that there is no potential threat or vulnerability, and has taken no action. For example, if an antivirus software determines that a file is not infected with a virus and it is indeed clean, it would be considered a True Negative. This type of result is just as important as True Positives, as it helps to prevent unnecessary actions and alerts that could create confusion or panic. <br>
+
+False Positive(FP): A False Positive result is an incorrect identification of a threat or vulnerability by a system or tool. This means that the system has detected something that is not actually a potential threat or vulnerability and has taken unnecessary action. For example, if an IDS incorrectly identifies legitimate network traffic as an attempted cyber-attack, it would be considered a False Positive. This type of result can be frustrating for users and can lead to wasted time and resources. <br>
+
+False Negative(FN): A False Negative result is a failure to identify a threat or vulnerability by a system or tool. This means that the system has missed a potential threat or vulnerability, and has taken no action to mitigate or eliminate it. For example, if an antivirus software fails to detect a virus in a file that is actually infected, it would be considered a False Negative. This type of result can be dangerous as it can allow threats and vulnerabilities to go undetected and potentially cause harm to computer systems and networks. <br>
+
+Benign or Neutral: A Benign or Neutral result is one where the system or tool detects activity or behavior, but it is determined to be harmless or not a threat. For example, if an IDS detects network traffic that is determined to be legitimate and not an attempted cyber-attack, it would be considered a Benign or Neutral result. This type of result is important to identify because it helps to reduce the number of False Positives and False Negatives, which can reduce the workload of security analysts and improve the accuracy of threat detection.
+
+## What is DHCP?
 
 21. What is the difference between IDS and IPS?
 
