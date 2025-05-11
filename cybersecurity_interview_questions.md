@@ -158,6 +158,7 @@ False Negative(FN): A False Negative result is a failure to identify a threat or
 Benign or Neutral: A Benign or Neutral result is one where the system or tool detects activity or behavior, but it is determined to be harmless or not a threat. For example, if an IDS detects network traffic that is determined to be legitimate and not an attempted cyber-attack, it would be considered a Benign or Neutral result. This type of result is important to identify because it helps to reduce the number of False Positives and False Negatives, which can reduce the workload of security analysts and improve the accuracy of threat detection.
 
 ## What is DHCP?
+Dynamic Host Configuration Protocol assigns IP addresses to devices on a network automatically and other network configuration parameters (like subnet mask, default gateway, and DNS server addresses) to devices on a network. This eliminates the need for manual configuration, simplifies network administration, and prevents IP address conflicts.
 
 21. What is the difference between IDS and IPS?
 
