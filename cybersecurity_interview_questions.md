@@ -160,9 +160,13 @@ Benign or Neutral: A Benign or Neutral result is one where the system or tool de
 ## What is DHCP?
 Dynamic Host Configuration Protocol assigns IP addresses to devices on a network automatically and other network configuration parameters (like subnet mask, default gateway, and DNS server addresses) to devices on a network. This eliminates the need for manual configuration, simplifies network administration, and prevents IP address conflicts.
 
-21. What is the difference between IDS and IPS?
+## What is the difference between IDS and IPS?
+IDS : Intrusion Detectin System, it only monitors the security events and notify us through alerts for unusual network activitiy and doesn't take any actions automatically, required a security experts to deal with the events. <br>
 
-22. How many OWASP top 10 can you name and can you explain how any of them work?
+IPS : Intrusion Prevention System, it monitors and blocks the security events or malicious network activity, it automatically take the actions required to prevent or block the unusual activity.
+
+## How many OWASP top 10 can you name and can you explain how any of them work?
+
 
 23. Can you explain SQL injection?
 
