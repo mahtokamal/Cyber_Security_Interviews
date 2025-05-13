@@ -168,7 +168,7 @@ IPS : Intrusion Prevention System, it monitors and blocks the security events or
 ## How many OWASP top 10 can you name and can you explain how any of them work?
 
 **OWASP TOP 10** <br>
-OWASP stands for Open Web Application Secruity Project.
+OWASP stands for Open Web Application Secruity Project. The OWASP Top 10 is a list of the 10 most critical web application security risks, published by the Open Worldwide Application Security Project (OWASP). It’s a non-profit foundation, globally recognized standard used by developers, security professionals, and organizations to secure web applications.
 
 - A01:2021-Broken Access Control
 - A02:2021-Cryptographic Failures
