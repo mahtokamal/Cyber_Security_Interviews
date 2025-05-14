@@ -181,59 +181,122 @@ OWASP stands for Open Web Application Secruity Project. The OWASP Top 10 is a li
 - A09:2021-Security Logging and Monitoring Failures
 - A10:2021-Server-Side Request Forgery 
 
-23. Can you explain SQL injection?
+## Can you explain SQL injection?
+It's when an attacker manipulates SQL queries through input fields to access or manipulate a database.
+SQL Injection occurs when an attacker can insert malicious SQL queries into an application's input fields (like login forms, search bars, or URL parameters). If the application doesn't properly sanitize or validate this input, the malicious SQL code can be executed against the backend database. This can allow the attacker to bypass authentication, retrieve sensitive data, modify or delete data, or even gain control over the database server.
 
-24. Can you explain Cross-Site Scripting?
+For example, consider a login form where a user enters a username and password. The application might construct an SQL query like: <br>
+SELECT * FROM users WHERE username = '$username' AND password = '$password'; <br>
 
-25. How is a Web Application Firewall different from a regular Firewall?
+If the application doesn't properly handle the $username input, an attacker could enter something like: <br>
+' OR '1'='1 <br>
 
-26. What is the difference between encoding, encryption, and hashing?
+This would result in the following malicious SQL query: <br>
 
-27. If you were going to going to encrypt a file, would you compress it before or after you encrypt it?
+SELECT * FROM users WHERE username = '' OR '1'='1' AND password = '$password'; <br>
 
-28. Explain salted hashes?
+Since '1'='1' is always true, this query would bypass the username and password check, potentially granting the attacker unauthorized access. <br>
 
-29. How does an attacker gain persistence when they've successfully entered?
+is a type of injection vulnerability that allows attackers to interfere with the queries that an application makes to its database. By inserting malicious SQL statements into input fields, attackers can bypass security measures, view, modify, or delete data, or even execute arbitrary commands on the database server. <br>
 
-30. Can you name the three major windows event log types?
 
-31. Name a sandbox that you like?
+## Can you explain Cross-Site Scripting?
+It allows attackers to inject malicious scripts into websites, which execute in the browser of users who view the page.<br>
+is a type of web application vulnerability that allows attackers to inject malicious scripts (usually JavaScript) into web pages viewed by other users. When a victim visits the compromised page, their browser executes the attacker's script. This can enable the attacker to steal session cookies, redirect the user to malicious websites, deface the website, or perform other malicious actions in the context of the victim's browser session. <br>
 
-32. What is the difference between static and dynamic malware analysis?
+There are typically three types of XSS: <br>
 
-33. What is a SIEM? Tell me when you've used one
+- Reflected XSS: The malicious script is injected through a request (e.g., in a URL parameter) and is reflected back to the user in the response.
+- Stored XSS: The malicious script is stored on the target server (e.g., in a database or comment section) and is executed whenever a user views the affected content. This is generally more dangerous.
+- DOM-based XSS: The vulnerability exists in the client-side JavaScript code itself, where malicious data in the DOM (Document Object Model) is used without proper sanitization.
 
-34. Name a few online tools you use for security analysis?
+## How is a Web Application Firewall different from a regular Firewall?
+is a specific type of firewall that focuses on protecting web applications by filtering and monitoring HTTP(S) traffic between the application and the internet. Unlike a traditional network firewall that operates at lower network layers (like IP addresses and ports), a WAF understands the application layer (HTTP) and can analyze the content of web requests and responses. <br>
 
-35. What are the three major RFC 1918 address spaces?
+## What is the difference between encoding, encryption, and hashing?
+- Encoding : converting plain-text(readable) into cipher-text(unreadable) without using key. It is reversible.Examples- Base64, URL encoding
+- Encryption : converting plain-text(readable) into cipher-text(unreadable) using key. It is reversible. Examples- DES, AES, RSA, Caesar Cipher.
+- Decryption: converting back to plain-text from cipher-text using key.
+- Hashing : it is a one-way process and used for data integrity checking. it is not reversible. Examples- MD-5, SHA-1, SHA-2, SHA-3.
 
-36. Do you know anything about Zero Trust?
+Symmetric : One key(Public key) used for encryption and decryption. <br>
 
-37. Do you have any experience with PCI or another compliance body?
+Asymmetric : different keys are used for encrytpion and decryption. Public key for encrytpion and Private key for decryption. <br>
 
-38. What is the difference between TCP and UDP?
+Digital Signature: Data authentication and Data Integrity. <br>
 
-39. Explain your experience with Azure and AWS?
+## If you were going to going to encrypt a file, would you compress it before or after you encrypt it?
+Compress before encrypting. Encryption randomizes data, making it harder to compress afterward. <br>
+Reduced File Size: Compression reduces the size of the data, which can lead to faster encryption times and less storage space required for the encrypted file.<br>
+Increased Entropy: Compression can sometimes increase the entropy (randomness) of the data. This can make the ciphertext more resistant to certain types of cryptanalysis, as patterns in the original data are reduced. <br>
+Encrypting first and then compressing might not be as effective because encryption aims to introduce randomness, which can hinder the compression algorithm's ability to find patterns and reduce the file size. <br>
 
-40. What is port 80?
+## Explain salted hashes?
+A salt is a random value( character, numbers or strings) added to passwords before hashing to prevent dictionary and rainbow table attacks. <br>
+
+- Prevents Rainbow Table Attacks: Rainbow tables are pre-computed tables of hashes for common passwords. Without salting, an attacker who obtains a database of password hashes can potentially use these tables to quickly look up the original passwords. Since each password has a unique salt, the resulting hashes will be different, making rainbow tables ineffective.
+
+- Increases Difficulty of Dictionary Attacks: Even if attackers try to guess common passwords and hash them, the added salt makes it much harder to match the generated hash with the stored salted hash. They would need to generate hashes for each password combined with each unique salt, which is computationally very expensive.
+
+## How does an attacker gain persistence when they've successfully entered?
+By installing backdoors, modifying registry keys, using scheduled tasks, or creating rogue user accounts. <br>
+
+Once an attacker has successfully gained initial access to a system, they often try to establish persistence to maintain their access even if the initial entry point is closed or the system is rebooted. They achieve this through various techniques: <br>
+
+- Registry Keys: Modifying or adding Run keys in the Windows Registry to automatically execute malicious programs at startup or logon.
+- Startup Folders: Placing malicious executables or shortcuts in startup folders so they run when a user logs in.   
+- Scheduled Tasks: Creating scheduled tasks to run malicious scripts or executables at specific times or intervals.   
+- Services: Installing malicious software as a service that runs in the background, often with elevated privileges.
+- Backdoors: Planting hidden mechanisms (like remote access tools or modified system files) that allow them to re-enter the system later.   
+- Web Shells: Uploading malicious scripts to web servers that allow them to execute commands remotely through a web browser.   
+- Account Manipulation: Creating new administrator accounts or adding their existing account to privileged groups.
+- SSH Keys: Installing their own SSH keys for passwordless remote access.
+
+## Can you name the three major windows event log types?
+The three major Windows event log types are: <br>
+
+- Application: Contains events logged by applications and programs. Developers often use this log to record errors, warnings, and informational events specific to their applications.   <br>
+- Security: Contains audit entries related to security events, such as successful and failed logon attempts, object access, privilege use, and account management changes. This log is crucial for security investigations.   <br>
+- System: Contains events logged by the Windows operating system components, such as startup and shutdown events, driver errors, and system service failures. <br>
+
+## Name a sandbox that you like?
+Hybrid analysis, Joesandbox, any.run. <br>
+
+## What is the difference between static and dynamic malware analysis?
+
+34. What is a SIEM? Tell me when you've used one
+
+35. Name a few online tools you use for security analysis?
+
+36. What are the three major RFC 1918 address spaces?
+
+37. Do you know anything about Zero Trust?
+
+38. Do you have any experience with PCI or another compliance body?
+
+39. What is the difference between TCP and UDP?
+
+40. Explain your experience with Azure and AWS?
+
+41. What is port 80?
 HTTP
-41. What is port 443?
+42. What is port 443?
 HTTPS
-42. Is a VPN necessary? Why or why not?
+43. Is a VPN necessary? Why or why not?
 
-43. What is port 22?
+44. What is port 22?
 SSH (Secure Shell)
-44. What is port 3389?
+45. What is port 3389?
 Remote Desktop Protocol (RDP)
-45. What is port 445 and what malware is notorious for flooding it?
+46. What is port 445 and what malware is notorious for flooding it?
 
-46. Are source ports good for anything in an investigation?
+47. Are source ports good for anything in an investigation?
 
-47. When you type in your computer google.com tell me what happens on your computer to get you the website?
+48. When you type in your computer google.com tell me what happens on your computer to get you the website?
 
-48. What is DNS?
+49. What is DNS?
 
-49. Data exfiltration
+50. Data exfiltration
 
 ## What is DMZ(Demilitarized Zone) in Cyber Security?
 
