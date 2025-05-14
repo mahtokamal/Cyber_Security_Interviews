@@ -268,6 +268,9 @@ The three major Windows event log types are: <br>
 Hybrid analysis, Joesandbox, any.run. <br>
 
 ## What is the difference between static and dynamic malware analysis?
+- Static Malware Analysis: Involves examining the malware's code and structure without actually executing it. This includes techniques like disassembling the code, analyzing file headers, strings, and identifying known malicious patterns or signatures. Static analysis can quickly provide insights into the malware's potential capabilities and characteristics. However, it can be evaded by techniques like code obfuscation or packing.
+
+- Dynamic Malware Analysis: Involves executing the malware in a controlled and isolated environment (like a sandbox) and observing its behavior in real-time. This allows analysts to see what actions the malware takes, such as network connections, file modifications, registry changes, and process creation. Dynamic analysis can reveal the actual impact and functionality of the malware, even if it uses obfuscation techniques. However, malware can sometimes detect sandbox environments and behave differently.
 
 ## What is a SIEM? Tell me when you've used one
 SIEM stands for Security Information and Event Management. The primary goal of a SIEM is to provide a centralized view of security-related data, enabling real-time monitoring, threat detection, security analysis, and incident response. <br>
@@ -299,9 +302,10 @@ Zero Trust ensures that every user and device must strictly identifies before ac
 
 ## Do you have any experience with PCI or another compliance body?
 
-39. What is the difference between TCP and UDP?
 
-40. Explain your experience with Azure and AWS?
+## What is the difference between TCP and UDP?
+
+## Explain your experience with Azure and AWS?
 
 41. What is port 80?
 HTTP
