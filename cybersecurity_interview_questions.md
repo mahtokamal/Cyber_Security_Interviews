@@ -167,6 +167,11 @@ IPS : Intrusion Prevention System, it monitors and blocks the security events or
 
 ## How many OWASP top 10 can you name and can you explain how any of them work?
 
+- Static Malware Analysis: Involves examining the malware's code and structure without actually executing it. This includes techniques like disassembling the code, analyzing file headers, strings, and identifying known malicious patterns or signatures. Static analysis can quickly provide insights into the malware's potential capabilities and characteristics. However, it can be evaded by techniques like code obfuscation or packing.
+
+- Involves executing the malware in a controlled and isolated environment (like a sandbox) and observing its behavior in real-time. This allows analysts to see what actions the malware takes, such as network connections, file modifications, registry changes, and process creation. Dynamic analysis can reveal the actual impact and functionality of the malware, even if it uses obfuscation techniques. However, malware can sometimes detect sandbox environments and behave differently.
+
+
 **OWASP TOP 10** <br>
 OWASP stands for Open Web Application Secruity Project. The OWASP Top 10 is a list of the 10 most critical web application security risks, published by the Open Worldwide Application Security Project (OWASP). It’s a non-profit foundation, globally recognized standard used by developers, security professionals, and organizations to secure web applications.
 
@@ -264,15 +269,35 @@ Hybrid analysis, Joesandbox, any.run. <br>
 
 ## What is the difference between static and dynamic malware analysis?
 
-34. What is a SIEM? Tell me when you've used one
+## What is a SIEM? Tell me when you've used one
+SIEM stands for Security Information and Event Management. The primary goal of a SIEM is to provide a centralized view of security-related data, enabling real-time monitoring, threat detection, security analysis, and incident response. <br>
+I’ve used SIEM (Splunk and ELK or Elastic Stack) to analyze logs, detect anomalies, and set up alerts. <br>
 
-35. Name a few online tools you use for security analysis?
+## Name a few online tools you use for security analysis?
 
-36. What are the three major RFC 1918 address spaces?
+- https://whois.domaintools.com/
+- https://www.ipvoid.com/
+- https://www.abuseipdb.com/
+- https://talosintelligence.com/
+- https://www.virustotal.com/gui/home/upload
+- https://www.ipvoid.com/ip-blacklist-check/
+- [Shodan](https://www.shodan.io/): IoT devices or internet-connected devices search engine.
+- https://urlscan.io/ : UrlScan.io is a free online service and tool that allows users to scan and analyze URLs (Uniform Resource Locators) or website links to determine potential security threats and risks associated with those URLs.
+- Sandbox : Hybrid analysis, Any.run, Joesanbox 
 
-37. Do you know anything about Zero Trust?
+## What are the three major RFC 1918 address spaces?
 
-38. Do you have any experience with PCI or another compliance body?
+|Class|Range|
+|------|---|
+|A, 10.0.0.0/8|10.0.0.0 - 10.255.255.255|
+|B, 172.16.0.0/12|172.16.0.0 - 172.31.255.255|
+|C, 192.168.0.0/16|192.168.0.0 - 192.168.255.255|
+
+## Do you know anything about Zero Trust?
+It's a security framework based on the principle of "never trust, always verify." <br>
+Zero Trust ensures that every user and device must strictly identifies before accessing the network or system irrespective whether it is internal or external entities.
+
+## Do you have any experience with PCI or another compliance body?
 
 39. What is the difference between TCP and UDP?
 
