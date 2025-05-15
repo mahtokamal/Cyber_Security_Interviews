@@ -307,11 +307,13 @@ Zero Trust ensures that every user and device must strictly identifies before ac
 
 ## Explain your experience with Azure and AWS?
 
-41. What is port 80?
-HTTP
-42. What is port 443?
-HTTPS
-43. Is a VPN necessary? Why or why not?
+## What is port 80?
+Port 80 is the standard port used for HTTP (Hypertext Transfer Protocol), which is the foundation of data communication on the World Wide Web. When you type a website address (URL) that starts with "http://", your browser typically connects to the web server on port 80 to request and receive web pages and other content. <br>
+
+## What is port 443?
+Port 443 is the standard port used for HTTPS (HTTP Secure), which is the secure version of HTTP. It uses TLS/SSL encryption to provide secure communication over the internet, protecting the confidentiality and integrity of data exchanged between the browser and the web server. Websites that handle sensitive information (like login credentials or payment details) typically use HTTPS and operate on port 443.
+
+## Is a VPN necessary? Why or why not?
 
 44. What is port 22?
 SSH (Secure Shell)
