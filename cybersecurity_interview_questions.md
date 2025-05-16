@@ -315,19 +315,68 @@ Port 443 is the standard port used for HTTPS (HTTP Secure), which is the secure 
 
 ## Is a VPN necessary? Why or why not?
 
-44. What is port 22?
-SSH (Secure Shell)
-45. What is port 3389?
-Remote Desktop Protocol (RDP)
-46. What is port 445 and what malware is notorious for flooding it?
+Whether a VPN (Virtual Private Network) is necessary depends heavily on the context and the user's needs and threat model: <br>
 
-47. Are source ports good for anything in an investigation?
+Reasons why a VPN can be beneficial: <br>
 
-48. When you type in your computer google.com tell me what happens on your computer to get you the website?
+- Privacy: Encrypts your internet traffic and masks your IP address, making it harder for websites, ISPs, and potential eavesdroppers to track your online activity.
+- Security on Public Wi-Fi: Protects your data from interception when using unsecured public Wi-Fi networks.
+- Bypassing Geo-restrictions: Allows access to content that might be blocked in your geographical location.
+- Secure Remote Access: Enables secure connections to private networks (like a company network) for remote workers.
 
-49. What is DNS?
+Reasons why a VPN might not always be necessary: <br>
 
-50. Data exfiltration
+- HTTPS: Many websites now use HTTPS, which already encrypts the communication between your browser and the server, providing a level of security.
+- Trusted Private Networks: On your secure home or office network, the added layer of a VPN might not be essential for basic browsing.
+- Performance Overhead: VPNs can sometimes introduce latency and reduce internet speed.
+- Trust in VPN Provider: You are essentially trusting your VPN provider with your internet traffic.
+
+In conclusion, a VPN can be a valuable tool for enhancing privacy and security, especially on untrusted networks. However, it's not a universal necessity, and its usefulness depends on individual circumstances and security requirements.
+
+## What is port 22?
+Port 22 is the standard port used for SSH (Secure Shell). SSH is a secure protocol used for establishing encrypted connections between two networked devices. It's commonly used for remote server administration, secure file transfer (SFTP, SCP), and creating secure tunnels for other network traffic.
+
+## What is port 3389?
+Port 3389 is the standard port used for Remote Desktop Protocol (RDP). RDP is a proprietary protocol developed by Microsoft that allows users to remotely access and control the graphical interface of another computer over a network connection.
+
+## What is port 445 and what malware is notorious for flooding it?
+Port 445 is the standard port used for Server Message Block (SMB), which is a network file-sharing protocol used by Windows operating systems (and also implemented by other systems like Samba for Linux/Unix).<br>
+
+The malware family most notorious for flooding port 445 and exploiting vulnerabilities in the SMB protocol is WannaCry. The WannaCry ransomware attack in 2017 used the EternalBlue exploit (developed by the NSA and later leaked) to spread rapidly across networks by exploiting a vulnerability in the SMBv1 protocol on port 445.
+
+## Are source ports good for anything in an investigation?
+Yes—they help in identifying services, behavior patterns, and can be used in correlation. <br>
+
+- Identifying the Originating Application/Process: Each application or process initiating a network connection typically uses a unique, ephemeral (temporary) source port. By examining the source port in network logs, you can sometimes identify the specific application or process on the originating machine that initiated the communication.
+- Tracking Connections: Source ports, along with source IP address, destination IP address, and destination port, form a unique 5-tuple that identifies a specific network connection. This can be crucial for tracking the flow of communication during an incident.
+- Detecting Anomalous Activity: Unusual or unexpected source ports used by a particular host might indicate malicious activity or the presence of unauthorized software.
+- Correlation with Endpoint Logs: Source port information in network logs can be correlated with local logs on the originating endpoint to gain a more complete picture of the events leading up to or during an incident. For example, matching a network connection with a specific process ID and timestamp in the endpoint logs.
+
+
+## When you type in your computer google.com tell me what happens on your computer to get you the website?
+Here is the simplified steps what happens behind the scence when you type google.com <br>
+
+- DNS resolves domain to IP.
+- TCP connection is established.
+- HTTP(S) request is made.
+- Web page is served to browser.
+
+Following explains the detail behind google.com <br>
+
+- DNS Resolution: Your computer first needs to find the IP address associated with the domain name google.com. It sends a DNS query to your configured DNS server (usually provided by your ISP or a custom DNS service).
+- DNS Lookup: The DNS server recursively queries other DNS servers until it finds the IP address for google.com.
+Establishing a TCP Connection: Once your computer has the IP address for google.com, your browser initiates a TCP connection to the web server on the standard HTTPS port 443 (since most modern websites use HTTPS by default). This involves a three-way handshake:
+- SYN (Synchronize): Your computer sends a SYN packet to the server.
+- SYN-ACK (Synchronize-Acknowledge): The server responds with a SYN-ACK packet.
+- ACK (Acknowledge): Your computer sends an ACK packet, establishing the connection.
+- TLS/SSL Handshake (for HTTPS): Because you're likely accessing https://google.com, a TLS/SSL handshake occurs to establish a secure, encrypted connection. This involves the browser and server exchanging certificates and agreeing on encryption algorithms.
+- HTTP Request: Your browser sends an HTTP GET request to the Google server, asking for the main webpage (/). This request includes information like your browser type (user-agent).
+- HTTP Response: The Google server processes your request and sends back an HTTP response. This response contains the HTML code for the Google homepage, along with other resources like CSS stylesheets, JavaScript files, and images.
+- Rendering the Page: Your web browser receives the HTTP response and starts to render the webpage by parsing the HTML, fetching the additional resources, and displaying the Google homepage on your screen.
+
+## What is DNS?
+
+## Data exfiltration
 
 ## What is DMZ(Demilitarized Zone) in Cyber Security?
 
