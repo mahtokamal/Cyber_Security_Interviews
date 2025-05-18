@@ -375,11 +375,47 @@ Establishing a TCP Connection: Once your computer has the IP address for google.
 - Rendering the Page: Your web browser receives the HTTP response and starts to render the webpage by parsing the HTML, fetching the additional resources, and displaying the Google homepage on your screen.
 
 ## What is DNS?
+DNS (Domain Name System) is a hierarchical and distributed naming system for computers, services, or any resource connected to the internet or a private network. It translates human-readable domain names (like google.com) into machine-readable IP addresses (like 172.217.160.142). <br>
+
+Think of DNS as the phonebook of the internet. Instead of having to remember complex numerical IP addresses for every website you want to visit, you can use easy-to-remember domain names. When you type a domain name into your browser, DNS works behind the scenes to look up the corresponding IP address so your computer can connect to the correct server. This system is crucial for the internet to be user-friendly and functional.
 
 ## Data exfiltration
+Data Exfiltration—also known as data theft, data leakage, or data breach—is when sensitive, confidential, or proprietary data is stolen or transferred out of an organization without authorization. <br>
+In simple terms, Data exfiltration is the unauthorized transfer of data from a computer or network. <br>
+It's one of the most dangerous outcomes of a cyberattack and a major focus for SOC analysts and incident response teams. <br>
+
+How Does It Happen? <br>
+- Malware (keyloggers, backdoors, RATs)
+- Phishing attacks (gaining user credentials)
+- Misconfigured cloud storage (like open S3 buckets)
+- Insider threats (disgruntled or careless employees)
+- Command & Control (C2) channels in APTs
+
+🌐 Real-World Examples: <br>
+1. Equifax Breach (2017)
+- Attackers exploited a vulnerability in Apache Struts.
+- Exfiltrated personal info of 147 million people (SSNs, birthdates, etc.).
+ - Data was transferred out over several weeks before detection.
+
+2. Capital One Breach (2019)
+- Misconfigured AWS firewall allowed access to cloud data.
+- An insider/ex-employee used that to exfiltrate credit applications of over 100 million users.
+
+3. Edward Snowden (NSA Leak, 2013)
+- Insider copied and exfiltrated highly classified NSA data.
+- Used removable media and anonymizing tools.
 
 ## What is DMZ(Demilitarized Zone) in Cyber Security?
 
+A DMZ (Demilitarized Zone) is a perimeter network that sits between an organization's internal network (trusted or LAN) and the public internet (untrusted). It hosts public-facing services like DNS, web, email, FTP, or VoIP servers while keeping your internal network safe. <br>
+
+![DemiltarizedZoneDMZ](https://github.com/user-attachments/assets/52a4fc50-0d4f-4d92-95fe-331404f1235b) <br>
+
+![Screenshot (730)](https://github.com/user-attachments/assets/3005dce0-fbde-4b54-83d0-9ce843ce8544) <br>
+
+https://www.geeksforgeeks.org/what-is-demiltarized-zone/ <br>
+https://www.fortinet.com/resources/cyberglossary/what-is-dmz#:~:text=A%20DMZ%20or%20demilitarized%20zone,area%20network%20from%20untrusted%20traffic. <br>
+https://www.barracuda.com/support/glossary/dmz-network#:~:text=about%20DMZ%20networks-,What%20is%20DMZ%20network%3F,untrusted%20network%2C%20commonly%20the%20internet.<br>
 ## Cyber Kill Chain (Rec, Weap, Del, Expl, Inst, C2, Act)
 
 **Phases of Cyber Kill Chain** <br>
