@@ -301,9 +301,18 @@ It's a security framework based on the principle of "never trust, always verify.
 Zero Trust ensures that every user and device must strictly identifies before accessing the network or system irrespective whether it is internal or external entities.
 
 ## Do you have any experience with PCI or another compliance body?
-
+I don't have practical experience with PCI DSS (Payment Card Industry Data Security Standard) compliance. However, I know the theoretical foundation knowledge about such as How does it work in real-work and why is it neccessary?
 
 ## What is the difference between TCP and UDP?
+
+|TCP| UDP|
+|---|---|
+|TCP is connection-oriented|UDP is connection-less|
+|TCP ensure reliable delivery of data (3-way handshake, SYN, SYN-ACK, ACK)|UDP does not ensure reliable delivery of data|
+|Slower|Faster|
+|web browsing (HTTP/HTTPS), email (SMTP, POP3, IMAP), and file transfer (FTP)|Streaming(audio and video), online  gaming, DNS queries|
+
+https://www.muvi.com/blogs/udp-vs-tcp-which-one-is-better-for-streaming/
 
 ## Explain your experience with Azure and AWS?
 
