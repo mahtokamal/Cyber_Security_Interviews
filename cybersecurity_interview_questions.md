@@ -136,6 +136,7 @@ In simple terms, 2FA is a two-way of identifying yourself before getting access 
 2FA adds an extra layer of security by requiring two forms of verification: something you know (password) and something you have (authenticator app or device). This makes it much harder for attackers to gain unauthorized access, even if they manage to steal your password.
 
 ## What was your last project? Tell me what you did and how you deployed it?
+Confired IAM policies using AWS CLI and Terraform (Infrastructure as Code(IaC)) Understanding how to manage users, groups, roles, and permissions on AWS cloud platforms to enforce least privilege.
 
 ## What is the C.I.A triad?
 - Confidentiality (C): Ensure data privacy and prevent unauthorized access.
@@ -315,6 +316,21 @@ I don't have practical experience with PCI DSS (Payment Card Industry Data Secur
 https://www.muvi.com/blogs/udp-vs-tcp-which-one-is-better-for-streaming/
 
 ## Explain your experience with Azure and AWS?
+My experience with Azure and AWS is primarily through understanding their security services and how they can be leveraged for building and monitoring secure cloud environments. I have knowledge of: <br>
+
+- Configured IAM policies on AWS platform and CloudWatch to monitor AWS logs, IaC(Terraform, infrastructure as a code to deploy, test and destroy the code creating ec2 instance) and AWS CLI.
+- T-Pot(Honey Pot) on Microsoft Azure platform and security analysis on source IP and using Terraform azure CLI to create resource group
+
+- Identity and Access Management (IAM): Understanding how to manage users, groups, roles, and permissions in both platforms to enforce least privilege.
+Network Security: Familiarity with Azure Network Security Groups (NSGs) and AWS Security Groups and Network ACLs for controlling inbound and outbound traffic.
+
+- Security Monitoring and Logging: Awareness of Azure Security Center/Microsoft Defender for Cloud and AWS Security Hub for centralized security management and threat detection, as well as their respective logging services (Azure Monitor Logs/Log Analytics and AWS CloudWatch Logs).
+  
+- Data Protection: Understanding encryption options at rest and in transit, as well as key management services (Azure Key Vault and AWS KMS).
+
+- Web Application Firewalls (WAF): Knowledge of Azure WAF and AWS WAF for protecting web applications from common web exploits.
+
+While my direct hands-on deployment experience in these platforms might be limited, I have a solid understanding of their core security concepts and how they contribute to a secure cloud infrastructure. <br>
 
 ## What is port 80?
 Port 80 is the standard port used for HTTP (Hypertext Transfer Protocol), which is the foundation of data communication on the World Wide Web. When you type a website address (URL) that starts with "http://", your browser typically connects to the web server on port 80 to request and receive web pages and other content. <br>
