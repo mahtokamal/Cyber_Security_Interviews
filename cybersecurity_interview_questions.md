@@ -529,14 +529,19 @@ Important to note that an adversary or another compromised host can be the owner
 - Overwrite or corrupt data.
 
 ## Surface Web, Dark Web and Deep Web
-
 https://www.kaspersky.com/resource-center/threats/deep-web <br>
 
 # Never leave an interview without asking them questions at the end
 
-1. What is your first question you'll ask about the company?
-2. What is the second question you'll ask about the people?
+## What is your first question you'll ask about the company?
+What are the biggest challenges for a SOC team in your company facing right now and what are the strategic priorities for the security team in addressing them over the next 12-18 months??
 
-### What is the third question you'll ask about your growth?
-What are thr growth and training opportunities for a SOC team.
+## What is the second question you'll ask about the people?
+Could you please tell and explain me about the team that I would be working with and their backgrounds? <br>
+Can you describe the typical day-to-day responsibilities of a SOC Analyst in this role and what opportunities are there for collaboration and knowledge sharing within the team?
+
+## What is the third question you'll ask about your growth?
+What are the growth and training opportunities for a SOC team to enhace the SOC career.<br>
+What opportunities are there for professional development and growth within the security operations center, such as training on new technologies or opportunities to specialize in specific security domains?
+
 # Scenarios-based Questions
