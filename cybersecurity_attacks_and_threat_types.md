@@ -1,9 +1,20 @@
 # Most Commonly Cybersecutiy attacks and threat types
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Hardware-level Cyber attacks
+## Rowhammer
+## Meltdown and Spectre
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Software-level Cyber attacks
+## Buffer Overflows
+## Non-Validated inputs
+## Race Condition
+## SYNful Knock vulnerability discovered in Cisco Internetwork Operating System (IOS) in 2015.
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Replay attacks
 ## Zero-day vulnerability or exploits
 ## ARP Posioning
@@ -20,7 +31,8 @@
 ## Typo squatting
 ## KRACKS (Key reinstallation attacks)
 ## DOS & DDoS
-## Cryptojacking Clickjacking
+## Cryptojacking
+## Clickjacking
 ## Buffer overflows
 ## SQL injections
 ## Rowhammer
