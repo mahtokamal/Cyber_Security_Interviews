@@ -41,7 +41,7 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 ## Adversary
 ## TTPs (Tactics, Techniques and Procedure)
 ## APT (Advanced Persistent Threat)
-## VPN vs Proxy
+## VPN vs Proxy vs Reverse  Proxy
 ## Firewall Vs IDP/IDS Vs SIEM
 ## SSID
 ## Chain of Custody
