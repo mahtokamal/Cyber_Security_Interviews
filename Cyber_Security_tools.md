@@ -50,20 +50,58 @@ Malware analysis and threat hunting.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Blue Team
 - SIEM (Splunk, ELK Stack) (security information and event management)
-  (Splunk, IBM QRadar, Microsoft Sentinel, ArcSight Enterprise Security Manager (Micro Focus), Sumo Logic, LogRhythm NextGen SIEM, Elastic Security (formerly Elastic SIEM), 
+  - Splunk (Cisco)
+  - IBM QRadar
+  - MS Sentinel 
+  - Elastic Stack (Open-Source ELK Stack)
+  - ArchSight
+  - LogRhythm
+  -(Splunk, IBM QRadar, Microsoft Sentinel, ArcSight Enterprise Security Manager (Micro Focus), Sumo Logic, LogRhythm NextGen SIEM, Elastic Security (formerly Elastic SIEM), 
   SolarWinds Security Event Manager, Exabeam Advanced Analytics, Fortinet FortiSIEM )
+
 - SOAR (Security Orchestration, Automation and Response)
-- MISSP
+  - Real-life example: Zensar’s Cybersecurity Team uses SOAR for faster email phishing attacks & incident response. The security team has automated the security 
+    investigation process by manually searching for threats.
+
+    CrowdStrike Falcon® Fusion SOAR for security analysis <br>
+
+    Use cases - Threat Hunting, Case Management, Threat Intelligence Coordination Automation, Vulnerability Management, Automated Phishing Attacks Investigation, Analysis & 
+    Response, Automated Remediation, Incident Response, Endpoint Protection, Forensic Investigation, Cloud security orchestration, Incident lifecycle case management, SSL 
+    certificate expiration tracking, Detecting suspicious user login from IP address locations. <br>
+  
+
+- MSSP (Managed Security Service Providers)
+  -  CISCO, Palo Alto, Check Points, CheckPoint, Verizon, Fortinet, IBM, AT&T, Secure works,  Trust waves
+  - CISCO(Networking devices and equipments), Palo Alto Networks
+  - Fortinet (SOC-based services, Cloud security solutions)
+  - Cloud security (Azure, AWS, GCP)
+  - Okta (IAM , SSO, MFA user activity monitoring)
+  - Qualys (Risk & Vulnerability Management Software)
+  - Anivirus (McAfee, Quick Heal, )
+
+- MISP (Malware Informatin Sharing Platform)
+
 - Firewall
+
 - IDPS (Snort, Suricata, CISCO Firepower)
-- EDR(Wazuh) XDR
+
+- EDR vs XDR
+  - EDR(Wazuh) (Endpoint Detection and Response)
+    - EDR have been created because antiviruses cannot catch every malicious binary and process running on the endpoint
+  - XDR (Extended detection and response)
+- VPN
+  - EX
 - UEBA (user and entity behavior analytics)
+
 - ASM (attack surface management
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Red Team
 - Wireshark
 - Nmap
 - Metasploit
+- Nessus
+- John the Ripper
+- Air-Crack NG
 - Burpsuite (web pentesting)
 - 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
