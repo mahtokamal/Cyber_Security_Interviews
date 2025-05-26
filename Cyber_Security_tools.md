@@ -89,7 +89,7 @@ Malware analysis and threat hunting.
   - EDR(Wazuh) (Endpoint Detection and Response)
     - EDR have been created because antiviruses cannot catch every malicious binary and process running on the endpoint
   - XDR (Extended detection and response)
-- VPN
+- VPN (Virtual Private Network)
   - EX
 - UEBA (user and entity behavior analytics)
 
