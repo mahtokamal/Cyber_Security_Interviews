@@ -56,7 +56,7 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 ## SOC
 ## Reconnaissance
 ## Red Team Vs Blue Team
-## KQL
+## KQL (Kusto Query Language )
 KQL can refer to Kusto Query Language in the context of Azure, and Kibana Query Language in the context of Elastic. Both are query languages used to explore and process data based on search terms and filters.
 
 ## Kibana
