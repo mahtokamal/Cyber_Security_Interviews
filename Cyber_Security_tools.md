@@ -88,12 +88,27 @@ Malware analysis and threat hunting.
 - EDR vs XDR
   - EDR(Wazuh) (Endpoint Detection and Response)
     - EDR have been created because antiviruses cannot catch every malicious binary and process running on the endpoint
+    - CrowdStrike Falcon
+
+     - SentinelOne
+
+     - Microsoft Defender for Endpoint
+
+     - Sophos Intercept X
+
+     - Carbon Black (VMware)
   - XDR (Extended detection and response)
+    - Microsoft 365 Defender (XDR solution)
+    - Palo Alto Cortex XDR
+    - Trend Micro Vision One
+    - SentinelOne Singularity XDR
+    - CrowdStrike Falcon XDR
+    - Palo Alto Cortex XDR
 - VPN (Virtual Private Network)
   - EX
 - UEBA (user and entity behavior analytics)
 
-- ASM (attack surface management
+- ASM (attack surface management)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Red Team
 - Wireshark
