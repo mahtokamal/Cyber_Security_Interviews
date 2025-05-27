@@ -76,7 +76,7 @@ KQL, or Kibana Query Language, is an easy-to-use language that can be used to se
 ## Cloud Exit
 ## Honey Well
 ## Firewall
-
+## Honey Pot
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Most common Malware
 ## Virus
