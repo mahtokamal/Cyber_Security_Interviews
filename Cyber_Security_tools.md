@@ -60,6 +60,15 @@ Malware analysis and threat hunting.
   SolarWinds Security Event Manager, Exabeam Advanced Analytics, Fortinet FortiSIEM )
 
 - SOAR (Security Orchestration, Automation and Response)
+  SOAR platforms help automate and coordinate the response to security incidents using playbooks, integrating with other tools (like SIEM, EDR, firewalls, etc.).<br>
+
+  Popular SOAR Tools: <br>
+  - Palo Alto Cortex XSOAR
+  - IBM Resilient
+  - Splunk SOAR (Phantom)
+  - Swimlane
+  - DFLabs IncMan  
+
   - Real-life example: Zensar’s Cybersecurity Team uses SOAR for faster email phishing attacks & incident response. The security team has automated the security 
     investigation process by manually searching for threats.
 
@@ -71,6 +80,7 @@ Malware analysis and threat hunting.
   
 
 - MSSP (Managed Security Service Providers)
+  They are third-party third-party vendors to your Cyber Security firms.
   -  CISCO, Palo Alto, Check Points, CheckPoint, Verizon, Fortinet, IBM, AT&T, Secure works,  Trust waves
   - CISCO(Networking devices and equipments), Palo Alto Networks
   - Fortinet (SOC-based services, Cloud security solutions)
