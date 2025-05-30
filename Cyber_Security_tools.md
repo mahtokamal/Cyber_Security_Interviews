@@ -80,7 +80,7 @@ Malware analysis and threat hunting.
   
 
 - MSSP (Managed Security Service Providers)
-  They are third-party third-party vendors to your Cyber Security firms.
+  They are third-party vendors to your Cyber Security firms.
   -  CISCO, Palo Alto, Check Points, CheckPoint, Verizon, Fortinet, IBM, AT&T, Secure works,  Trust waves
   - CISCO(Networking devices and equipments), Palo Alto Networks
   - Fortinet (SOC-based services, Cloud security solutions)
@@ -100,7 +100,20 @@ Malware analysis and threat hunting.
    - Maltego, OpenCTI for visualization and correlation
   
 - Firewall
+     A firewall is a security device (hardware or software) that monitors and controls incoming and outgoing network traffic based on predefined security rules. <br>
 
+     Popular Firewall Tools: <br>
+
+    - Cisco ASA / Firepower
+    
+    - Palo Alto Networks NGFW
+    
+    - Fortinet FortiGate
+    
+    - Check Point
+    
+    - pfSense (open-source)
+  
 - IDPS (Snort, Suricata, CISCO Firepower)
 
 - EDR vs XDR
