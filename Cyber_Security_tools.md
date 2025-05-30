@@ -89,8 +89,16 @@ Malware analysis and threat hunting.
   - Qualys (Risk & Vulnerability Management Software)
   - Anivirus (McAfee, Quick Heal, )
 
-- MISP (Malware Informatin Sharing Platform)
-
+- MISP (Malware Informatin Sharing Platform) <br>
+  Popular Tools and Integrations: <br>
+   - MISP (Official): https://www.misp-project.org
+   - MISP integrations:
+   - TheHive (incident response platform)
+   - Cortex (analysis engine)
+   - SIEMs like Splunk, QRadar, or ELK Stack
+   - Suricata/Snort (IDS tools for using MISP IOCs in detection)
+   - Maltego, OpenCTI for visualization and correlation
+  
 - Firewall
 
 - IDPS (Snort, Suricata, CISCO Firepower)
