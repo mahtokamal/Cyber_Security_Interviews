@@ -114,8 +114,17 @@ Malware analysis and threat hunting.
     
     - pfSense (open-source)
   
-- IDPS (Snort, Suricata, CISCO Firepower)
+- IDPS (Snort, Suricata, CISCO Firepower) <br>
+   IDPS detects suspicious activities and either alerts (IDS) or actively blocks (IPS) the malicious behavior on the network or host level. <br>
 
+   Popular IDPS Tools:
+
+    - Snort (open-source IDS/IPS)
+    - Suricata
+    - Cisco Firepower NGIPS
+    - Palo Alto NGFW with Threat Prevention
+    - Trend Micro TippingPoint
+   
 - EDR vs XDR
   - EDR(Wazuh) (Endpoint Detection and Response)
     - EDR have been created because antiviruses cannot catch every malicious binary and process running on the endpoint
