@@ -145,7 +145,13 @@ Malware analysis and threat hunting.
     - CrowdStrike Falcon XDR
     - Palo Alto Cortex XDR
 - VPN (Virtual Private Network)
-  - EX
+  - Popular VPN Tools:
+  - OpenVPN (open-source, enterprise-grade)
+  - NordVPN / ExpressVPN (consumer)
+  - Cisco AnyConnect
+  - Palo Alto GlobalProtect
+  - WireGuard (lightweight, open-source)
+
 - UEBA (user and entity behavior analytics)
 
 - ASM (attack surface management)
