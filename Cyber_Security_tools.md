@@ -152,8 +152,11 @@ Malware analysis and threat hunting.
   - Palo Alto GlobalProtect
   - WireGuard (lightweight, open-source)
 
-- UEBA (user and entity behavior analytics)
-
+- UEBA (user and entity behavior analytics) <br>
+   UEBA is a cybersecurity technology that uses machine learning and analytics to detect abnormal behavior by users, devices, or applications in a network. Instead of relying solely on known attack signatures, UEBA identifies anomalies and risky behaviors that could indicate insider threats, compromised accounts, or advanced persistent threats (APTs). <br>
+   Popular UEBA Tools: <br>
+   - Microsoft Defender XDR (formerly Azure Sentinel UEBA)
+   - Splunk UEBA
 - ASM (attack surface management)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Red Team
