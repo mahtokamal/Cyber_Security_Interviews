@@ -157,7 +157,16 @@ Malware analysis and threat hunting.
    Popular UEBA Tools: <br>
    - Microsoft Defender XDR (formerly Azure Sentinel UEBA)
    - Splunk UEBA
-- ASM (attack surface management)
+
+- ASM (attack surface management) <br>
+   Popular ASM Tools: <br>
+   - AttackIQ
+   - Palo Alto Cortex Xpanse
+   - Randori Recon (IBM)
+   - CyCognito
+   - SecurityTrails
+   - Shodan / Censys
+   - IntrigueCore (open-source)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Red Team
 - Wireshark
