@@ -159,6 +159,7 @@ Malware analysis and threat hunting.
    - Splunk UEBA
 
 - ASM (attack surface management) <br>
+   ASM (Attack Surface Management) is the process of continuously discovering, monitoring, and managing all external digital assets and potential exposure points (attack surfaces) that could be targeted by attackers. <br>
    Popular ASM Tools: <br>
    - AttackIQ
    - Palo Alto Cortex Xpanse
