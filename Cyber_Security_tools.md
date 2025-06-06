@@ -137,7 +137,8 @@ Malware analysis and threat hunting.
      - Sophos Intercept X
 
      - Carbon Black (VMware)
-  - XDR (Extended detection and response)
+  - XDR (Extended detection and response) <br>
+     XDR expands on EDR by integrating multiple security layers (endpoints, email, servers, cloud, network) into one platform for detection and response. <br>
     - Microsoft 365 Defender (XDR solution)
     - Palo Alto Cortex XDR
     - Trend Micro Vision One
