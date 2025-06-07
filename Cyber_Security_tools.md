@@ -125,18 +125,15 @@ Malware analysis and threat hunting.
     - Palo Alto NGFW with Threat Prevention
     - Trend Micro TippingPoint
    
-- EDR vs XDR
-  - EDR(Wazuh) (Endpoint Detection and Response)
+- EDR vs XDR vs MDR <br>
+   EDR(Wazuh) (Endpoint Detection and Response) EDR is a cybersecurity solution focused on monitoring, detecting, and responding to threats on endpoints (like laptops, desktops, servers).<br>
     - EDR have been created because antiviruses cannot catch every malicious binary and process running on the endpoint
     - CrowdStrike Falcon
-
-     - SentinelOne
-
-     - Microsoft Defender for Endpoint
-
-     - Sophos Intercept X
-
-     - Carbon Black (VMware)
+    - SentinelOne
+    - Microsoft Defender for Endpoint
+    - Sophos Intercept X
+    - Carbon Black (VMware)
+      
   - XDR (Extended detection and response) <br>
      XDR expands on EDR by integrating multiple security layers (endpoints, email, servers, cloud, network) into one platform for detection and response. <br>
     - Microsoft 365 Defender (XDR solution)
@@ -145,6 +142,18 @@ Malware analysis and threat hunting.
     - SentinelOne Singularity XDR
     - CrowdStrike Falcon XDR
     - Palo Alto Cortex XDR
+
+  - MDR – Managed Detection and Response <br>
+
+    MDR is an outsourced security service where an external team (SOC-as-a-service) provides 24/7 monitoring, threat hunting, and response using EDR/XDR tools, When you lack internal expertise or resources to run your own detection and response operations. <br>
+    Popular MDR  Providers: <br>
+   - Arctic Wolf
+   - CrowdStrike Falcon Complete (MDR over Falcon)
+   - Red Canary
+   - Sophos MDR
+   - SentinelOne Vigilance
+
+  
 - VPN (Virtual Private Network)
 
    A VPN encrypts internet traffic and routes it through a secure tunnel to a server, masking the user's IP address and protecting data from interception.
