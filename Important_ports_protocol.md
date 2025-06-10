@@ -4,7 +4,7 @@
 
 |Protocols|Port_Number| Secured Versions| Port_Number |
 |------|------|----|---|
-|FTP|20,21|SFTP(secure FTP)|989,990|
+|FTP |20,21|SFTP(secure FTP)|989,990|
 |TELNET|23|SSH|22|
 |SMTP|25|SMTP Secure (SMTPS)|587,465|
 |DNS|53||
@@ -28,3 +28,20 @@
 |MySQL|3306|||
 |RDP|3389|||
 |SIP|5060,5061||
+
+## TCP Vs UDP
+
+## Short explanation of Important Protocols
+
+## FTP
+## TELNET
+
+## SMTP
+
+## DNS
+
+## VoIP
+
+## DHCP
+
+
