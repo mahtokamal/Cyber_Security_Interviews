@@ -45,6 +45,18 @@
 ## SNMP
 ## DHCP
 ## VoIP
+## SMB
+## RDP
+## Kerberos Authentications
+## NTP
+## NNTP
+## NetBIOS
+## IRC
+## LDAP
+## IKE
+## MIcrosoft SQL Server
+## Oracle Database
+## SIP
 
 
 
