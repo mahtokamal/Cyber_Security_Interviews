@@ -53,4 +53,5 @@
 ## SMB
 ## Meltdown 2017, Side Channel Attack, meltdown and spectre
 ## Rowhammer
+## SIM Swapping
 
