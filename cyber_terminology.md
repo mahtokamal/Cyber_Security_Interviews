@@ -8,7 +8,13 @@ Threat Vector or attack vectors are the methods, process or mechanisms used by C
 
 
 
-## Vulnerability 
+## Vulnerability
+Vulnerability is a loophole, weakness, flaw or other shortcomings presents in a System (infrastructure, database, hardware & software), however it can also exist in a process, a set of controls, or simply just the way that something has been implemented or deployed.
+
+Different types of Vulnerabilities available, but it is divided on two categories:
+
+Technical Vulnerabilities: Hardware, Software or bugs in code or errors. in 2022, according to Positive Technologies, 72% of vulnerabilities were related to flaws in web application code.
+Human Vulnerabilities: such as employees falling for phishing, smishing or other common attacks. The goal of 85% of these attacks is data theft.
 ## Exploit
 ## Threat
 ## Risk
