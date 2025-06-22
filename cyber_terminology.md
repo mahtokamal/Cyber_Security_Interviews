@@ -3,9 +3,12 @@
 ## Threat Vector
 Threat Vector or attack vectors are the methods, process or mechanisms used by Cyber criminal to do cyber attack that enables them to gain unauthorized access, compromised the computer system and network access, exploit the vulnerabilities. Threat Vector can be Active or Passive.
 
-- Passive attack - Eavesdropping or monitoring the data flow from or into the systems, the goal is to obatin as much as information during transimission without any alteration, modification or destroying the system. Examples - Network Sniffing, Traffic Analysis.
-- Active attack - In active attack, the attacker will directly interfere with the target to damage or gain unauthorized access to computer systems and networks. Examples-DDoS(Distributed Denial of Services) attack, Masquerading, Modification of Messages, Replay Attacks, Repudiation
+- Passive attack - Eavesdropping or monitoring the data flow from or into the systems, the goal is to obatin as much as information during transimission without any alteration, modification or destroying the system. Examples - Phishing, Network Sniffing, Traffic Analysis.
+- Active attack - In active attack, the attacker will directly interfere with the target to damage or gain unauthorized access to computer systems and networks. Examples-DDoS(Distributed Denial of Services) attack, Masquerading, Modification of Messages, Replay Attacks, Repudiation.
+- Threat Vector vs Attack Surface - An attack vector is a method of gaining unauthorized access to a network or computer system.
+An attack surface is the total number of attack vectors an attacker can use to manipulate a network or computer system or extract data.
 
+**Threat vector can be used interchangeably with attack vector and generally describes the potential ways a hacker can gain access to data or other confidential information.**
 
 
 ## Vulnerability
@@ -36,7 +39,8 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Phishing
-
+Phishing is one of the most effective cybersecurity threat vectors; it has defeated even the most sophisticated cyber defense systems by preying on people’s weaknesses.
+## pretexting, baiting, piggybacking, tailgating
 ## Vulnerability
 ## Exploit
 ## Threat
