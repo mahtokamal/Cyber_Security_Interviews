@@ -1,6 +1,13 @@
 # Terminology in Cyber Security
 
 ## Threat Vector
+Threat Vector or attack vectors are the methods, process or mechanisms used by Cyber criminal to do cyber attack that enables them to gain unauthorized access, compromised the computer system and network access, exploit the vulnerabilities. Threat Vector can be Active or Passive.
+
+- Passive attack - Eavesdropping or monitoring the data flow from or into the systems, the goal is to obatin as much as information during transimission without any alteration, modification or destroying the system. Examples - Network Sniffing, Traffic Analysis.
+- Active attack - In active attack, the attacker will directly interfere with the target to damage or gain unauthorized access to computer systems and networks. Examples-DDoS(Distributed Denial of Services) attack, Masquerading, Modification of Messages, Replay Attacks, Repudiation
+
+
+
 ## Vulnerability 
 ## Exploit
 ## Threat
