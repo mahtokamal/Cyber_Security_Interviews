@@ -8,6 +8,8 @@ Threat Vector or attack vectors are the methods, process or mechanisms used by C
 - Threat Vector vs Attack Surface - An attack vector is a method of gaining unauthorized access to a network or computer system.
 An attack surface is the total number of attack vectors an attacker can use to manipulate a network or computer system or extract data.
 
+![Screenshot (734)](https://github.com/user-attachments/assets/14bce9a8-e14b-4fc4-b7de-d983da5f0716)
+
 **Threat vector can be used interchangeably with attack vector and generally describes the potential ways a hacker can gain access to data or other confidential information.**
 
 
