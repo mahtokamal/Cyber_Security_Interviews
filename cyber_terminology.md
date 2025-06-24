@@ -23,6 +23,7 @@ Different types of Vulnerabilities available, but it is divided on two categorie
 Technical Vulnerabilities: Hardware, Software or bugs in code or errors. in 2022, according to Positive Technologies, 72% of vulnerabilities were related to flaws in web application code.
 Human Vulnerabilities: such as employees falling for phishing, smishing or other common attacks. The goal of 85% of these attacks is data theft.
 ## Exploit
+In Cybersecurity, a exploit is any tools or techniques or piece of codes that attacker use to take advantge of vulnerability. Often, an exploit is delivered via a piece of code built to target that vulnerability such as (remote exploits, local exploits(physical system access ) or zero-days exploits).
 ## Threat
 ## Risk
 ## Impact
