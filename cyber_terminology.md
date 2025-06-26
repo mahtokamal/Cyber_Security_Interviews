@@ -25,6 +25,11 @@ Human Vulnerabilities: such as employees falling for phishing, smishing or other
 ## Exploit
 In Cybersecurity, a exploit is any tools or techniques or piece of codes that attacker use to take advantge of vulnerability. Often, an exploit is delivered via a piece of code built to target that vulnerability such as (remote exploits, local exploits(physical system access ) or zero-days exploits).
 ## Threat
+In Cybersecurity, anything that could exploit a vulnerability, which could affect the confidentiality, integrity or availability of your systems, data, people, and more.
+
+A more advanced definition of threat is when an adversary or attacker has the opportunity, capability and intent to bring a negative impact upon your operations, assets, workforce and/or customers. Examples of this can include malware, ransomware, phishing attacks and more — and the types of threats out there will continue to evolve.
+
+For example, your organization may have no vulnerabilities to exploit due to a solid patch management program or strong network segmentation policies that prevent access to critical systems. However, in the real world, chances are extremely likely that you do have vulnerabilities, so let’s consider the risk factor.
 ## Risk
 ## Impact
 ## Governance
