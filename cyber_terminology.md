@@ -31,6 +31,7 @@ A more advanced definition of threat is when an adversary or attacker has the op
 
 For example, your organization may have no vulnerabilities to exploit due to a solid patch management program or strong network segmentation policies that prevent access to critical systems. However, in the real world, chances are extremely likely that you do have vulnerabilities, so let’s consider the risk factor.
 ## Risk
+Risk = vulnerability × impact
 ## Impact
 ## Governance
 ## Compliance
