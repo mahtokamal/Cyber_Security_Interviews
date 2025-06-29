@@ -56,6 +56,15 @@ A **threat(causes harm, damage or loss)** is a malicious or negative event that 
 Finally, the **risk** is the potential for loss and damage when the threat does occur.
 
 ## Impact
+It refers to the negative consequences that occur when a cyberattack or security incident successfully compromises the confidentiality, integrity, or availability of an organization's or individual's digital assets.
+
+- Technical Impact: (Hardware system, software, servers)
+- Business Impact: (losing trust of customer, reputational damage)
+Consequences and types of the impact:
+
+- Financial Impact
+- Reputational Impact
+- Operational Impact (System Downtime or unavailability of services)
 ## Governance
 ## Compliance
 ## PII (Personal Identifiable Information)
