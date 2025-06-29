@@ -32,7 +32,20 @@ A more advanced definition of threat is when an adversary or attacker has the op
 For example, your organization may have no vulnerabilities to exploit due to a solid patch management program or strong network segmentation policies that prevent access to critical systems. However, in the real world, chances are extremely likely that you do have vulnerabilities, so let’s consider the risk factor.
 ## Risk
 In general, Risk = Likelihood × Impact. Vulnerability and threat are the sources for a risks.
+Risk is the probability of a negative (harmful) event occurring as well as the potential of scale of that harm. Your organizational risk fluctuates over time, sometimes even on a daily basis, due to both internal and external factors.
 
+![Screenshot (456)](https://github.com/user-attachments/assets/a71df272-33ec-4e29-a96f-b4ad6adec98b)
+
+In order for organizations to begin risk mitigation and risk management, you first need to understand your vulnerabilities and the threats to those vulnerabilities.
+
+Real-world example
+Your organization might be looking to protect all its data, likely through data encryption methods and other approaches. But this approach is incredibly expensive, so you must pare down which ones to protect the best.
+
+You could think about the risk involved in this way: if the mechanism for protecting certain data fails in some way, you’ll have one or more vulnerabilities. And if there is a threat actor who finds and exploits this vulnerability, the threat is realized.
+
+Here, your risk is how valuable it would be to lose that data to the threat actor.
+
+NOTE: Risk comes with universal truth: you cannot eliminate or entirely protect against all threats, no matter how advanced your systems are.
 ## Impact
 ## Governance
 ## Compliance
