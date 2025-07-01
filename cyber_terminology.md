@@ -66,6 +66,9 @@ Consequences and types of the impact:
 - Reputational Impact
 - Operational Impact (System Downtime or unavailability of services)
 ## Governance
+GRC stands for governance, risk (management), and compliance.
+
+Governance is the set of policies, rules, or frameworks that a company uses to achieve its business goals. It defines the responsibilities of key stakeholders, such as the board of directors and senior management.
 ## Compliance
 ## PII (Personal Identifiable Information)
 PII are the data used to uniquely idenfifies an individuals.
