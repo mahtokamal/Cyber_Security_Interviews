@@ -70,6 +70,9 @@ GRC stands for governance, risk (management), and compliance.
 
 Governance is the set of policies, rules, or frameworks that a company uses to achieve its business goals. It defines the responsibilities of key stakeholders, such as the board of directors and senior management.
 ## Compliance
+Compliance is the act of following rules, laws, standards and regulations realted to information security . It applies to legal and regulatory requirements set by industrial bodies and also for internal corporate policies. In GRC, compliance involves implementing procedures to ensure that business activities comply with the respective regulations. For example, healthcare organizations must comply with laws like HIPAA that protect patients' privacy.
+
+GDPR(Genera Data Protection Regulations) (to maintain data confidentiality and privacy of individuals), is a European Union regulation on information privacy in the European Union and the European Economic Area.
 ## PII (Personal Identifiable Information)
 PII are the data used to uniquely idenfifies an individuals.
 For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security numbers etc.
