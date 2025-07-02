@@ -88,7 +88,7 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Phishing
-Phishing is one of the most effective cybersecurity threat vectors; it has defeated even the most sophisticated cyber defense systems by preying on people’s weaknesses.
+Phising is a type of cyber attack, in which attacker sends malicious link through email, texts, or direct phone calls, that tricks people into sharing the sensitive data or information, as a result, people become a victim knowingly or unknowingly. Phishing attack (a type of social-engineering attack used to steal sensitive data, including login credentials and credit card numbers). Phishing is one of the most effective cybersecurity threat vectors; it has defeated even the most sophisticated cyber defense systems by preying on people’s weaknesses.
 ## pretexting, baiting, piggybacking, tailgating
 ## Vulnerability
 ## Exploit
