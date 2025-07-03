@@ -98,6 +98,10 @@ Phising is a type of cyber attack, in which attacker sends malicious link throug
 ## Governance 
 ## Compliance
 ## Payload
+In the field of Cybersecurity, a payload consists of a malicious code and designed to execute a specific forms of task or action on a target system. The code can be in any forms of malicious nature such as Virus, Worms, Trojans, Ransomware etc. and it exploits the system vulnearbilities or security flaws. When it is successfully executed and delivered, it can expose various cyber threats such as such as stealing sensitive information, disrupting system operations, or taking control of the target system.
+
+In simple terms, a payload in the context of computing and networking refers to the actual data that is carried by a protocol or data packet, excluding the header or routing information.
+
 ## Threat Vector
 ## Threat Actor
 ## Confidentiality
