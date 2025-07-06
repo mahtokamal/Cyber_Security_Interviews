@@ -104,9 +104,11 @@ In simple terms, a payload in the context of computing and networking refers to 
 
 ## Threat Vector
 ## Threat Actor
-## Confidentiality
-## Integrity
-## Availability
+## CIA Triads
+- Confidentiality (C): Ensure data privacy and prevent unauthorized access.
+- Integrity (I): Ensure (tampering-proof, without alteratin of data)data isn't altered.
+- Availability (A): Ensure services/data are accessible when needed.
+
 ## Victim
 ## Adversary
 ## TTPs (Tactics, Techniques and Procedure)
