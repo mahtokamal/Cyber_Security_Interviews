@@ -112,6 +112,14 @@ In simple terms, a payload in the context of computing and networking refers to 
 ## Victim
 ## Adversary
 ## TTPs (Tactics, Techniques and Procedure)
+MITRE ATT&CK(Adversarial Tactics, Techniques, and Common Knowledge) framework, is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. It helps to map and understand attacker behaviors during the kill chain.
+
+It is a guideline for classifying and describing cyberattacks and intrusions. It was created by the Mitre Corporation and released in 2013 and used for threat modeling and profiling.
+The framework is an alternative to the cyber kill chain developed by Lockheed Martin.
+
+|Tactics|Techniques|
+|----|---|
+|Reconnaissance|Active Scanning, Phishing for information|
 ## APT (Advanced Persistent Threat)
 ## VPN vs Proxy vs Reverse  Proxy
 ## Firewall Vs IDP/IDS Vs SIEM
