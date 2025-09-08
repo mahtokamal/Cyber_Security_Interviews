@@ -178,7 +178,7 @@ Two ways to find jobs:
 - Do you have any experience with Infrastructure as Code (IaC)?
  
  ## Sign UP for AWS and Azure acounts
-**Sign-up for Amazon Web Services free accounts ** <br>
+**Sign-up for Amazon Web Services free accounts** <br>
 - Visit https://aws.amazon.com/ click on "Create an AWS account"
 - Sign up for AWS, enter your email address, AWS account name and verify email address , create root user Password and click on continue
   NOTE: This will create a root user account that will have highest level of privilege to control AWS account.
