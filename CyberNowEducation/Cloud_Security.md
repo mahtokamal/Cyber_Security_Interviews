@@ -303,7 +303,7 @@ NOTE : if commands run without any errors then it is successfully installed.
 ![Screenshot (495)](https://github.com/user-attachments/assets/f8fc309d-f0ed-46c2-a718-31372907070f)
 
 
-## IAC-Hands-on with Terraform
+## IAC-Hands-on with Terraform Using Azure & AWS
 
 **1. Terraform with Azure** <br>
 First create Microsoft Azure account <br>
@@ -404,6 +404,7 @@ Install Terraform GUI on Windows OS <br>
 
 
 Install Azure CLI on windows <br>
+
 - Type "install azure cli windows" on Google Search
 - click on install the azure cli on windows
 - then, Microsoft installer (MSI) and download latest MSI based on System architecture (32-bit or 64-bit)
@@ -427,11 +428,13 @@ Install Azure CLI on windows <br>
 ![Screenshot (586)](https://github.com/user-attachments/assets/d6cf43b2-5aa2-44ed-b9b8-51da7e62c42d)
 
 Verifying azure CLI installation <br>
+
 ![Screenshot (587)](https://github.com/user-attachments/assets/16c75a62-d5af-4a37-bbb6-bb248083a3eb)
 
 ![Screenshot (588)](https://github.com/user-attachments/assets/45a0f35f-fce9-4975-afe8-c5e2f4c09119)
 
-Hands-On with Terraform <br>
+Hands-On with Terraform Microsoft Azure <br>
+
 ![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
 
 ![Screenshot (530)](https://github.com/user-attachments/assets/d1997b34-7590-4143-9dc8-7bf7318379a6)
