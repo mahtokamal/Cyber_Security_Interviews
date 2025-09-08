@@ -280,6 +280,8 @@ type: terraform <br>
 cd C:\ (hit enter) <br>
 terraform -help <br>
 
+NOTE : if commands run without any errors then it is successfully installed.
+
 ![Screenshot (482)](https://github.com/user-attachments/assets/a0f29cce-1b05-47df-8b4e-6556ae9c26e1)
 
 ![Screenshot (483)](https://github.com/user-attachments/assets/3d56e119-7657-4d04-918d-d4a6076d856b)
@@ -344,8 +346,13 @@ Next, Click on "Go to Azure Portal" and it will direct to the Microsoft Azure pl
 
 ![image](https://github.com/user-attachments/assets/76309c1d-1e09-4875-8a49-1e8f408b77f9)
 
-Install Terraform on Windows OS <br>
+Install Terraform GUI on Windows OS <br>
 
+- Goto https://developer.hashicorp.com/terraform/install and select OS "Windows" download and extract the files. <br> or else you can type "terraform windows download" in Google.
+- In extracted file, select "terraform" application file and copy it, make folder "Terraform",  paste it(Terraform application file) on any desired drive (for e.g C:)
+- copy the file path and goto "system environment variable" and paste the terraform file path there.
+- open powershell and run the command "terraform" to test if it's working or not.
+  
 ![Screenshot (553)](https://github.com/user-attachments/assets/a373357b-9f37-4954-a531-4c02f9d8afaa)
 
 ![Screenshot (554)](https://github.com/user-attachments/assets/c81743a6-667f-4918-aa9e-f29bfed48c13)
@@ -396,25 +403,12 @@ Install Terraform on Windows OS <br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Install Azure CLI <br>
+Install Azure CLI on windows <br>
+- Type "install azure cli windows" on Google Search
+- click on install the azure cli on windows
+- then, Microsoft installer (MSI) and download latest MSI based on System architecture (32-bit or 64-bit)
+- Now, azure cli installer file to install, accept terms & conditions, click install and finally finish.
+- To verify azure cli installation, open powershell and type az or az version.
 
 ![Screenshot (577)](https://github.com/user-attachments/assets/4969b7bf-c032-4178-bcb3-1e0e2cd05b73)
 
@@ -437,6 +431,7 @@ Verifying azure CLI installation <br>
 
 ![Screenshot (588)](https://github.com/user-attachments/assets/45a0f35f-fce9-4975-afe8-c5e2f4c09119)
 
+Hands-On with Terraform <br>
 ![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
 
 ![Screenshot (530)](https://github.com/user-attachments/assets/d1997b34-7590-4143-9dc8-7bf7318379a6)
