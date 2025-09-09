@@ -715,8 +715,14 @@ Do you really want to destroy all resources?
 ![Screenshot (545)](https://github.com/user-attachments/assets/a42b6399-d06d-4f0f-84ba-753705672e61)
 ![Screenshot (552)](https://github.com/user-attachments/assets/f9371d9a-bda6-4499-99ac-df811b9eb44f)
 
-**2. Terraform with AWS** <br>
+**2.Terraform Hands-on with AWS** <br>
 
+- visit google search "aws cli installation on windows" to download it
+- click on first hyperlink appears on Google, "install/update", choose "Windows"
+- Download and run the AWS CLI MSI installer for windows based on system architecture
+- save it on system, run the installer and follow the installation wizards and accept Terms & Conditions and lastly click "finish"
+- open powershell and run aws and aws --version (to verify the aws cli installations)
+  
 ![Screenshot (589)](https://github.com/user-attachments/assets/dd171f20-c943-42f5-9de4-ce660f80a9e0)
 
 ![Screenshot (590)](https://github.com/user-attachments/assets/cd34c31a-9a13-46b2-87ad-5528d7be9855)
@@ -746,8 +752,20 @@ Do you really want to destroy all resources?
 
 
 
-Recommend to not to use root user to sign in to AWS console(use IAM user) <br>
-
+### Recommended do not use root user account to sign in to AWS console(instead, use IAM user) to complete this project
+**How to Create AWS IAM user ?** <br>
+- first login using root user account into AWS console
+- search tab "IAM" and click (will open IAM dashboard)
+- Under Access Management tab, Select "Users", "Create User"
+- Enter "user name" and check on "Provide user access to the AWS Management Console"
+- choose "I want to create an IAM user", console password "custom password", "user must creat a password at next sign-in", "Next"
+- Permission options "Attach policies directly"
+- Permission policies, search tab "IAM", under policy name "IAMFullAccess", "AmazonEC2FullAccess", "AWSLambda_FullAccess" then Next.
+- Review and Create and just click on "Create User", message "User Created Successfully"
+- In Retrieve Password, shows console sign-in details, click on "Email sign-in instructions" (to receive by email about sign URL and details), "Return to users list"
+- Refresh the IAM dashboard to see the newly created IAM user "kamal"
+- Now, you can use the IAM user and password to logged in as an IAM user account
+- after logged in, you can see the IAM users have restricted access to the AWS management console
 ![Screenshot (603)](https://github.com/user-attachments/assets/10e3506f-fdd1-4030-9334-b1bbae0c9124)
 
 ![Screenshot (604)](https://github.com/user-attachments/assets/1e3e3fe2-3076-40ca-b5fe-ea40b36dbe7d)
@@ -802,6 +820,9 @@ Recommend to not to use root user to sign in to AWS console(use IAM user) <br>
 
 ![Screenshot (648)](https://github.com/user-attachments/assets/45503170-aea6-473b-a210-4963661d0471)
 
+
+lllll
+
 ![Screenshot (649)](https://github.com/user-attachments/assets/2eb53814-99f9-46ff-b77a-5a5ec7f14984)
 
 ![Screenshot (650)](https://github.com/user-attachments/assets/5026e4bc-fb34-4a99-b16f-f3df82a87425)
@@ -820,6 +841,9 @@ Recommend to not to use root user to sign in to AWS console(use IAM user) <br>
 
 ![Screenshot (658)](https://github.com/user-attachments/assets/906dc26a-52c9-4904-b031-52915fa0acca)
 
+
+
+kkkkkkkkkkkkkkkkk
 
 ![Screenshot (659)](https://github.com/user-attachments/assets/6ed5f0d0-a79c-4d66-a7f7-f80d20da9036)
 
