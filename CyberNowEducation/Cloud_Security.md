@@ -409,7 +409,7 @@ Install Azure CLI on windows <br>
 - click on install the azure cli on windows
 - then, Microsoft installer (MSI) and download latest MSI based on System architecture (32-bit or 64-bit)
 - Now, azure cli installer file to install, accept terms & conditions, click install and finally finish.
-- To verify azure cli installation, open powershell and type az or az version.
+- To verify azure cli installation, open powershell and type command az or az version.
 
 ![Screenshot (577)](https://github.com/user-attachments/assets/4969b7bf-c032-4178-bcb3-1e0e2cd05b73)
 
@@ -434,7 +434,31 @@ Verifying azure CLI installation <br>
 ![Screenshot (588)](https://github.com/user-attachments/assets/45a0f35f-fce9-4975-afe8-c5e2f4c09119)
 
 Hands-On with Terraform Microsoft Azure <br>
+**Let's understand Terraform loop first**
 
+- Init: Initialize the (local) Terraform environment. Usually executed only once per session.
+- Plan: Compare the Terraform state with the as-is state in the cloud, build and display an execution plan. This does not change the deployment (read-only).
+- Apply: Apply the plan from the plan phase. This potentially changes the deployment (read and write).
+- Destroy all resources that are governed by this specific terraform environment.
+
+- Now, Open powershell and type az login (a GUI prompt appears that let you log into Microsoft Azure, enter you azure user account and password) and proceed to continue
+- After logged in, subscription name, tenant and Subscription ID will show and enter "1" for selected Subscription ID
+- Then, az account show (In the output in the terminal, find the ID of the subscription that you want to use:)
+- {
+- "environmentName": "AzureCloud",
+- "homeTenantId": "0envbwi39-home-Tenant-Id",
+- "id": "35akss-subscription-id",
+- "isDefault": true,
+- "managedByTenants": [],
+- "name": "Subscription-Name",
+- "state": "Enabled",
+- "tenantDefaultDomain": ""
+- "tenantDisplayName": "Default Directory"
+- "tenantId": "0envbwi39-TenantId",
+- "user": {
+- "name": "your-username@domain.com",
+- "type": "user"
+- }
 ![Screenshot (529)](https://github.com/user-attachments/assets/705faa7d-ddc0-448e-928f-db5340d3ed8a)
 
 ![Screenshot (530)](https://github.com/user-attachments/assets/d1997b34-7590-4143-9dc8-7bf7318379a6)
@@ -443,7 +467,23 @@ Hands-On with Terraform Microsoft Azure <br>
 
 ![Screenshot (532)](https://github.com/user-attachments/assets/24aa2e99-1e24-4c05-a64f-1b108196e661)
 
+Once you have chosen the account subscription ID, set the account with the Azure CLI.
+- az account set --subscription "your-subscription-ID"
 ![Screenshot (533)](https://github.com/user-attachments/assets/cdc02d03-0ce8-414a-b89e-f67e166d2803)
+
+Next, we create a Service Principal. A Service Principal is an application within Azure Active Directory with the authentication tokens Terraform needs to perform actions on your behalf. Update the <SUBSCRIPTION_ID> with the subscription ID you specified in the previous step.
+- az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/<YOUR_SUBSCRIPTION_ID>"
+
+The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control. For more information, see the assignment details
+
+
+- {
+- "appId": "xxxxxx-xxx-xxxx-xxxx-xxxxxxxxxx",
+- "displayName": "azure-cli-2022-xxxx",
+- "password": "xxxxxx~xxxxxx~xxxxx",
+- "tenant": "xxxxx-xxxx-xxxxx-xxxx-xxxxx"
+- }
+
 
 ![Screenshot (534)](https://github.com/user-attachments/assets/f185c508-f1d0-4184-92ac-093cc3fc5fe1)
 
