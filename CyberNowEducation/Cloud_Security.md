@@ -488,14 +488,24 @@ The output includes credentials that you must protect. Be sure that you do not i
 ![Screenshot (534)](https://github.com/user-attachments/assets/f185c508-f1d0-4184-92ac-093cc3fc5fe1)
 
 Environment Variables <br>
+In your Powershell terminal, set the following environment variables. Be sure to update the variable values with the values Azure returned in the previous command.
+
+ $env:ARM_CLIENT_ID="<APPID_VALUE>"
+ $env:ARM_SUBSCRIPTION_ID="<SUBSCRIPTION_ID>"
+ $env:ARM_TENANT_ID="<TENANT_VALUE>"
+ $env:ARM_CLIENT_SECRET="<PASSWORD_VALUE>"
+
+- type gci env:ARM_* (shows all environment variables that you set)
 
 ![Screenshot (535)](https://github.com/user-attachments/assets/45ac22fd-e22a-4d02-a12d-6f37bab019c0)
 
-Now, verify the environment variable<br>
-
-Install Visual Studio <br>
-
+Now, verify the environment variables <br>
+Install Visual Studio Code and Setup Environment <br>
+- https://code.visualstudio.com/download
 create a directory that contains our terraform configuration file (.tf) format <br>
+- mkdir \terraform
+- cd \terraform
+- code main.tf (configurartion autmatically opens into Visual Studio)
 
 ![Screenshot (536)](https://github.com/user-attachments/assets/03d9164f-683d-4006-a662-479b076fc4b2)
 
@@ -503,21 +513,129 @@ create a directory that contains our terraform configuration file (.tf) format <
 
 ![Screenshot (538)](https://github.com/user-attachments/assets/246fa1f0-ef37-419e-8511-e12b78e1fa93)
 
+Now we need to write configuration to create a new resource group.
+
+#Configure the Azure provider <br>
+terraform { <br>
+required_providers { <br>
+azurerm = { <br>
+source = "hashicorp/azurerm" <br>
+version = "~> 3.0.2" <br>
+} <br>
+} <br>
+required_version = ">= 1.1.0" <br>
+} <br>
+provider "azurerm" { <br>
+features {} <br>
+} <br>
+
+resource "azurerm_resource_group" "rg" { <br>
+name = "myTFResourceGroup" <br>
+location = "westus2" <br>
+} <br>
+
+Note:The location of your resource group is hardcoded in this example. If you do not have access to the resource group location westus2, update the main.tf file with your Azure region. This is a complete configuration that Terraform can apply. In the following sections we will review each block of the configuration in more detail.
+
 ![Screenshot (539)](https://github.com/user-attachments/assets/5cae4a8e-286e-4985-af8f-e29cd3a7c404)
 
-Initialize terraform configuration <br>
+### Terraform Block
+The terraform {} block contains Terraform settings, including the required providers Terraform will use to provision your infrastructure. For each provider, the source attribute defines an optional hostname, a namespace, and the provider type. Terraform installs providers from the Terraform Registry by default. In this example configuration, the azurerm provider's source is defined as hashicorp/azurerm, which is shorthand for registry.terraform.io/hashicorp/azurerm.
+
+
+You can also define a version constraint for each provider in the required_providers block. The version attribute is optional, but we recommend using it to enforce the provider version. Without it, Terraform will always use the latest version of the provider, which may introduce breaking changes.
+
+### Providers
+The provider block configures the specified provider, in this case azurerm. A provider is a plugin that Terraform uses to create and manage your resources. You can define multiple provider blocks in a Terraform configuration to manage resources from different providers.
+
+
+### Resource
+Use resource blocks to define components of your infrastructure. A resource might be a physical component such as a server, or it can be a logical resource such as a Heroku application.
+
+
+Resource blocks have two strings before the block: the resource type and the resource name. In this example, the resource type is azurerm_resource_group and the name is rg. The prefix of the type maps to the name of the provider. In the example configuration, Terraform manages the azurerm_resource_group resource with the azurerm provider. Together, the resource type and resource name form a unique ID for the resource. For example, the ID for your network is azurerm_resource_group.rg.
+
+
+Resource blocks contain arguments which you use to configure the resource. The Azure provider documentation documents supported resources and their configuration options, including azurerm_resource_group and its supported arguments.
+
+### Initialize your Terraform configuration
+Initialize your learn-terraform-azure directory in your terminal. The terraform commands will work with any operating system. Your output should look similar to the one in the assignment text.
+
+- terraform init (to initialize)
+
+Initializing the backend... <br>
+Initializing provider plugins... <br>
+
+- Finding hashicorp/azurerm versions matching "~> 3.0.2"...
+- Installing hashicorp/azurerm v3.0.2...
+- Installed hashicorp/azurerm v3.0.2 (signed by HashiCorp)
+
+Terraform has been successfully initialized! <br>
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands should now work. <br>
+
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+
 
 ![Screenshot (540)](https://github.com/user-attachments/assets/92ff820b-2a42-4706-803c-dca6047ee646)
 
 
-terraform format <br>
+### Format and validate the configuration
+We recommend using consistent formatting in all of your configuration files. The terraform fmt command automatically updates configurations in the current directory for readability and consistency.
+
+Format your configuration. Terraform will print out the names of the files it modified, if any. In this case, your configuration file was already formatted correctly, so Terraform won't return any file names.
+
+ - terraform fmt
+
+You can also make sure your configuration is syntactically valid and internally consistent by using the terraform validate command. The example configuration provided above is valid, so Terraform will return a success message.
+
 ![Screenshot (541)](https://github.com/user-attachments/assets/a4fdb827-8084-4c21-ad84-005583d7e85b)
 
-terraform validate<br>
+- terraform validate (shows Success! message if it is valid configuration file)
 
 ![Screenshot (542)](https://github.com/user-attachments/assets/a6a89f26-ccd0-4ce2-b75a-98c7f27a4e3c)
 
-terraform apply <br>
+### Apply your Terraform Configuration
+Run the terraform apply command to apply your configuration. This output shows the execution plan and will prompt you for approval before proceeding. If anything in the plan seems incorrect or dangerous, it is safe to abort here with no changes made to your infrastructure. Type yes at the confirmation prompt to proceed.
+
+
+- terraform apply
+
+An execution plan has been generated and is shown below. Resource actions are indicated with the following symbols: <br>
+
++ create
+
+Terraform will perform the action of creating a resource group: <br>
+
+azurerm_resource_group.rg will be created <br>
++ resource "azurerm_resource_group" "rg" { <br>
++ id = (known after apply) <br>
++ location = "westus2" <br>
++ name = "myTFResourceGroup" <br>
+} <br>
+
+ 
+
+Plan: 1 to add, 0 to change, 0 to destroy. <br>
+
+Do you want to perform these actions? <br>
+
+Terraform will perform the actions described above. <br>
+Only 'yes' will be accepted to approve. <br>
+
+
+- Enter a value: yes
+
+azurerm_resource_group.rg: Creating... <br>
+azurerm_resource_group.rg: Creation complete after 1s [id=/subscriptions/c9ed8610-47a3-4107-a2b2-a322114dfb29/resourceGroups/myTFResourceGroup] <br>
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed. <br>
+
+Navigate to the Azure portal in your web browser to check to make sure the resource group was created.
+
 ![Screenshot (543)](https://github.com/user-attachments/assets/472e5dac-785a-49f4-9cae-5a7698197e54)
 
 ![Screenshot (544)](https://github.com/user-attachments/assets/713778b0-6ca3-4354-bd0f-1eebb926879d)
@@ -528,17 +646,72 @@ terraform apply <br>
 
 ![Screenshot (546)](https://github.com/user-attachments/assets/0a86dd55-ae76-4bd2-a39d-623ac9246c62)
 
-Inspect your state<br>
+### Inspect your state
+When you apply your configuration, Terraform writes data into a file called terraform.tfstate. This file contains the IDs and properties of the resources Terraform created so that it can manage or destroy those resources going forward. Your state file contains all of the data in your configuration and could also contain sensitive values in plaintext, so do not share it or check it in to source control. <br>
+
+For teams or larger projects, consider storing your state remotely. Remote stage storage enables collaboration using Terraform but is beyond the scope of this exercise. <br>
+
+Inspect the current state using terraform show.
+
+- terraform show
+azurerm_resource_group.rg: <br>
+resource "azurerm_resource_group" "rg" {
+
+id = "/subscriptions/c9ed8610-47a3-4107-a2b2-a322114dfb29/resourceGroups/myTFResourceGroup" <br>
+location = "westus2" <br>
+name = "myTFResourceGroup" <br>
+} <br>
+
+When Terraform created this resource group, it also gathered the resource's properties and meta-data. These values can be referenced to configure other resources or outputs. <br>
+
+To review the information in your state file, use the state command. If you have a long state file, you can see a list of the resources you created with Terraform by using the list subcommand. <br>
+
+- terraform state list
+
+If you run terraform state, you will see a full list of available commands to view and manipulate the configuration's state.
+
+- terraform state
+
+This command has subcommands for advanced state management. <br>
+
+These subcommands can be used to slice and dice the Terraform state. This is sometimes necessary in advanced cases. For your safety, all
+state management commands that modify the state create a timestamped backup of the state prior to making modifications. <br>
+
+
+The structure and output of the commands is specifically tailored to work well with the common Unix utilities such as grep, awk, etc. We recommend using those tools to perform more advanced state tasks. <br>
+
 ![Screenshot (547)](https://github.com/user-attachments/assets/4a979106-a0b7-4c10-a818-2cdd3cc416ab)
 ![Screenshot (548)](https://github.com/user-attachments/assets/8cda327d-03d3-4f77-90fb-bda3e201d79e)
 ![Screenshot (549)](https://github.com/user-attachments/assets/ade11a40-92f3-4675-a129-4218606ddeb6)
 
-Destroy terraform<br>
+### Terraform Destroy
+
+Lastly, issue the terraform destroy command to complete the lifecycle and undo the changes that you made. Terraform keeps a state of the changes you made in the terraform state file so it knows exactly which ones to undo.
+
+
+- terraform destroy
+
+Terraform will perform the following actions: <br>
+
+#azurerm_resource_group.rg will be destroyed
+resource "azurerm_resource_group" "rg" { <br>
+
+id = "/subscriptions/b7b18fdb-6e24-4934-a25e-2957c9e62d05/resourceGroups/myTFResourceGroup" -> null <br>
+location = "westus2" -> null <br>
+name = "myTFResourceGroup" -> null <br>
+tags = {} -> null <br>
+}
+
+Plan: 0 to add, 0 to change, 1 to destroy. <br>
+Do you really want to destroy all resources?
+- yes
+
 ![Screenshot (550)](https://github.com/user-attachments/assets/7965ce24-b6dc-42f1-bcd8-89e0f430c850)
 
 
 ![Screenshot (551)](https://github.com/user-attachments/assets/6dc9823c-30d1-4f10-8d57-a15cb09ae177)
 
+- you can verify the deletion of resource group from Azure portal
 ![Screenshot (545)](https://github.com/user-attachments/assets/a42b6399-d06d-4f0f-84ba-753705672e61)
 ![Screenshot (552)](https://github.com/user-attachments/assets/f9371d9a-bda6-4499-99ac-df811b9eb44f)
 
