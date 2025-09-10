@@ -716,7 +716,8 @@ Do you really want to destroy all resources?
 ![Screenshot (552)](https://github.com/user-attachments/assets/f9371d9a-bda6-4499-99ac-df811b9eb44f)
 
 **2.Terraform Hands-on with AWS** <br>
-
+In this lab , you will provision an EC2 instance on Amazon Web Services. EC2 instances are virtual machines running on AWS, and a common component of many infrastructure projects.
+The first thing we are going to do is install the AWS CLI. Follow the steps below to download it. <br>
 - visit google search "aws cli installation on windows" to download it
 - click on first hyperlink appears on Google, "install/update", choose "Windows"
 - Download and run the AWS CLI MSI installer for windows based on system architecture
@@ -748,8 +749,6 @@ Do you really want to destroy all resources?
 ![Screenshot (600)](https://github.com/user-attachments/assets/78339f32-9977-491d-a4f2-0be9c506e40f)
 
 ![Screenshot (601)](https://github.com/user-attachments/assets/c89ed59a-e4da-4bf5-9832-fd8834ad96b4)
-
-
 
 
 ### Recommended do not use root user account to sign in to AWS console(instead, use IAM user) to complete this project
@@ -821,7 +820,14 @@ Do you really want to destroy all resources?
 ![Screenshot (648)](https://github.com/user-attachments/assets/45503170-aea6-473b-a210-4963661d0471)
 
 
-lllll
+Now, the next thing we need to do is create access keys so that the AWS CLI can access your AWS account. For this let’s switch to a web browser and go to your AWS console. I recommend not using your AWS root user but if you don’t use AWS for anything yet, it might be OK. In my case I have created a separate user for this lab and I will login directly to my console with this user. After we get there it should look similar to yours. <br>
+
+- click on user profile top right corner of AWS console, then "Security Credentials"
+- Scroll down to access keys and click the button to create an access key.
+- Select the Command Line Interface option, check on confirmation and click next.
+- Click create access key. (Successful Message "Access Key Created") and click done.
+
+Now this is the only time you’ll be able to view the access key secret. If you need it again you’ll have to create a new key. Store it in your password manager or the safest way you have at your disposal. <br>
 
 ![Screenshot (649)](https://github.com/user-attachments/assets/2eb53814-99f9-46ff-b77a-5a5ec7f14984)
 
@@ -842,8 +848,18 @@ lllll
 ![Screenshot (658)](https://github.com/user-attachments/assets/906dc26a-52c9-4904-b031-52915fa0acca)
 
 
+Now lets go back to the terminal. To use your IAM credentials to authenticate the Terraform AWS provider, set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables to the key values we just got. <br>
 
-kkkkkkkkkkkkkkkkk
+- $Env: AWS_ACCESS_KEY_ID= ""
+- $Env: AWS_SECRET_ACCESS_KEY= ""
+
+Now we’re all set up to use AWS with Terraform! <br>
+
+Let’s write the configuration. Each Terraform configuration must be in its own working directory. Create a directory for your configuration.<br>
+- mkdir learn-terraform-aws-instance
+- cd C:\learn-terraform-aws-instance\
+
+
 
 ![Screenshot (659)](https://github.com/user-attachments/assets/6ed5f0d0-a79c-4d66-a7f7-f80d20da9036)
 
@@ -851,15 +867,108 @@ kkkkkkkkkkkkkkkkk
 
 ![Screenshot (661)](https://github.com/user-attachments/assets/72256534-f13b-4c3f-93b2-8e7e4785e2a9)
 
+Open main.tf in visual studio code. <br>
+- code main.tf
+
+Paste in the configuration (below).  Save the file.<br>
+
+terraform { <br>
+required_providers {  <br>
+aws = { <br>
+source = "hashicorp/aws" <br>
+version = "~> 4.16" <br>
+} <br>
+} <br>
+ 
+required_version = ">= 1.2.0" <br>
+} <br>
+ 
+provider "aws" { <br>
+region = "us-west-2" <br>
+} <br>
+ 
+resource "aws_instance" "app_server" { <br>
+ami = "ami-830c94e3" <br>
+instance_type = "t2.micro" <br>
+ 
+tags = { <br>
+Name = "ExampleAppServerInstance" <br>
+} <br>
+} <br>
+
 ![Screenshot (662)](https://github.com/user-attachments/assets/4320ab52-c8a6-4309-8f46-23ef44acafc1)
 
 ![Screenshot (663)](https://github.com/user-attachments/assets/0df1e1a4-88a3-4732-a6c2-e1c7e6f7d5da)
 
+This is a complete configuration that you can deploy with Terraform. The following sections review each block of this configuration in more detail. <br>
+### Terraform Block
+The terraform {} block contains Terraform settings, including the required providers Terraform will use to provision your infrastructure. For each provider, the source attribute defines an optional hostname, a namespace, and the provider type. Terraform installs providers from the Terraform Registry by default. In this example configuration, the aws provider's source is defined as hashicorp/aws, which is shorthand for registry.terraform.io/hashicorp/aws.
+
+You can also set a version constraint for each provider defined in the required_providers block. The version attribute is optional, but we recommend using it to constrain the provider version so that Terraform does not install a version of the provider that does not work with your configuration. If you do not specify a provider version, Terraform will automatically download the most recent version during initialization.
+
+
+### Providers
+The provider block configures the specified provider, in this case aws. A provider is a plugin that Terraform uses to create and manage your resources.
+
+
+You can use multiple provider blocks in your Terraform configuration to manage resources from different providers. You can even use different providers together. For example, you could pass the IP address of your AWS EC2 instance to a monitoring resource from DataDog.
+
+
+### Resources
+Use resource blocks to define components of your infrastructure. A resource might be a physical or virtual component such as an EC2 instance, or it can be a logical resource such as a Heroku application.
+
+
+Resource blocks have two strings before the block: the resource type and the resource name. In this example, the resource type is aws_instance and the name is app_server. The prefix of the type maps to the name of the provider. In the example configuration, Terraform manages the aws_instance resource with the aws provider. Together, the resource type and resource name form a unique ID for the resource. For example, the ID for your EC2 instance is aws_instance.app_server.
+
+
+Resource blocks contain arguments which you use to configure the resource. Arguments can include things like machine sizes, disk image names, or VPC IDs.  For your EC2 instance, the example configuration sets the AMI ID to an Ubuntu image, and the instance type to t2.micro, which qualifies for AWS' free tier. It also sets a tag to give the instance a name.
+
+### Initialize the directory
+When you create a new configuration — or check out an existing configuration from version control — you need to initialize the directory with terraform init.
+
+Initializing a configuration directory downloads and installs the providers defined in the configuration, which in this case is the aws provider.
+
+Initialize the directory.<br>
+- terraform init
+
+Terraform downloads the aws provider and installs it in a hidden subdirectory of your current working directory, named .terraform. The terraform init command prints out which version of the provider was installed. Terraform also creates a lock file named .terraform.lock.hcl which specifies the exact provider versions used, so that you can control when you want to update the providers used for your project. <br>
+
+
 ![Screenshot (664)](https://github.com/user-attachments/assets/0e6cd8a3-c944-4499-8727-2b8c3ecb7183)
 
+### Format and validate the configuration
+We recommend using consistent formatting in all of your configuration files. The terraform fmt command automatically updates configurations in the current directory for readability and consistency.
+
+Format your configuration. Terraform will print out the names of the files it modified, if any.
+
+- terraform fmt
+
+You can also make sure your configuration is syntactically valid and internally consistent by using the terraform validate command. <br>
+
+Validate your configuration. The example configuration is valid, so Terraform will return a success message. <br>
+- terraform validate
 ![Screenshot (665)](https://github.com/user-attachments/assets/2f60d0c1-2568-46e4-a1af-7885eaf002f4)
 
 ![Screenshot (666)](https://github.com/user-attachments/assets/0301231e-fd14-4a09-afc5-8d97feb589b9)
+
+### Create infrastructure
+Apply the configuration now with the terraform apply command.
+
+- terraform apply
+
+Before it applies any changes, Terraform prints out the execution plan which describes the actions Terraform will take in order to change your infrastructure to match the configuration. <br>
+
+
+The output format is similar to the diff format generated by tools such as Git. The output has a + next to aws_instance.app_server, meaning that Terraform will create this resource. Beneath that, it shows the attributes that will be set. When the value displayed is known after apply, it means that the value will not be known until the resource is created. For example, AWS assigns Amazon Resource Names (ARNs) to instances upon creation, so Terraform cannot know the value of the arn attribute until you apply the change and the AWS provider returns that value from the AWS API. <br>
+
+Terraform will now pause and wait for your approval before proceeding. If anything in the plan seems incorrect or dangerous, it is safe to abort here before Terraform modifies your infrastructure. <br>
+
+In this case the plan is acceptable, so type yes at the confirmation prompt to proceed. Executing the plan will take a few minutes since Terraform waits for the EC2 instance to become available. <br>
+
+- yes
+
+You have now created infrastructure using Terraform! Visit the EC2 console and find your new EC2 instance. Make sure you are in the right region to see your EC2 instance, in this case it is US-WEST-2. <br>
+
 
 ![Screenshot (667)](https://github.com/user-attachments/assets/89ea7ee6-4278-41a9-9c53-bb08645e97c3)
 
@@ -869,11 +978,19 @@ kkkkkkkkkkkkkkkkk
 
 ![Screenshot (670)](https://github.com/user-attachments/assets/1b88ba8e-4d4b-4eee-9962-0dc732f0c9ca)
 
+Now, you can verify through  IAM user AWS management console that you just created EC2 instance <br>
+
 ![Screenshot (671)](https://github.com/user-attachments/assets/b69dd171-66b4-490b-9a9d-852efe449647)
 
 ![Screenshot (672)](https://github.com/user-attachments/assets/28e81f47-f9d9-4ba7-bc54-361f04ceea6a)
 
-Destroying AWS terraform <br>
+### Terraform Destroy
+Lastly, the Terraform Destroy command will destroy all resources created. It reads the .tfstate file created in your working directory to know which resources were created thus which need to be destroyed. Issue the Terraform Destroy command now. <br>
+
+- terraform destroy
+- Enter a value: yes (to destroy everything)
+
+And that completes the lifecycle of initializing, planning, applying and destroying AWS infrastructure with Terraform. If you would like to continue your learning with Terraform, I’d highly recommend the Udemy course Terraform for Absolute Beginners with Labs. This innovative course from KodeKloud walks you through creating a Terraform file from scratch with lectures and by using their proprietary lab platform KodeKloud. The only reason I recommend it is because I took it myself and thought it was a fantastic course. As of now, you understand how the Terraform lifecycle works and have configured both Azure and AWS with Terraform so that you can continue your learning. <br>
 ![Screenshot (673)](https://github.com/user-attachments/assets/4516dd36-cd4a-43a4-8d78-0d8c3bbc8602)
 ![Screenshot (674)](https://github.com/user-attachments/assets/90cb2ac3-e8cf-4f18-a05b-7f6e187d2e78)
 ![Screenshot (675)](https://github.com/user-attachments/assets/b26cc547-eea8-44f5-b1c4-a348bd18f267)
@@ -899,53 +1016,51 @@ Checkov scans these IaC file types:
 This lab shows how to install Checkov, run a scan, and analyze the results.
 
 
-Install Pip3 and Python
+### Install Pip3 and Python
 pip3 is the official package manager and pip command for Python 3. It enables the installation and management of third party software packages with features and functionality not found in the Python standard library. Pip3 installs packages from PyPI (Python Package Index).
 
+You can get it by installing the latest version of python here (official website).
 
-You can get it by installing the latest version of python here.
+### Install Checkov From PyPI Using Pip
 
+- pip3 install checkov
 
-Install Checkov From PyPI Using Pip
+### Make Terraform Directory and Move There
 
-pip3 install checkov
+- mkdir ~/checkov-example
+- cd ~/checkov-example
 
-Make Terraform Directory and Move There
+**Create main.tf file with VS Code** <br>
 
-mkdir ~/checkov-example
-cd ~/checkov-example
+- code main.tf
 
-Create main.tf file with VS Code
-
-code main.tf
-
-Paste Code into File, Save, then Exit
+### Paste Code into File, Save, then Exit
 
 Make sure there are no copy and paste extra characters in your code.
 
+resource "aws_s3_bucket" "foo-bucket" { <br>
+#same resource configuration as previous example, but acl set for public access. <br>
+acl = "public-read" <br>
+} <br>
+data "aws_caller_identity" "current" {} <br>
 
-resource "aws_s3_bucket" "foo-bucket" {
-#same resource configuration as previous example, but acl set for public access.
-acl = "public-read"
-}
-data "aws_caller_identity" "current" {}
+### Format the file
 
-Format the file
+- terraform fmt
 
-terraform fmt
-
-Execute Checkov
+### Execute Checkov
 
 Make sure you're in the directory that your Terraform is in.
 
+- checkov -f main.tf
 
-checkov -f main.tf
-
-Results
+### Results
 
 <img width="1819" height="380" alt="Screenshot (686)" src="https://github.com/user-attachments/assets/0c513f18-6324-46e1-86fe-72d4d6d411c5" />
 
-It's that simple.  As you can see Checkov runs and it notes that versioning was not enabled for that resource.  Checkov checks for all common configuration and security errors in your Terraform code BEFORE deploying it.  Anytime you download a Terraform script to execute in your environment, you will want to run Checkov to make sure that it meets your standards for configuration.
+It's that simple.  As you can see Checkov runs and it notes that versioning was not enabled for that resource.  Checkov checks for all common configuration and security errors in your Terraform code BEFORE deploying it.  Anytime you download a Terraform script to execute in your environment, you will want to run Checkov to make sure that it meets your standards for configuration. <br>
+
+Now, output the Checkov report to a file and save this file to attach to the form when submitting for a grade at the end of the course. <br>
 
 ## Serverless Computing: Introduction
 
