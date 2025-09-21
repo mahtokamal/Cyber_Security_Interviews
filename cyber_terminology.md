@@ -85,6 +85,24 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 ## IDPS (Snort, Suricata)
 ## Firewall (Pfsense)
 ## EDR / XDR (Wazuh)
+EDR (Endpoint Detection and Response) - EDR provides security solutions to monitor, detect and respond the endpoint devices such PCs, Workstations, Server or networking devices against potential threats, which are undetecable by traditional Anitvirus.
+
+EDR available in the markets:
+- CrowdStrike Falcon
+- SentinelOne ActiveEDR
+- Microsoft Defender for Endpoint
+- OpenEDR
+- Symantec EDR
+
+3 main features of EDR:
+- Visibility: it provides better graphical representation of ednpoints collected data such as process modifications, registry modifications, file and folder modifications, user actions, and much more. With good visibility, it helps security analyst to analyzed the data in well-structured format.
+- Detection: it consists of both signature-based and behaviour-based detection such as unexpected user activities. with modern machine learning capabilities, it identifies any deviation from the baseline behavior(normal) and instantly flags it, can also detect fileless malware that presents in the memory.
+- Response: It responds with full-fledged details such when, where and what happened.you may decide to isolate a complete endpoint, terminate a process, or quarantine some files with the help of EDT console
+
+EDR vs Anti-virus:
+
+
+XDR(Extended Detection and Response)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Phishing
