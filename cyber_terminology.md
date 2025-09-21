@@ -100,7 +100,42 @@ EDR available in the markets:
 - Response: It responds with full-fledged details such when, where and what happened.you may decide to isolate a complete endpoint, terminate a process, or quarantine some files with the help of EDT console
 
 EDR vs Anti-virus:
+Unlike antivirus software's basic signature-based detection, it monitors and records the behaviors of the endpoint. An EDR also provides organization-wide visibility of any activity. For example, if a suspicious file is detected on one endpoint, the EDR will also check it across all the other endpoints.
 
+Scenario Breakdown
+- Step #1: A user receives a phishing email with a Word document embedded with a malicious macro (VBA script)
+- Step #2: The user downloads the document and opens it
+- Step #3: The malicious macro is silently executed, and it spawns PowerShell
+- Step #4: The malicious macro runs an obfuscated PowerShell command to download a sophisticated second-stage payload
+- Step #5: The payload is injected into a legitimate svchost.exe
+- Step #6: The attacker gains remote access to the system
+
+<img width="1399" height="478" alt="Screenshot (839)" src="https://github.com/user-attachments/assets/31604504-9a2b-4d0d-a3a6-f8e63718507c" />
+<img width="1833" height="937" alt="Screenshot (840)" src="https://github.com/user-attachments/assets/cfaaa86b-469f-4ffa-8b05-96bc2ddabe8a" />
+
+How EDR works?
+<img width="1541" height="585" alt="Screenshot (841)" src="https://github.com/user-attachments/assets/b21a3b2e-05cf-400d-8f81-dcc62147608e" />
+- EDR Agents(Sensors): EDR agents are deployed inside the endpoints. They are the eyes and ears of the EDR. Their job is to sit and monitor all the activities happen at the endpoints and the detailed activities about the information are directly send to central EDR Console.
+- EDR Console: All details data that are sent by EDR agents is correlated and analyzed with help of complex logic and Machine learning algorithm.The threat intelligence information is matched with the collected data. The EDR is just like the brain connecting all the dots. These dots connect to form a detection, often called an alert.The detections are happening here. Based on the available data, the analyst's job is first to use their expertise to determine if the alert is a false positive or a true positive. In case of a true positive, the analyst can take actions from within the EDR console. 
+
+Detection happening:
+When detection triggers, the responsibility of SOC analyst comes into the picture to prioritize and acknowledge the alerts based upon the severity levels of alert(Critical, High, Medium,Low, Informational)
+
+EDR Telemetry?
+The data collected by EDR agents from endpoints and fed directly to EDR console are known as Telemetry data.elemetry is the black box of an endpoint with everything necessary for detection and investigation.
+
+Collected Telemetry
+Since many activities going on the endpoints, most of them are legitimate and it is difficult to distinguish between regualr and malicious activity. The more data are collected to make better judgement. EDR collects detailed telemetry from the endpoints.
+
+- Process Executions and Terminations
+- Network Connections
+- Command Line Activity
+- Files and Folders Modifications
+- Registry Modifications
+
+NOTE: Advanced threats keep most of their activities stealthy, using legitimate utilities during execution. Individually, their activities may seem harmless, but when observed through detailed telemetry, they tell a different story. This detailed telemetry not only helps the EDR detect advanced threats and make better judgments on the legitimacy of the activities, but it is also very helpful for the analysts during the investigations. The analysts can understand the full chain of events, identify the root cause, and reconstruct the attack timeline.
+
+https://tryhackme.com/room/introductiontoedrs <br>
 
 XDR(Extended Detection and Response)
 
