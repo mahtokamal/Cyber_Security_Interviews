@@ -121,7 +121,7 @@ How EDR works?
 Detection happening:
 When detection triggers, the responsibility of SOC analyst comes into the picture to prioritize and acknowledge the alerts based upon the severity levels of alert(Critical, High, Medium,Low, Informational)
 
-EDR Telemetry?
+**EDR Telemetry?** <br>
 The data collected by EDR agents from endpoints and fed directly to EDR console are known as Telemetry data.elemetry is the black box of an endpoint with everything necessary for detection and investigation.
 
 Collected Telemetry
@@ -137,7 +137,28 @@ NOTE: Advanced threats keep most of their activities stealthy, using legitimate 
 
 https://tryhackme.com/room/introductiontoedrs <br>
 
-XDR(Extended Detection and Response)
+**Detection and Response Capabilites**
+**Detection** <br>
+- Behavioral Detection
+- Anomaly Detection
+- IOC matching
+- MITRE ATT&CK Mapping
+- Machine Learning Algorithms
+
+**Response** <br>
+- Isolate Host
+- Terminate Process
+- Quarantine
+- Remote Access
+
+**Atrefacts Collection** <br>
+- Memory Dump
+- Event Logs
+- Specific Folder Contents
+- Registry Hives
+
+
+**XDR(Extended Detection and Response)**
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Phishing
