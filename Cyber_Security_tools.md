@@ -227,3 +227,69 @@ We also recommend regularly keeping up with ThreatPost, The Hacker News, PenTest
 - SOc L3 (Threat Hunter or Malware Analysts)
 - SOC Manager
 - CISO
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Incident Response and Incident Management
+**What is a Cyber Incident?** <br>
+The monitoring process starts from SOC (Security Operations Center) teams, where a team of Security analysts are responsible for 24X7 supervising and monitoring the oraganisation's security. Their task involves following:
+- Closely monitors events and activity.
+- Overview the events nature(Normal, anomaly or unexpected)
+- alert is generated if the event is anomaly or unexpected
+- Alert can be false or True (True Positive or False Positive)
+- if it's real then team will perform triage process to determine the Severity level.
+- Based on high severity level (Low, Medium, High, Critical)
+
+**NOTE:** if the severity of the alert is sufficient, an incident will be raised.
+
+- When an alert with high severity level then it becomes Cyber incident and Incident Response & Incident Management comes into the Play.
+
+**Incident Response** <br>
+Deals with Technical aspects "What happened?"
+- EDR or AV alert (events activity i.e. Normal or abnormal)
+- Network Tap alert (alerts for anomalour network)
+- SIEM alert (log's activity)
+
+Sometimes we need to take help from Digital Forensics team when the generated alert is not solid enough. We need following incidents:
+- Recovering Hard disk of infected Host to get ideas aboout the Malware propagation into the System.
+- Recovering data from RAM of infected Host to investigate the how malware works
+- Recovering System and Network logs to uncover the malware spreading
+
+**Incident Management** <br>
+Deals with the actual incidents"How do we respond to what happened?"
+
+- Triaging the incident to accurately update the severity of the incident as new information becomes available and getting more stakeholders involved to help deal with the incident, such as Subject Matter Experts (SMEs).
+- Guiding the incident actions through the use of playbooks.
+- Deciding which containment, eradication, and recovery actions will be taken to deal with the incident.
+- Deciding the communication that will be sent internally and externally while the team deals with the incident.
+- Documenting the information about the incident, such as the actions taken and the effect that they had on dealing with the incident.
+- Closing the incident and taking the information to learn from the incident and improve future processes and procedures.
+
+**NOTE:** Effective incident response and management are required to deal with an incident. It is often mistaken that only technical skills are required to deal with incidents. The management aspect is just as important.
+
+
+**Levels of Incidents Response and Management** <br>
+A user has reported a phishing email <br>
+Level 1: SOC Incident <br>
+At level one, these are often not even classified as incidents. Usually, these require a purely technical approach. At this level,  upon investigation of our example, the analyst finds that it is an isolated event and therefore simply updates the mail filtering rules to block the sender. These levels of incidents can happen several times a day and are usually quick to deal with and the analyst deals with this themselves.
+
+However, in our example, a Computer Emergency Readiness Team (CERT) Incident may be invoked if the investigation found that several users received the email.
+Level 2: CERT Incident <br>
+At level two, several analysts in the SOC may be involved in the investigation. A CERT Incident is one where we don't yet have enough to raise the alarm bells. Still, we are concerned and therefore performing additional investigation to determine the scope of the incident. Usually, the analyst would request assistance and more members of the SOC team would get involved. In our example, at this point, we would be investigating if any of those users interacted with the email. We would also like to better understand what the email does.
+
+If we were able to stop the incident before any of the users interacted with the email, we would usually stop at this level. However, if we discover that the email contains malware and that some of the users actually interacted with the email, we would invoke a Computer Security Incident Response Team (CSIRT) incident.
+Level 3: CSIRT Incident <br>
+At level three, the entire SOC is placed on high alert and actively working to resolve the incident. At this point, the entire SOC team will focus on the single incident to deal with it. Analysts and the forensic team work to uncover the full scope of the incident and the management team is taking action against the threat actor to contain the spread of the malware, eradicate it from hosts where it is discovered, and recover affected systems.
+
+If the team is able to stop the spread of the attack before any disruptions can occur or the threat actor can escalate their privileges within the estate, the CSIRT team will close the incident. However, if it is determined that the scope is larger through investigation, we would invoke a Crisis Management Team (CMT) Incident.
+Level 4: CMT Incident <br>
+At level four, it is all hands on deck and officially a full-scale cyber crisis. The CMT would usually consist of several key business stakeholders such as the entire executive suite, members from the legal and communication teams, as well as other external parties, such as the regulator or police. Furthermore, at this level, we start to move into the territory of what is called "nuclear" actions. Rather than simple actions to contain, eradicate, and recover, this team can authorise the use of nuclear actions, such as taking the entire organisation offline to limit the incident's damage.
+
+**The Different Roles during an incident:** <br>
+
+<img width="1870" height="968" alt="Screenshot (843)" src="https://github.com/user-attachments/assets/da61e104-7853-4ee9-bb32-a54d3d423d2b" />
+
+<img width="1872" height="1010" alt="Screenshot (844)" src="https://github.com/user-attachments/assets/b3755ba1-d5e9-4938-9013-346cc510c435" />
+
+<img width="1865" height="923" alt="Screenshot (845)" src="https://github.com/user-attachments/assets/99a0a4d6-0532-4501-adce-e0b75f902950" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
