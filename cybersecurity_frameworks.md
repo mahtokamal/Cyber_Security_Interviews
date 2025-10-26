@@ -1,7 +1,17 @@
 # Cyber Security Standard and Frameworks
 
-## Cyber Kill Chain (CKC)
+## Cyber Kill Chain (R,W,D,E,I,C,A) 
+The term kill chain is a military concept related to the structure of an attack.  It consists of target identification, decision and order to attack the target, and finally the target destruction.Lockheed Martin, a global security and aerospace company, that established the Cyber Kill Chain® framework for the cybersecurity industry in 2011 based on the military concept. The framework defines the steps used by adversaries or malicious actors in cyberspace. <br>
 
+To succeed, an adversary needs to go through all phases of the Kill Chain. We will go through the attack phases and help you better understand adversaries and their techniques used in the attack to defend yourself. <br>
+
+The Cyber Kill Chain will help you understand and protect against ransomware attacks, security breaches as well as Advanced Persistent Threats (APTs). You can use the Cyber Kill Chain to assess your network and system security by identifying missing security controls and closing certain security gaps based on your company's infrastructure. <br>
+
+By understanding the Kill Chain as a SOC Analyst, Security Researcher, Threat Hunter, or Incident Responder, you will be able to recognize the intrusion attempts and understand the intruder's goals and objectives. <br>
+
+![Screenshot (732)](https://github.com/user-attachments/assets/bbd3a101-c704-41cf-b704-0e2564bbfd32)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## MITRE ATT & CK (Adversarial Tactics, Techniques, and Common Knowledge)
 MITRE ATT&CK(Adversarial Tactics, Techniques, and Common Knowledge) framework, is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. It helps to map and understand attacker behaviors during the kill chain.
 
