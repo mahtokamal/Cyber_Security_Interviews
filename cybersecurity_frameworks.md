@@ -1,5 +1,7 @@
 # Cyber Security Standard and Frameworks
 
+## Cyber Kill Chain (CKC)
+
 ## MITRE ATT & CK (Adversarial Tactics, Techniques, and Common Knowledge)
 MITRE ATT&CK(Adversarial Tactics, Techniques, and Common Knowledge) framework, is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations. It helps to map and understand attacker behaviors during the kill chain.
 
@@ -74,7 +76,8 @@ IT service management
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## SANS top 25
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Cyber Kill Chain (CKC)
+
+## KRITIS (Kritische Infrastrukturen or Critical Infrastructures)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Gramm-Leach-Bliley Act (GLBA)
 
