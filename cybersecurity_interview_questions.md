@@ -544,4 +544,7 @@ Can you describe the typical day-to-day responsibilities of a SOC Analyst in thi
 What are the growth and training opportunities for a SOC team to enhace the SOC career.<br>
 What opportunities are there for professional development and growth within the security operations center, such as training on new technologies or opportunities to specialize in specific security domains?
 
+# Interview Preparations resources
+https://tryhackme.com/resources/blog/soc-analyst-interview-guide
+https://tryhackme.com/careers/cyber-security-analyst
 # Scenarios-based Questions
