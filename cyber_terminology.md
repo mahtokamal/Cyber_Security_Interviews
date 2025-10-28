@@ -196,7 +196,28 @@ The framework is an alternative to the cyber kill chain developed by Lockheed Ma
 |Reconnaissance|Active Scanning, Phishing for information|
 ## APT (Advanced Persistent Threat)
 ## VPN vs Proxy vs Reverse  Proxy
+1. VPN
+
+   <img width="1024" height="739" alt="image-25" src="https://github.com/user-attachments/assets/8e20a41c-3310-4dd6-862a-46bd91cb8c23" />
+
+3. Proxy
+4. Online Resources
+
+   https://www.geeksforgeeks.org/computer-networks/what-is-vpn-how-it-works-types-of-vpn/
+  https://en.wikipedia.org/wiki/Virtual_private_network#:~:text=In%20a%20VPN%2C%20a%20tunneling,one%20network%20host%20to%20another.&text=Host%2Dto%2Dnetwork%20VPNs%20are,office%20network%20and%20a%20datacenter.
+   
+   http://geeksforgeeks.org/computer-networks/types-of-virtual-private-network-vpn-and-its-protocols/
+   
+6.  
 ## Firewall Vs IDP/IDS Vs SIEM
+1. Firewall
+2. Resources
+   https://tryhackme.com/room/firewallfundamentals
+   https://www.geeksforgeeks.org/computer-networks/introduction-of-firewall-in-computer-network/
+   https://www.geeksforgeeks.org/computer-networks/types-of-network-firewall/
+   https://en.wikipedia.org/wiki/Firewall_(computing)
+   https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/5-types-of-firewalls-which-one-do-you-need/
+4. 
 ## SSID
 ## Chain of Custody
 ## Update & Patching
