@@ -201,16 +201,24 @@ The framework is an alternative to the cyber kill chain developed by Lockheed Ma
    <img width="1024" height="739" alt="image-25" src="https://github.com/user-attachments/assets/8e20a41c-3310-4dd6-862a-46bd91cb8c23" />
 
 **3. Proxy** <br>
+
 **4. Online Resources** <br>
 
    https://www.geeksforgeeks.org/computer-networks/what-is-vpn-how-it-works-types-of-vpn/
   https://en.wikipedia.org/wiki/Virtual_private_network#:~:text=In%20a%20VPN%2C%20a%20tunneling,one%20network%20host%20to%20another.&text=Host%2Dto%2Dnetwork%20VPNs%20are,office%20network%20and%20a%20datacenter.
    
    http://geeksforgeeks.org/computer-networks/types-of-virtual-private-network-vpn-and-its-protocols/
+
+   https://www.geeksforgeeks.org/computer-networks/what-is-proxy-server/
+
+   https://www.splunk.com/en_us/blog/learn/proxy-servers.html
    
 6.  
 ## Firewall Vs IDP/IDS Vs SIEM
 **1. Firewall** <br>
+
+<img width="1779" height="772" alt="Screenshot (866)" src="https://github.com/user-attachments/assets/c84bbf78-f2d9-412f-b922-7f24c4870826" />
+
 **2. Resources** <br>
    https://tryhackme.com/room/firewallfundamentals
    https://www.geeksforgeeks.org/computer-networks/introduction-of-firewall-in-computer-network/
