@@ -546,5 +546,6 @@ What opportunities are there for professional development and growth within the 
 
 # Interview Preparations resources
 https://tryhackme.com/resources/blog/soc-analyst-interview-guide
+
 https://tryhackme.com/careers/cyber-security-analyst
 # Scenarios-based Questions
