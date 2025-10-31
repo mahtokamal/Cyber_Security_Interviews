@@ -64,18 +64,14 @@ SIEM acts as a centralized point in the (SOC)Security Operation Center where sec
 - Cloud and SaaS solutions: Software and services not hosted on-premises
 
 **Capabilitties**
-- Data aggregation: comes from different sources such as hardware, software, databased, servers and applications
+- Data aggregation: comes from different sources such as hardware, software, OS(Windows, Linux, MacOS) databased, servers and applications
+- Normalisation: Breaking down a log into several fields for ease of understanding is known as Parsing, and converting all the logs of various log sources(Windows, Linux and others) into one consistent format is known as Normalization. 
 - Correlation: looks for common matching patterns, linkage of events and turned them into meaningful informations (What, When, How happend)
 - Alerting: The automated analysis of correlated events.
 - Dashboards: Tools can take event data and turn it into informational charts to assist in seeing patterns, or identifying activity that is not forming a standard pattern.
 - Compliance:  Applications can be employed to automate the gathering of compliance data, producing reports that adapt to existing security, governance and auditing processes.
 - Retention: Employing long-term storage of historical data to facilitate correlation of data over time, and to provide the retention necessary for compliance requirements. The Long term log data retention is critical in forensic investigations as it is unlikely that the discovery of a network breach will be at the time of the breach occurring
 - Forensic analysis: The ability to search across logs on different nodes and time periods based on specific criteria. This mitigates having to aggregate log information in your head or having to search through thousands and thousands of logs.
-
-**Online Resources** <br>
-- https://en.wikipedia.org/wiki/Security_information_and_event_management
-- https://www.splunk.com/en_us/blog/learn/siem-security-information-event-management.html?utm_campaign=google_emea_tier1_en_search_generic_security_siem&utm_source=google&utm_medium=cpc&utm_content=siem_learn_blog&utm_term=what%20is%20siem%20in%20cyber%20security&device=c&_bt=771525059501&_bm=e&_bn=g&gad_source=1&gad_campaignid=8200497833&gbraid=0AAAAAD8kDz34C3oUw8_Iv3mUky53wRA4r&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkRa89pZNpjkVlciUX7lQJzXVp5jd5AChjBP-oKHnYRoy4_7U1Mp85YaAiPeEALw_wcB
-- 
 
 
 **The role of UBA in SIEM** <br>
@@ -89,6 +85,14 @@ UBA works in two ways: <br>
 - Monitoring malicious behavior and preventatively addressing security issues.
 These functions play a critical role in any SIEM solution as they illuminate patterns of behavior within the organization’s network, offering context you didn’t have before. They also filter alerts before the security operations center (SOC) team is notified — helping reduce alert fatigue and freeing up analysts’ time for more complex or urgent threats. <br>
 
+## Various system Log Management
+- Windows: Windows records every event that can be viewed through the **Event Viewer**. It assigns a unique ID to each type of log activity, making it easy for the analyst to examine and keep track of.
+- Linux: Linux OS stores all the related logs, such as events, errors, warnings, etc. These are then ingested into SIEM for continuous monitoring. Some of the common locations where Linux stores logs are:
+
+/var/log/httpd: Contains HTTP Request  / Response and error logs. <br>
+/var/log/cron: Events related to cron jobs are stored in this location. <br>
+/var/log/auth.log and /var/log/secure: Stores authentication-related logs. <br>
+/var/log/kern: This file stores kernel-related events. <br>
 
 
 **Popular SIEM Tools** <br>
@@ -101,8 +105,12 @@ These functions play a critical role in any SIEM solution as they illuminate pat
   -(Splunk, IBM QRadar, Microsoft Sentinel, ArcSight Enterprise Security Manager (Micro Focus), Sumo Logic, LogRhythm NextGen SIEM, Elastic Security (formerly Elastic SIEM), 
   SolarWinds Security Event Manager, Exabeam Advanced Analytics, Fortinet FortiSIEM )
 
+**Online Resources** <br>
+- https://en.wikipedia.org/wiki/Security_information_and_event_management
+- https://www.splunk.com/en_us/blog/learn/siem-security-information-event-management.html?utm_campaign=google_emea_tier1_en_search_generic_security_siem&utm_source=google&utm_medium=cpc&utm_content=siem_learn_blog&utm_term=what%20is%20siem%20in%20cyber%20security&device=c&_bt=771525059501&_bm=e&_bn=g&gad_source=1&gad_campaignid=8200497833&gbraid=0AAAAAD8kDz34C3oUw8_Iv3mUky53wRA4r&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkRa89pZNpjkVlciUX7lQJzXVp5jd5AChjBP-oKHnYRoy4_7U1Mp85YaAiPeEALw_wcB
+- 
 
-- SOAR (Security Orchestration, Automation and Response)
+## 7.2 SOAR (Security Orchestration, Automation and Response)
   SOAR platforms help automate and coordinate the response to security incidents using playbooks, integrating with other tools (like SIEM, EDR, firewalls, etc.).<br>
 
   Popular SOAR Tools: <br>
