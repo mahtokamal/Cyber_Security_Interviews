@@ -56,12 +56,16 @@ SEM(Security Event Management): Real-time monitoring, correlation of events, not
 
 SIEM acts as a centralized point in the (SOC)Security Operation Center where security professionals usually "Security analyst" employed for 24X7/365 days monitoring, analysis, detection and responding to the security alerts, logs, and events based upon their severity levels or behaviours wihtin an Organizations. 
 
+<img width="847" height="683" alt="Screenshot (994)" src="https://github.com/user-attachments/assets/9f95137f-710f-4481-9637-660b24159299" />
+
 **SIEM Data Sources** <br>
 - Network devices: Routers, switches, bridges, wireless access points, modems, line drivers, hubs
 - Servers: Web, proxy, mail, FTP
 - Security devices: Intrusion prevention systems (IPS), firewalls, antivirus software, content filter devices, intrusion detection systems (IDS) and more
 - Applications: Any software used on any of the above devices
 - Cloud and SaaS solutions: Software and services not hosted on-premises
+
+<img width="823" height="838" alt="Screenshot (995)" src="https://github.com/user-attachments/assets/0fc63deb-ad51-4db6-aeec-3f821be586c7" />
 
 **Capabilitties**
 - Data aggregation: comes from different sources such as hardware, software, OS(Windows, Linux, MacOS) databased, servers and applications
@@ -286,6 +290,8 @@ We also recommend regularly keeping up with ThreatPost, The Hacker News, PenTest
 - SOc L3 (Threat Hunter or Malware Analysts)
 - SOC Manager
 - CISO
+<img width="1736" height="740" alt="Screenshot (996)" src="https://github.com/user-attachments/assets/2fe1f85a-9f42-4d42-97e5-9e1151560f01" />
+<img width="821" height="748" alt="Screenshot (997)" src="https://github.com/user-attachments/assets/f181f862-b055-495d-b2b8-7f1a35e546b6" />
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 15. Incident Response and Incident Management
