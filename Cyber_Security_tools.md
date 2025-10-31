@@ -94,7 +94,15 @@ These functions play a critical role in any SIEM solution as they illuminate pat
 /var/log/auth.log and /var/log/secure: Stores authentication-related logs. <br>
 /var/log/kern: This file stores kernel-related events. <br>
 
+**Log Ingestion** <br>
+All these logs provide a wealth of information and can help identify security issues. Each SIEM solution has its own way of ingesting the logs. Some common methods used by these SIEM solutions are explained below: <br>
 
+- Agent / Forwarder: These SIEM solutions provide a lightweight tool called an agent (forwarder by Splunk) that gets installed on the Endpoint. It is configured to capture and send all the important logs to the SIEM server.
+- Syslog: Syslog is a widely used protocol to collect data from various systems like web servers, databases, etc., and send real-time data to the centralized destination.
+- Manual Upload: Some SIEM solutions, like Splunk, ELK, etc., allow users to ingest offline data for quick analysis. Once the data is ingested, it is normalized and made available for analysis.
+- Port-Forwarding: SIEM solutions can also be configured to listen on a certain port, and then the endpoints forward the data to the SIEM instance on the listening port.
+
+  
 **Popular SIEM Tools** <br>
   - Splunk (Cisco)
   - IBM QRadar
