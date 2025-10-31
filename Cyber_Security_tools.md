@@ -1,10 +1,10 @@
 # List of Cyber Security Tools
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## General Skills
-## Search Engine
+## 1. General Skills
+## 2. Search Engine
 Google (use google dorking), Microsoft Bing, China's Baidu
-## SPECALIZED SEARCH ENGINE
+## 3. SPECALIZED SEARCH ENGINE
 - Shodan.io (Internet-Connected devices)
 - censys (focuses on Internet-connected hosts, websites, certificates, and other Internet assets. Some of its use cases include enumerating domains in use, auditing open ports and services, and discovering rogue assets within a network.)
 -  Have I Been Pwned
@@ -16,7 +16,7 @@ Google (use google dorking), Microsoft Bing, China's Baidu
 -  MITRE ATT & CK
 -  VirusTotal
 -  Hunter.io - this is  an email hunting tool that will let you obtain contact information associated with the domain
-## Others
+## 4. Others
 - Gobuster Gobuster is a free and open-source directory and file enumeration tool. Penetration testers and security professionals use it to fin hidden directories and files on web servers.
 
   Gobuster is a tool used to brute-force:
@@ -33,13 +33,13 @@ Industry’s first security search engine for Mobile Threats. Search and uncover
 
 With BeVigil , users can now ascertain the risk rating of an app, check the list of permissions it requests on installation, and ensure it is not malicious. BeVigil’s familiar and easy-to-use search engine interface allows users to simply search for the app name to get a risk score that is indicative of the app’s overall security posture. Moreover, app developers can proactively upload their applications to BeVigil to identify vulnerabilities and remediate them, avoiding any pitfalls prior to their launch.
 
-## Sandboxing
+## 5. Sandboxing
 Malware analysis and threat hunting.
 - Hybrid Analysis
 - Any.run
 - Joe Sandbox
 
-## Permanently data deletion with (0's and 1's)
+## 6. Permanently data deletion with (0's and 1's)
 
 - SDelete (Microsoft)
 - Shred (Linux)
@@ -48,8 +48,50 @@ Malware analysis and threat hunting.
 
 ## 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Blue Team
-- SIEM (Splunk, ELK Stack) (security information and event management)
+## 7. Blue Team
+## 7.1 SIEM (Splunk, ELK Stack) (security information and event management)
+SIEM stands for "Security Information and Event Management".In 2005, the term "SIEM" (Security Information and Event Management) was introduced by Gartner analysts Mark Nicolett and Amrit Williams. It is the combination of SIM(Security Informatin Management) and SEM(Security Event Management).
+SIM(Security Informatin Management): Long-term storage as well as analysis and reporting of log data.
+SEM(Security Event Management): Real-time monitoring, correlation of events, notifications and console views.
+
+SIEM acts as a centralized point in the (SOC)Security Operation Center where security professionals usually "Security analyst" employed for 24X7/365 days monitoring, analysis, detection and responding to the security alerts, logs, and events based upon their severity levels or behaviours wihtin an Organizations. 
+
+**SIEM Data Sources** <br>
+- Network devices: Routers, switches, bridges, wireless access points, modems, line drivers, hubs
+- Servers: Web, proxy, mail, FTP
+- Security devices: Intrusion prevention systems (IPS), firewalls, antivirus software, content filter devices, intrusion detection systems (IDS) and more
+- Applications: Any software used on any of the above devices
+- Cloud and SaaS solutions: Software and services not hosted on-premises
+
+**Capabilitties**
+- Data aggregation: comes from different sources such as hardware, software, databased, servers and applications
+- Correlation: looks for common matching patterns, linkage of events and turned them into meaningful informations (What, When, How happend)
+- Alerting: The automated analysis of correlated events.
+- Dashboards: Tools can take event data and turn it into informational charts to assist in seeing patterns, or identifying activity that is not forming a standard pattern.
+- Compliance:  Applications can be employed to automate the gathering of compliance data, producing reports that adapt to existing security, governance and auditing processes.
+- Retention: Employing long-term storage of historical data to facilitate correlation of data over time, and to provide the retention necessary for compliance requirements. The Long term log data retention is critical in forensic investigations as it is unlikely that the discovery of a network breach will be at the time of the breach occurring
+- Forensic analysis: The ability to search across logs on different nodes and time periods based on specific criteria. This mitigates having to aggregate log information in your head or having to search through thousands and thousands of logs.
+
+**Online Resources** <br>
+- https://en.wikipedia.org/wiki/Security_information_and_event_management
+- https://www.splunk.com/en_us/blog/learn/siem-security-information-event-management.html?utm_campaign=google_emea_tier1_en_search_generic_security_siem&utm_source=google&utm_medium=cpc&utm_content=siem_learn_blog&utm_term=what%20is%20siem%20in%20cyber%20security&device=c&_bt=771525059501&_bm=e&_bn=g&gad_source=1&gad_campaignid=8200497833&gbraid=0AAAAAD8kDz34C3oUw8_Iv3mUky53wRA4r&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkRa89pZNpjkVlciUX7lQJzXVp5jd5AChjBP-oKHnYRoy4_7U1Mp85YaAiPeEALw_wcB
+- 
+
+
+**The role of UBA in SIEM** <br>
+Other tools have made their way into the SIEM space, particularly user behavior analytics (UBA). Also known as user and entity behavior analytics (UEBA), UBA is used to discover and remediate internal and external threats. <br>
+
+While UBA is often seen as a more advanced security tool, it’s increasingly folded into the SIEM category. For instance, the Gartner Magic Quadrant for SIEM includes information about UBA/UEBA offerings.<br>
+
+UBA works in two ways: <br>
+
+- Creating a baseline for any user or application’s data. Then, highlighting deviations from that norm that could be a threat.
+- Monitoring malicious behavior and preventatively addressing security issues.
+These functions play a critical role in any SIEM solution as they illuminate patterns of behavior within the organization’s network, offering context you didn’t have before. They also filter alerts before the security operations center (SOC) team is notified — helping reduce alert fatigue and freeing up analysts’ time for more complex or urgent threats. <br>
+
+
+
+**Popular SIEM Tools** <br>
   - Splunk (Cisco)
   - IBM QRadar
   - MS Sentinel 
@@ -58,6 +100,7 @@ Malware analysis and threat hunting.
   - LogRhythm
   -(Splunk, IBM QRadar, Microsoft Sentinel, ArcSight Enterprise Security Manager (Micro Focus), Sumo Logic, LogRhythm NextGen SIEM, Elastic Security (formerly Elastic SIEM), 
   SolarWinds Security Event Manager, Exabeam Advanced Analytics, Fortinet FortiSIEM )
+
 
 - SOAR (Security Orchestration, Automation and Response)
   SOAR platforms help automate and coordinate the response to security incidents using playbooks, integrating with other tools (like SIEM, EDR, firewalls, etc.).<br>
@@ -182,7 +225,7 @@ Malware analysis and threat hunting.
    - Shodan / Censys
    - IntrigueCore (open-source)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Red Team
+## 8. Red Team
 - Wireshark
 - Nmap
 - Metasploit
@@ -192,14 +235,14 @@ Malware analysis and threat hunting.
 - Burpsuite (web pentesting)
 - 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Digital / Cyber Forensics
+## 9. Digital / Cyber Forensics
 - Autopsy
 - FTK
 - Sleuth Kit
 - Volatility
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## For Level 1 SOC Analysts, typical job responsibilities include:
+## 10. For Level 1 SOC Analysts, typical job responsibilities include:
 Proactive monitoring of network traffic and events
 Creating tickets
 Investigating alerts
@@ -208,20 +251,20 @@ Closing alerts
 Triaging the incident and coordinating with Level 2 SOC Analysts
 As Level 1 SOC Analysts gain more experience, they can then choose to progress to become a Level 2 SOC Analyst, Level 3 SOC Analyst, SOC Engineer/Architect, or SOC Manager.
 
-## SOC L1 Pre-requisites Skills
+## 11. SOC L1 Pre-requisites Skills
 Network Fundamentals - the core concepts of how computers communicate with each other are important to understand before learning how to attack and defend networks
 Web Application Technologies - learn the building blocks of the world wide web to understand how to attack web applications
 Linux Fundamentals - Many servers and security tools use Linux. Learn how to use the Linux operating system, a critical skill in cyber security
 Windows Fundamentals - Get hands-on access to Windows and its security controls. These basics will help you in identifying, exploiting and defending Windows
 SOC Analysts must also have soft skills like critical thinking, problem-solving, independence, resilience, and logical thinking.
 
-## IT Support roles
-## Stay Updated and Keeping up with the industry trends and technology
+## 12. IT Support roles
+## 13. Stay Updated and Keeping up with the industry trends and technology
 Here are a number of researchers, influencers, and key content creators in the field that share the very latest in defensive security, including Katie Paxton-Fear, Nicole Enesse, Simply Cyber, Florian Roth, Chris Greer, Alyssa Miller, Tracy Z. Maleef, Lesley Carhart, and Marcus J. Carey.
 
 We also recommend regularly keeping up with ThreatPost, The Hacker News, PenTest Magazine, and the TryHackMe blog.
 
-## SOC Roadmap
+## 14. SOC Roadmap
 - SOC L1 (Analysts)
 - SOC L2 (Analyst or Incident Responders)
 - SOc L3 (Threat Hunter or Malware Analysts)
@@ -229,7 +272,7 @@ We also recommend regularly keeping up with ThreatPost, The Hacker News, PenTest
 - CISO
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Incident Response and Incident Management
+## 15. Incident Response and Incident Management
 **What is a Cyber Incident?** <br>
 The monitoring process starts from SOC (Security Operations Center) teams, where a team of Security analysts are responsible for 24X7 supervising and monitoring the oraganisation's security. Their task involves following:
 - Closely monitors events and activity.
