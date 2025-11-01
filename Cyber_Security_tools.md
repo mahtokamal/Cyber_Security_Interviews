@@ -57,7 +57,7 @@ SEM(Security Event Management): Real-time monitoring, correlation of events, not
 SIEM acts as a centralized point in the (SOC)Security Operation Center where security professionals usually "Security analyst" employed for 24X7/365 days monitoring, analysis, detection and responding to the security alerts, logs, and events based upon their severity levels or behaviours wihtin an Organizations. 
 
 <img width="847" height="683" alt="Screenshot (994)" src="https://github.com/user-attachments/assets/9f95137f-710f-4481-9637-660b24159299" />
-
+ 
 **SIEM Data Sources** <br>
 - Network devices: Routers, switches, bridges, wireless access points, modems, line drivers, hubs
 - Servers: Web, proxy, mail, FTP
@@ -116,6 +116,129 @@ All these logs provide a wealth of information and can help identify security is
   - LogRhythm
   -(Splunk, IBM QRadar, Microsoft Sentinel, ArcSight Enterprise Security Manager (Micro Focus), Sumo Logic, LogRhythm NextGen SIEM, Elastic Security (formerly Elastic SIEM), 
   SolarWinds Security Event Manager, Exabeam Advanced Analytics, Fortinet FortiSIEM )
+
+**Components of Splunk** <br>
+Splunk has three main components: Forwarder, Indexer, and Search Head. These components work together to help us search and analyze the data. These components are explained below:
+
+<img width="1400" height="308" alt="Screenshot (1003)" src="https://github.com/user-attachments/assets/887bd120-994d-47e1-bdf2-de512f472141" />
+
+**Splunk Forwarder** <br>
+Splunk Forwarder is a lightweight agent installed on the endpoint intended to be monitored, and its main task is to collect the data and send it to the Splunk instance. It does not affect the endpoint's performance as it takes a few resources to process. Some of the key data sources are: <br>
+
+- Web server generating web traffic.
+- Windows machine generating Windows Event Logs, PowerShell, and Sysmon data.
+- Linux host generating host-centric logs.
+- Database generating DB connection requests, responses, and errors.
+<img width="1191" height="451" alt="Screenshot (1004)" src="https://github.com/user-attachments/assets/acf2575f-3387-48ff-b680-e990d44e3e78" />
+The forwarder collects the data from the log sources and sends it to the Splunk Indexer.  <br>
+
+**Splunk Indexer** <br>
+Splunk Indexer plays the main role in processing the data it receives from forwarders. It parses and normalizes the data into field-value pairs, categorizes it, and stores the results as events, making the processed data easy to search and analyze.<br>
+
+<img width="827" height="392" alt="Screenshot (1005)" src="https://github.com/user-attachments/assets/40b7c694-2f78-4390-82ea-88e3e6b04478" />
+
+Now, the data, which is normalized and stored by the indexer, can be searched by the Search Head, as explained below.<br>
+**Splunk Search head** <br>
+Splunk Search Head is the place within the Search & Reporting App where users can search the indexed logs, as shown below. The searches are done using the SPL (Search Processing Language), a powerful query language for searching indexed data. When the user performs a search, the request is sent to the indexer, and the relevant events are returned as field-value pairs.<br>
+
+<img width="1074" height="268" alt="Screenshot (1006)" src="https://github.com/user-attachments/assets/940fbe0a-3ee4-4b72-a991-87e1a98b18d2" />
+
+The Search Head also allows you to transform results into presentable tables and visualizations such as pie, bar, and column charts, as shown below:<br>
+<img width="1200" height="736" alt="Screenshot (1007)" src="https://github.com/user-attachments/assets/3c81d866-4d9e-41d7-927c-59d3a3f3da36" />
+
+**Splunk Navigations** <br>
+When you access Splunk, you will see the default home screen as shown below: <br>
+<img width="1920" height="832" alt="Screenshot (1008)" src="https://github.com/user-attachments/assets/92cc4da4-cf9f-4c11-b84b-348bc696acc4" />
+Let's look at each section of this home screen.<br>
+**Splunk Bar** <br>
+The top panel is the Splunk Bar as shown below: <br>
+
+<img width="1542" height="37" alt="splunk-bar" src="https://github.com/user-attachments/assets/013d809d-af70-4494-9173-03f92642e8ba" />
+
+In the Splunk Bar, we have the following options available:
+- Messages: View system-level notifications and messages.
+- Settings: Configure Splunk instance settings.
+- Activity: Review the progress of search jobs and processes.
+- Help: View tutorials and documentation.
+- Find: Search across the App.
+The Splunk Bar, allows users to switch between installed Splunk apps instead of using the Apps panel.
+
+**Apps Panel**<br>  
+
+Next is the Apps Panel. This panel shows the apps installed for the Splunk instance. The default app for every Splunk installation is Search & Reporting.
+
+<img width="409" height="520" alt="Screenshot (1009)" src="https://github.com/user-attachments/assets/7f54c641-ced5-40e5-b234-ad75c993bbf1" />
+<img width="405" height="523" alt="Screenshot (1010)" src="https://github.com/user-attachments/assets/7644beaa-c5f8-45a0-9359-65e4b328f1a0" />
+
+You can also switch between the Splunk Apps directly from the Splunk Bar, as shown below, without using the Apps Panel.<br>
+<img width="367" height="35" alt="splunk-bar2" src="https://github.com/user-attachments/assets/bde5168a-bca0-48f5-92a1-e37216730d9b" />
+
+**Explore Splunk** <br>
+The next section is Explore Splunk . This panel contains quick links to add data to the Splunk instance, add new Splunk apps, and access the Splunk documentation. <br>
+<img width="1512" height="405" alt="Screenshot (1011)" src="https://github.com/user-attachments/assets/63f6e7c3-e389-4b1a-8fb8-33b3393a1b33" />
+
+**Splunk Dashboard** <br>
+The last section is the Home Dashboard. By default, no dashboards are displayed. You can choose from a range of dashboards readily available within your Splunk instance. You can select a dashboard from the dropdown menu or by visiting the dashboards listing page.<br>
+
+<img width="1920" height="830" alt="Screenshot (1012)" src="https://github.com/user-attachments/assets/0ac973c3-bf47-450f-a810-6aee5b3a6119" />
+
+You can also create dashboards and add them to the Home Dashboard. The dashboards you create can be viewed separately from the other dashboards by clicking on the Yours tab.
+<img width="1920" height="804" alt="Screenshot (1017)" src="https://github.com/user-attachments/assets/a0939b3b-edb1-42f3-b08f-ee8beed4df94" />
+
+Please review the Splunk documentation on Navigating Splunk here.
+
+**Adding Data** <br>
+Splunk can ingest any data. According to the Splunk documentation, when data is added to Splunk, the data is processed and transformed into a series of individual events. The data sources can be event logs, website logs, firewall logs, etc. The data sources are grouped into categories.<br>
+
+ Below is a chart listing from the Splunk documentation detailing each data source category. <br>
+<img width="1626" height="668" alt="Screenshot (1018)" src="https://github.com/user-attachments/assets/a2f98519-7b2f-4ac1-a866-2cb614f44540" />
+
+ In this task, we're going to focus on VPN logs. We're presented with the following screen when we click on the Add Data link on the Splunk home screen.
+<img width="1512" height="405" alt="Screenshot (1011)" src="https://github.com/user-attachments/assets/0c73fdab-4510-4a4d-ba49-808dc152ab98" />
+<img width="1454" height="675" alt="Screenshot (1019)" src="https://github.com/user-attachments/assets/29102aa3-0d4e-4e0f-9edd-c15f3080c2c0" />
+<img width="1450" height="423" alt="Screenshot (1020)" src="https://github.com/user-attachments/assets/663bcc1b-11b9-4965-8276-dca9ef4b4485" />
+We will use the Upload Option to upload the data from our local machine. <br>
+Practical <br>
+Download the log file VPN_logs from the Download Task Files button below and upload it to the Splunk instance we started in Task #2. If you are using the AttackBox, the log file is available in the /root/Rooms/SplunkBasic/ directory.<br>
+
+To upload the data successfully, you must follow five steps, which are explained below:<br>
+
+1. Select Source: Choose the Log file and the data source.
+2. Select Source Type: Select what type of logs are being ingested, e.g, JSON, syslog.
+3. Input Settings: Select the index where these logs will be dumped and the HOSTNAME to be associated with the logs.
+4. Review: Review all the configurations.
+5. Done: Complete the upload. Your data will be uploaded successfully and ready to be analyzed.
+
+<img width="1920" height="885" alt="Screenshot (1021)" src="https://github.com/user-attachments/assets/d0d4a5fc-9dfb-48fc-a986-713db47ce4a2" />
+<img width="1920" height="826" alt="Screenshot (1022)" src="https://github.com/user-attachments/assets/2404ef85-255e-4eb5-a7b0-56902fdd6de1" />
+<img width="1920" height="790" alt="Screenshot (1023)" src="https://github.com/user-attachments/assets/5bc9ebcf-747a-452c-b57a-7caba02aca95" />
+<img width="1920" height="878" alt="Screenshot (1024)" src="https://github.com/user-attachments/assets/27d87ef2-57cd-432e-a7ef-1268d155f59c" />
+<img width="1920" height="886" alt="Screenshot (1025)" src="https://github.com/user-attachments/assets/f87044fb-7d17-493f-b5fe-7de280c7332b" />
+<img width="1920" height="848" alt="Screenshot (1026)" src="https://github.com/user-attachments/assets/62175e7c-6b8a-4f4a-a933-ae63a03420d0" />
+<img width="1920" height="936" alt="Screenshot (1027)" src="https://github.com/user-attachments/assets/ec14af40-2135-4ab5-a64d-108211bb793e" />
+<img width="1920" height="1080" alt="Screenshot (1028)" src="https://github.com/user-attachments/assets/9ba52840-3656-4ed3-a187-a6e57c08abb5" />
+<img width="1920" height="1080" alt="Screenshot (1029)" src="https://github.com/user-attachments/assets/54a91ade-60f3-4db2-8880-11a1b43d014c" />
+<img width="1920" height="909" alt="Screenshot (1030)" src="https://github.com/user-attachments/assets/047ef4b4-2c93-4101-ad91-0a9697fdc673" />
+<img width="1920" height="839" alt="Screenshot (1031)" src="https://github.com/user-attachments/assets/ea5ea40a-81cb-4301-8c7a-61120e4ebe8b" />
+<img width="1920" height="1080" alt="Screenshot (1032)" src="https://github.com/user-attachments/assets/87a1d906-c068-4c7c-9741-30fe70187442" />
+<img width="1920" height="741" alt="Screenshot (1033)" src="https://github.com/user-attachments/assets/e35b3131-66c3-45cc-8675-001f536c86cb" />
+<img width="1920" height="721" alt="Screenshot (1034)" src="https://github.com/user-attachments/assets/faa9cc0f-7024-41b4-8a3d-fc1acf8d7c42" />
+<img width="1920" height="1080" alt="Screenshot (1035)" src="https://github.com/user-attachments/assets/ba7cdd1b-640f-40da-8d08-7efe53a84b00" />
+<img width="1920" height="830" alt="Screenshot (1036)" src="https://github.com/user-attachments/assets/b6beaa3f-eed1-4851-851d-3e47345a27d3" />
+<img width="1920" height="960" alt="Screenshot (1037)" src="https://github.com/user-attachments/assets/cf2c48c8-c347-40dc-8663-af68a8ef562b" />
+<img width="1920" height="994" alt="Screenshot (1038)" src="https://github.com/user-attachments/assets/5904777e-57b0-44de-8d77-0e04e6183e38" />
+<img width="1920" height="994" alt="Screenshot (1039)" src="https://github.com/user-attachments/assets/9b2aeb49-a66a-457a-88a1-9ffd6c95cb74" />
+<img width="1920" height="927" alt="Screenshot (1040)" src="https://github.com/user-attachments/assets/084ddb91-0547-438c-8e08-3d0dac9fc026" />
+
+
+
+
+
+
+
+
+
+
 
 **Online Resources** <br>
 - https://en.wikipedia.org/wiki/Security_information_and_event_management
