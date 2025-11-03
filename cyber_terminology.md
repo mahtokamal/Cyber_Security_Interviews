@@ -215,17 +215,117 @@ The framework is an alternative to the cyber kill chain developed by Lockheed Ma
    
 6.  
 ## Firewall Vs IDP/IDS Vs SIEM
-**1. Firewall** <br>
+**Firewall** <br>
+🔥 1. What is a Firewall?<br>
+➤ A firewall is a security system (hardware, software, or both) that monitors and controls incoming and outgoing network traffic based on a set of security rules. <br>
+It acts as a barrier between your trusted internal network (like your home or office) and untrusted external networks (like the Internet).
 
+💡Real-World Analogy: 
+
+Imagine your home is your computer/network, and the front door is your firewall.
+You decide who can enter (trusted friends) and who cannot (strangers).
+You might also decide what kind of activity is allowed (deliver a package, not steal furniture).
+Similarly, a firewall filters traffic — it allows safe connections and blocks harmful or unauthorized ones.
+
+⚙️ How a Firewall Works
+A firewall examines data packets (small chunks of information) traveling between your network and the internet.
+Each packet includes:
+
+- Source IP address
+- Destination IP addess
+- Port number
+- Protocol (e.g., HTTP, HTTPS, FTP)
+
+The firewall compares this information against predefined rules (like a checklist).<br>
+
+🔄 Process:
+1. A packet arrives at the firewall.
+2. The firewall checks:
+- Where it came from (source)
+- Where it’s going (destination)
+- What type of data it carries (protocol/port)
+
+3. Based on the rule set:
+
+✅ Allow (if trusted) <br>
+❌ Block (if suspicious)<br>
+
+4. Logs or alerts the administrator if necessary.
+
+🧠 Example: <br>
+Let’s say your company only allows web traffic (port 80 and 443) but blocks file-sharing traffic (port 21). <br>
+If a hacker tries to access your system via port 21 (FTP), the firewall blocks it immediately.<br>
+
+🧩 Types of Firewalls<br>
+Firewalls come in several types, depending on how deeply they inspect and filter data.<br>
 <img width="1779" height="772" alt="Screenshot (866)" src="https://github.com/user-attachments/assets/c84bbf78-f2d9-412f-b922-7f24c4870826" />
 
+|Type|Descriptions|Example Use|
+|--|--|--|
+|Packet-Filtering Firewall|Examines packets’ headers (IP, port, protocol),allows or blocks based on simple rules.|Basic routers, early firewalls.|
+|Stateful Inspection Firewall|Tracks active connections and understands the state of the traffic, smarter than simple packet filters.|Home/office routers.|
+|Proxy Firewall (Application-Level Gateway)|Intercepts traffic at the application layer, filters by specific apps or content.|Web proxy or mail server filtering.|
+|Next-Generation Firewall (NGFW)|Combines traditional filtering with intrusion detection, deep packet inspection (DPI), malware blocking, and user identity awareness.|Enterprise security systems.|
+|Network Address Translation (NAT) Firewall|Hides internal IPs using NAT; prevents direct external access.|Home routers, corporate gateways.|
+|Cloud Firewalls|Hosted in the cloud, protects virtual infrastructure (e.g., AWS, Azure).|Cloud servers and services.|
+|Host-Based Firewall|Installed on a single device (e.g. Windows Firewall).|Personal laptops, phones.|
+
+🧠 4. Firewall Rules (Access Control Lists – ACLs) <br>
+Rules are typically written as:<br>
+ALLOW TCP from 192.168.1.5 to ANY port 443 <br>
+DENY  TCP from ANY to 192.168.1.5 port 21 <br>
+
+ℹ️ Meaning:
+- Allow HTTPS traffic from a specific internal machine to anywhere.
+- Deny FTP traffic from anyone to a protected machine.
+
+🌍 5. Usage of Firewalls in Daily Life
+|Scenario|Firewall Function|Example|
+|---|---|--|
+|Home Wi-Fi Router|Blocks incoming internet traffic that’s not part of an established request.|Prevents hackers from connecting to your devices.|
+|Corporate Networks|Enforces policies on what employees can access.|Blocks social media or torrent sites at work.|
+|Personal Computers|Software firewall blocks unknown apps from using the Internet.|Windows Defender Firewall blocking suspicious programs.|
+|Cloud Servers|Cloud firewalls control access to virtual machines.|AWS Security Groups or Azure Firewalls.|
+|Public Wi-Fi Networks|Filters malicious packets and prevents attacks.|Hotel or airport network firewalls.|
+|Data Centers|Protects critical databases and internal servers.|Enterprise-grade NGFWs from Cisco, Palo Alto, or Fortinet.|
+
+🧠 6. Example of a Firewall in Action<br>
+Imagine:
+
+- You’re at a café using Wi-Fi.
+- A hacker on the same network tries to scan your laptop’s open ports.
+- Your firewall detects and blocks the suspicious packets — preventing access.
+You remain safe, even though you’re on a public, untrusted network.<br>
+
+💪 7. Benefits of Firewalls<br>
+✅ Protects against unauthorized access
+✅ Blocks malicious traffic
+✅ Controls outgoing data (prevents leaks)
+✅ Enforces corporate or parental policies
+✅ Monitors and logs network activity
+
+⚠️ 8. Limitations of Firewalls <br>
+❌ Cannot protect against insider threats
+❌ Doesn’t detect viruses hidden inside allowed traffic
+❌ Needs correct configuration — weak rules = weak protection
+❌ Won’t stop phishing or social engineering attacks directly
+
+🔐 9. Real-World Examples of Firewalls <br>
+
+- Software Firewalls: Windows Defender Firewall, macOS Firewall, Linux iptables
+- Hardware Firewalls: Cisco ASA, FortiGate, Palo Alto Networks, SonicWall
+- Cloud Firewalls: AWS WAF, Azure Firewall, Google Cloud Armor
+
+🧠 In Simple Terms <br>
+A firewall is your network’s security guard — it decides who can enter or leave your digital “building” based on predefined safety rules. <br>
+
 **2. Resources** <br>
-   https://tryhackme.com/room/firewallfundamentals
-   https://www.geeksforgeeks.org/computer-networks/introduction-of-firewall-in-computer-network/
-   https://www.geeksforgeeks.org/computer-networks/types-of-network-firewall/
-   https://en.wikipedia.org/wiki/Firewall_(computing)
-   https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/5-types-of-firewalls-which-one-do-you-need/
-4. 
+   - https://tryhackme.com/room/firewallfundamentals
+   - https://www.geeksforgeeks.org/computer-networks/introduction-of-firewall-in-computer-network/
+   - https://www.geeksforgeeks.org/computer-networks/types-of-network-firewall/
+   - https://en.wikipedia.org/wiki/Firewall_(computing)
+   - https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/5-types-of-firewalls-which-one-do-you-need/
+
 ## SSID
 ## Chain of Custody
 ## Update & Patching
