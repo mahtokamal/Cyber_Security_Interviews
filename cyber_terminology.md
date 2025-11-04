@@ -219,7 +219,6 @@ Imagine you’re sending a confidential letter (your internet data):<br>
 
 🧠 Example:<br>
 If you are in India and connect to a VPN server in the US,<br>
-
 - The website will think you’re browsing from the US.
 - Your real IP (India) stays hidden.
 - Your data is encrypted so your ISP or hackers can’t read it.
@@ -229,7 +228,7 @@ If you are in India and connect to a VPN server in the US,<br>
 |---|---|---|
 |Remote Access VPN|Allows individual users to securely connect to a private network remotely.|Employees working from home connecting to office network.|
 |Site-to-Site VPN|Connects entire networks (e.g., two company branches).|Company A’s New York office connects securely to its London office.|
-|Client-Based VPN	Installed software/app on a single device for encrypted browsing.|NordVPN, ExpressVPN, Surfshark, etc.|
+|Client-Based VPN|Installed software/app on a single device for encrypted browsing.|NordVPN, ExpressVPN, Surfshark, etc.|
 |Router-Based VPN|Configured on routers, protects all devices connected to that router.|Home or small business networks.|
 |Mobile VPN|Optimized for mobile networks with changing IPs and signals.|Secure mobile banking or email apps.|
 
@@ -238,14 +237,14 @@ A VPN protocol defines how data is encrypted and transmitted between your device
 
 |Protocol|Description|Speed|Security|Typical Use|
 |---|---|---|---|---|
-|PPTP (Point-to-Point Tunneling Protocol)|Oldest VPN protocol; fast but weak security.|⚡Fast|	❌ Weak	Streaming, legacy systems|
+|PPTP (Point-to-Point Tunneling Protocol)|Oldest VPN protocol; fast but weak security.|⚡Fast|	❌ Weak|	Streaming, legacy systems|
 |L2TP/IPsec (Layer 2 Tunneling + IPsec)|Stronger encryption, adds IPsec security layer.|⚡ Moderate|	✅ Strong|General secure browsing|
-|OpenVPN|Open-source and widely trusted; balances speed and security.|⚡ Moderate	|✅✅ Very Strong|Most commercial VPNs
+|OpenVPN|Open-source and widely trusted; balances speed and security.|⚡ Moderate	|✅✅ Very Strong|Most commercial VPNs|
 |IKEv2/IPsec|Very stable on mobile devices; reconnects quickly.|⚡⚡ Fast	|✅ Strong|Mobile VPNs|
 |WireGuard|Newer protocol — faster, simpler, and very secure.|⚡⚡⚡ Very Fast|	✅✅ Very Strong|Modern VPN apps|
-|SSTP (Secure Socket Tunneling Protocol)|	Uses SSL (HTTPS) port; works well behind firewalls.|⚡ Moderate|✅ Strong|Corporate VPNs (Windows)
+|SSTP (Secure Socket Tunneling Protocol)|	Uses SSL (HTTPS) port; works well behind firewalls.|⚡ Moderate|✅ Strong|Corporate VPNs (Windows)|
 
-🧠 5. How VPNs Are Used in Daily Life<bt>
+🧠 5. How VPNs Are Used in Daily Life<br>
 |Real-World Application|Description|Example|
 |--|--|--|
 |Privacy & Anonymity|	Hide your IP address and browsing history from ISPs or websites.|	Avoid being tracked online.|
@@ -263,15 +262,14 @@ A VPN protocol defines how data is encrypted and transmitted between your device
 ✅ Protects from hackers and data sniffers<br>
 ✅ Helps remote work securely<br>
 
-⚠️ 7. Limitations of VPNs
+⚠️ 7. Limitations of VPNs<br>
 ❌ Slight speed reduction (due to encryption overhead)<br>
 ❌ VPN providers can log data if not trustworthy<br>
 ❌ Some streaming services block known VPN IPs<br>
 ❌ Not a substitute for antivirus or good security practices<br>
 
-🔍 8. Example VPN Setup
-
-Let’s say:
+🔍 8. Example VPN Setup<br>
+Let’s say:<br>
 - You’re at an airport using free Wi-Fi
 - You open your VPN app (e.g., ProtonVPN)
 - It connects to a VPN server in Germany
@@ -285,7 +283,7 @@ It hides your real location, protects your data, and ensures privacy.
 **3. Proxy** <br>
 🌐 What is a Proxy Server?<br>
 ➤ A Proxy Server is an intermediary between a user’s device and the Internet.When you use a proxy, your internet requests go through the proxy first, which then forwards them to the target website or service on your behalf.<br>
-Essentially, a proxy hides your real IP address, filters traffic, and sometimes caches data to improve performance.
+Essentially, a proxy hides your real IP address, filters traffic, and sometimes caches data to improve performance.<br>
 
 💡 Real-World Analogy:<br>
 Imagine you don’t want to talk to a shop directly, so you send a messenger to do it for you.<br>
@@ -301,11 +299,11 @@ That’s what a proxy does on the Internet.<br>
 ⚙️ How a Proxy Server Works<br>
 🔄 Step-by-Step Process:<br>
 
-👉 You send a request (e.g., “open www.google.com”) to the proxy server instead of directly to the Internet.
-👉 The proxy server evaluates your request based on its rules (security, filtering, caching).
-👉 It forwards the request to the target server (Google, in this case).
-👉 The response (Google’s webpage) returns to the proxy.
-👉 The proxy passes it back to you.
+👉 You send a request (e.g., “open www.google.com”) to the proxy server instead of directly to the Internet.<br>
+👉 The proxy server evaluates your request based on its rules (security, filtering, caching).<br>
+👉 It forwards the request to the target server (Google, in this case).<br>
+👉 The response (Google’s webpage) returns to the proxy.<br>
+👉 The proxy passes it back to you.<br>
 
 During this process:<br>
 - The target website sees the proxy’s IP, not yours.
@@ -349,8 +347,8 @@ During this process:<br>
 |Security Filtering|Scans or blocks malicious content before reaching internal systems.|Reverse proxy protecting web servers from DDoS attacks.|
 
 🧠 6. Examples of Popular Proxy Implementations <br>
-|Type|Example|Software/Service|
-|---|---|---|
+|Type|Example Software/Service|
+|---|------|
 |Forward Proxy|Squid Proxy, Privoxy|
 |Reverse Proxy|NGINX, Apache HTTP Server, HAProxy|
 |Caching Proxy|Varnish Cache|
@@ -412,14 +410,14 @@ It acts as a barrier between your trusted internal network (like your home or of
 
 💡Real-World Analogy: 
 
-Imagine your home is your computer/network, and the front door is your firewall.
-You decide who can enter (trusted friends) and who cannot (strangers).
-You might also decide what kind of activity is allowed (deliver a package, not steal furniture).
-Similarly, a firewall filters traffic — it allows safe connections and blocks harmful or unauthorized ones.
+Imagine your home is your computer/network, and the front door is your firewall.<br>
+- You decide who can enter (trusted friends) and who cannot (strangers).
+- You might also decide what kind of activity is allowed (deliver a package, not steal furniture).
+Similarly, a firewall filters traffic — it allows safe connections and blocks harmful or unauthorized ones.<br>
 
-⚙️ How a Firewall Works
+⚙️ How a Firewall Works? <br>
 A firewall examines data packets (small chunks of information) traveling between your network and the internet.
-Each packet includes:
+Each packet includes:<br>
 
 - Source IP address
 - Destination IP addess
@@ -488,17 +486,17 @@ Imagine:
 You remain safe, even though you’re on a public, untrusted network.<br>
 
 💪 7. Benefits of Firewalls<br>
-✅ Protects against unauthorized access
-✅ Blocks malicious traffic
-✅ Controls outgoing data (prevents leaks)
-✅ Enforces corporate or parental policies
-✅ Monitors and logs network activity
+✅ Protects against unauthorized access<br>
+✅ Blocks malicious traffic<br>
+✅ Controls outgoing data (prevents leaks)<br>
+✅ Enforces corporate or parental policies<br>
+✅ Monitors and logs network activity<br>
 
 ⚠️ 8. Limitations of Firewalls <br>
-❌ Cannot protect against insider threats
-❌ Doesn’t detect viruses hidden inside allowed traffic
-❌ Needs correct configuration — weak rules = weak protection
-❌ Won’t stop phishing or social engineering attacks directly
+❌ Cannot protect against insider threats<br>
+❌ Doesn’t detect viruses hidden inside allowed traffic<br>
+❌ Needs correct configuration i.e. weak rules = weak protection<br>
+❌ Won’t stop phishing or social engineering attacks directly<br>
 
 🔐 9. Real-World Examples of Firewalls <br>
 
