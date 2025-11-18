@@ -1,4 +1,4 @@
-<img width="666" height="723" alt="Screenshot (1138)" src="https://github.com/user-attachments/assets/95804b13-293e-4729-a86a-8c4651139e0f" /># Most commonly Cyber Security Interview Questions?
+# Most commonly Cyber Security Interview Questions?
 
 ## How do you stay updated with Information Security?
 I follow Cyber Security experts, newsletter, online articles, attending webinar, youtube channels, LinkedIn groups etc.
