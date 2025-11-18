@@ -1,4 +1,4 @@
-# Most commonly Cyber Security Interview Questions?
+<img width="666" height="723" alt="Screenshot (1138)" src="https://github.com/user-attachments/assets/95804b13-293e-4729-a86a-8c4651139e0f" /># Most commonly Cyber Security Interview Questions?
 
 ## How do you stay updated with Information Security?
 I follow Cyber Security experts, newsletter, online articles, attending webinar, youtube channels, LinkedIn groups etc.
@@ -147,6 +147,8 @@ Confired IAM policies using AWS CLI and Terraform (Infrastructure as Code(IaC)) 
 Indicator of Compromise(IoCs) acts as a sign or proof that a system has been compromised of cyber attack. IOCs can include things like unusual network traffic, suspicious file hashes,IP addresses, unexpected registry entries, the presence of known malware signatures, or anomalous login attempts. Security analysts use IOCs to detect past or ongoing intrusions and to inform their threat hunting efforts.
 
 ## What's the difference between a true positive and a false positive alert?
+
+<img width="666" height="723" alt="Screenshot (1138)" src="https://github.com/user-attachments/assets/a28524a1-11c4-4472-832a-b4d23466231a" />
 
 True Positive (TP): A True Positive result is a correct identification of a threat or vulnerability by a system or tool. This means that the system has correctly detected and identified a potential threat or vulnerability, and has taken the appropriate action to mitigate or eliminate it. For example, if an intrusion detection system (IDS) correctly detects and reports an attempted cyber-attack, it would be considered a True Positive. This type of result is crucial in ensuring the safety and security of computer systems and networks. <br>
 
@@ -530,6 +532,9 @@ Important to note that an adversary or another compromised host can be the owner
 
 ## Surface Web, Dark Web and Deep Web
 https://www.kaspersky.com/resource-center/threats/deep-web <br>
+
+## What is a Lateral Movement?
+
 
 # Never leave an interview without asking them questions at the end
 
