@@ -50,6 +50,20 @@ yes, Security misconfiguration is one of the common vulnerabilities that may hap
 - Directory Listings Enabled:
 - Not Changing Default Credentials:
 
+Misconfigurations
+On the other hand, a misconfiguration isn't a bug in the software but a mistake in how the system was set up, often by the IT team. These errors happen frequently, usually to make things simpler, like using "1111" instead of typing a long password every time. Let's take a look at some real-world examples.
+
+How "123456" password exposed chats for 64 million McDonald's job applications.
+How a misconfigured AWS cloud resulted in a breach of 106 million bank customers.
+How improperly configured smart fridges are silently used in full-scale botnet attacks.
+
+Responding to Misconfigurations
+Misconfigurations do not require a software update - just a better setup. As a SOC analyst, you'll often spot them only after threat actors exploit them. However, in smaller companies, you might also be responsible for a more proactive response, for example:
+
+- Penetration Testing: Hire ethical "hackers" who simulate an attack and report on discovered security flaws
+- Vulnerability Scans: Periodically run tools that can detect default passwords or outdated software
+- Configuration Audits: Manually review the systems to match best practices like CIS benchmarks
+
 ## Define vulnerability in your own words?
 Vulnerability is a loophole, weakness, flaw or other shortcomings presents in a System (infrastructure, database, hardware & software), however it can also exist in a process, a set of controls, or simply just the way that something has been implemented or deployed.
 
