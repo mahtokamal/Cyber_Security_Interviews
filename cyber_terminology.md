@@ -84,7 +84,7 @@ For example: Name, Email, Address, Phone numbers, Date of Birth, Social Security
 ## MISSP
 ## IDPS (Snort, Suricata)
 ## Firewall (Pfsense)
-## EDR / XDR (Wazuh)
+## EDR / XDR (Wazuh, Microsoft Windows Defender)
 EDR (Endpoint Detection and Response) - EDR provides security solutions to monitor, detect and respond the endpoint devices such PCs, Workstations, Server or networking devices against potential threats, which are undetecable by traditional Anitvirus.
 
 EDR available in the markets:
@@ -548,15 +548,77 @@ KQL, or Kibana Query Language, is an easy-to-use language that can be used to se
 ## Honey Well
 ## Firewall
 ## Honey Pot
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Most common Malware
-## Virus
-## Worm
-## Trojan horses
-## Ransomware
-## Spyware
-## Adware
-## Scareware
-## Rootkits
-## Backdoor (RAT)
-## Bots
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Most common types of Malware
+## 1. Virus:
+A virus is malicious code that attaches itself to legitimate files or programs. It requires user action to execute (such as opening an infected file) and then spreads to other files or systems.
+
+Example:ILOVEYOU Virus (2000), Spread via email attachments titled “ILOVEYOU” and caused billions in damages by overwriting files and spreading rapidly through address books.
+
+## 2.Worm:
+👉 A worm is a self-replicating malware that spreads automatically across networks without user interaction. It exploits vulnerabilities in systems or services.
+
+Example: WannaCry (2017), A ransomware worm that used the EternalBlue exploit to propagate across Windows systems globally in hours.
+
+## 3.Trojan (Trojan Horse)
+👉 A Trojan is malware disguised as legitimate software. Once executed, it delivers a malicious payload such as backdoors, keyloggers, downloaders, or credential stealers.
+
+Example:Zeus Trojan (Zbot), A banking Trojan used to steal online banking credentials and financial information.
+
+## 4.Ransomware
+👉 Malware that encrypts files or locks systems, demanding payment (usually cryptocurrency) in exchange for the decryption key.
+
+Example:CryptoLocker (2013), Locked user files with strong encryption and demanded ransom payments in Bitcoin.
+
+## 5.Spyware
+👉 Software that secretly monitors user activity and steals sensitive data such as keystrokes, credentials, browsing habits, and personal information.
+
+Example:Pegasus Spyware, Highly advanced mobile spyware known for secretly accessing calls, messages, cameras, and location data on iOS/Android devices.
+
+## 6.Adware
+👉 Software that automatically displays or downloads unwanted advertisements. Often bundled with free software, it tracks user behavior for targeted ads.
+
+Example:Fireball Adware (2017), Hijacked browser settings, collected data, and redirected users to malicious advertising pages.
+
+## 7.Scareware
+👉 Malware or deceptive software that frightens users with fake warnings and prompts them to purchase useless “security tools.”
+
+Example:FakeAV (Fake Antivirus), Displayed false infection alerts, demanding payment to “clean” the computer.
+
+## 8.Rootkit
+👉 Stealthy malware designed to hide other malicious processes, files, or system modifications by modifying the OS at a low level.
+
+Example:Sony BMG Rootkit (2005), A DRM system that hid itself and unintentionally opened backdoors for other malware.
+
+## 9.Backdoor / Remote Access Trojan (RAT)
+👉 A RAT is malware that gives attackers remote control over an infected system, enabling data theft, surveillance, and further attacks.
+
+Example:Gh0st RAT, Used in espionage campaigns; capable of screen capture, keylogging, file theft, and camera/microphone access.
+
+## 10.Bot / Botnet Malware
+👉 Malware that turns infected devices (PCs, servers, IoT devices) into “bots” controlled by an attacker to perform tasks such as DDoS attacks, spam, or crypto-mining.
+
+Example:Mirai Botnet (2016) – Infected IoT devices using default passwords, launching massive DDoS attacks that disrupted major internet platforms.
+
+## 11.Keylogger
+👉 A type of spyware that records keystrokes to capture passwords, messages, credit card numbers, and other sensitive input.
+
+Example: HawkEye Keylogger, Sold on underground forums and used to steal credentials from businesses and individuals.
+
+## 12.Fileless Malware
+👉 Malware that operates entirely in memory, using legitimate system tools (PowerShell, WMI) to avoid leaving typical disk artifacts.
+
+Example:Astaroth Fileless Malware, Used native Windows tools to download and execute malicious payloads without writing files.
+
+## 13.Bootkit
+👉 A type of rootkit that infects the boot sector or bootloader, loading before the operating system to maintain persistent, stealthy control.
+
+Example: TDL4 Bootkit, One of the most advanced bootkits, capable of evading antivirus and controlling machines at startup.
+
+## 14.Logic Bomb
+👉 Malicious code triggered when specific conditions are met (date/time, event, or action).
+
+Example:2000s UBS PaineWebber Incident – A disgruntled employee planted a logic bomb that caused over $3M in damages.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
