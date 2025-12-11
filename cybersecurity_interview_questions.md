@@ -3,6 +3,8 @@
 ## How do you stay updated with Information Security?
 I follow Cyber Security experts, newsletter, online articles, attending webinar, youtube channels, LinkedIn groups etc.
 
+## What is persistence?
+Malware often tries to keep a footprint in the system such that it keeps running even after a system restart. This is called persistence. For example, If a malware adds itself to the startup registry keys, it will persist even after a system restart.
 ## Explain Black Hat, White Hat, and Gray Hat Hackers?
 Black Hat(Unethical hacker) having malicious intent are hackers, to gain unauthorized and illegal access to the computer system for the purpose of personal gain(stealing data).
 
