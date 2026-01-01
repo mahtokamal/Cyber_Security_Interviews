@@ -12,7 +12,7 @@
 **Real-World Example:** <br>
 ℹ️ Colonial Pipeline Attack (2021):Attackers gained initial access using a single compromised VPN password to enter the pipeline operator’s network.
 
-## 2.Lateral Movement
+## 2.Lateral Movement vs Persistence
 👉 After an attacker enters an environment(after initial access), they move deeper into the network(try to persists or reside into System) to reach valuable systems (e.g., domain controllers, databases to get higher level privilege escalations). This is called lateral movement.
 
 **Common Techniques:** <br>
@@ -24,6 +24,8 @@
 
 **Real-World Example:** <br>
 ℹ️ NotPetya (2017):After gaining initial access, the malware used legitimate Windows admin tools and the EternalBlue exploit to move laterally at high speed.
+
+👉**Persistence** <br>
 
 ## 3.Remote Code Execution (RCE)
 👉 RCE is a vulnerability that allows an attacker to run arbitrary code on a target machine—usually without authentication. This is one of the most dangerous vulnerability types.
