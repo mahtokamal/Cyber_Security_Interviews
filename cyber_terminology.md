@@ -548,6 +548,12 @@ KQL, or Kibana Query Language, is an easy-to-use language that can be used to se
 ## Honey Well
 ## Firewall
 ## Honey Pot
+## Demilitarized Zone
+👉 A DMZ or demilitarized zone is a perimeter network that protects and adds an extra layer of security to an organization’s internal local-area network from untrusted traffic. The end goal of a demilitarized zone network is to allow an organization to access untrusted networks, such as the internet, while ensuring its private network or LAN remains secure.
+
+A buffer network segment where public-facing servers (web, mail, VPN) are placed.
+
+DMZ (Demilitarized Zone): Hosts public-facing services.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Most common types of Malware
 ## 1. Virus:
