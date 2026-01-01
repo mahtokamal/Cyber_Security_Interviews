@@ -25,7 +25,8 @@
 **Real-World Example:** <br>
 ℹ️ NotPetya (2017):After gaining initial access, the malware used legitimate Windows admin tools and the EternalBlue exploit to move laterally at high speed.
 
-👉**Persistence** <br>
+**Persistence** <br>
+👉 Malware often tries to keep a footprint in the system such that it keeps running even after a system restart. This is called persistence. For example, If a malware adds itself to the startup registry keys, it will persist even after a system restart.
 
 ## 3.Remote Code Execution (RCE)
 👉 RCE is a vulnerability that allows an attacker to run arbitrary code on a target machine—usually without authentication. This is one of the most dangerous vulnerability types.
