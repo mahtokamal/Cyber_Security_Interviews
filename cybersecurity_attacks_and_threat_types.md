@@ -349,6 +349,28 @@ Example: Discovered on compromised Cisco routers across multiple countries; used
 ## 4. CSRF (Cross-Side Request Forgery)
 ## 5. SSRF (Server-Side Request Forgery)
 
+## Client-Side Attacks
+**Cross-Site Scripting (XSS) :** is the most common client-side attack, in which malicious scripts are run in a trusted website and executed in the user's browser. If your website has a comment box that doesn't filter input, an attacker could post a comment like: Hello <script>alert('You have been hacked');</script>. When visitors load the page, the script runs inside their browser, and the pop-up appears. In a real attack, instead of a harmless pop-up, the attacker could steal cookies or session data.
+
+**Cross-Site Request Forgery (CSRF):** The browser is tricked into sending unauthorized requests on behalf of the trusted user.
+
+**Clickjacking:** Attackers overlay invisible elements on top of legitimate content, making users believe they are interacting with something safe.
+
+## Server-Side Attacks
+**Brute-force** attacks occur when an attacker repeatedly attempts different usernames or passwords in an attempt to gain unauthorized access to an account. Automated tools are often used to send these requests quickly, allowing attackers to go through large lists of credentials and common passwords. T-Mobile faced a breach in 2021 that stemmed from a brute-force attack, allowing attackers access to the personally identifiable information (PII) of over 50 million T-Mobile customers.
+
+**SQL Injection (SQLi)** relies on attacking the database that sits behind a website and occurs when applications build queries through string concatenation instead of using parameterized queries, allowing attackers to alter the intended SQL command and access or manipulate data. In 2023, an SQLi vulnerability in MOVEit, a file-transfer software, was exploited, affecting over 2,700 organizations, including U.S. government agencies, the BBC, and British Airways.
+
+**Command Injection** is a common attack that occurs when a website takes user input and passes it to the system without checking it. Attackers can sneak in commands, making the server run them with the same permissions as the application.
+
+## online References
+- https://www.hackerone.com/blog/how-cross-site-scripting-vulnerability-led-account-takeover
+- https://krishnag.ceo/blog/the-2024-cwe-top-25-understanding-and-mitigating-cwe-78-os-command-injection/
+- https://www.akamai.com/blog/security-research/moveit-sqli-zero-day-exploit-clop-ransomware
+- https://www.fierce-network.com/operators/t-mobile-ceo-says-hacker-used-brute-force-attacks-to-breach-it-servers
+- https://www.thalesgroup.com/en/news-centre/press-releases/artificial-intelligence-fuels-rise-hard-detect-bots-now-make-more-half
+- https://blog.cloudflare.com/new-waf-intelligence-feeds/
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Application and System-level Attacks
