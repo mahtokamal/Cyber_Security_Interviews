@@ -10,13 +10,14 @@
 - Drive-by downloads
 
 **Real-World Example:** <br>
-ℹ️ Colonial Pipeline Attack (2021):Attackers gained initial access using a single compromised VPN password to enter the pipeline operator’s network. <br>
+ℹ️ Colonial Pipeline Attack (2021):Attackers gained initial access using a single compromised VPN password to enter the pipeline operator’s network.
 
+**Web Shell** <br>
 A web shell is a malicious program uploaded to a target web server, enabling adversaries to execute commands remotely. Web shells often serve as both an initial access method (via file upload vulnerabilities) and a persistence mechanism.
 
 Once access has been gained on a compromised server, attackers can use a web shell to move through the kill chain, performing reconnaissance, escalating privileges, moving laterally, and exfiltrating data.
 
-Below is a simple example of a web shell named awebshell.php that can run commands remotely through the web interface. Note that the web shell is located in the /uploads directory of the target server, 10.10.10.100.
+Below is a simple example of a web shell named awebshell.php that can run commands remotely through the web interface. Note that the web shell is located in the /uploads directory of the target server, 10.10.10.100. 
 
 ## 2.Lateral Movement vs Persistence
 👉 After an attacker enters an environment(after initial access), they move deeper into the network(try to persists or reside into System) to reach valuable systems (e.g., domain controllers, databases to get higher level privilege escalations). This is called lateral movement.
@@ -114,6 +115,15 @@ Below is a simple example of a web shell named awebshell.php that can run comman
 
 **Real-World Example:** <br>
 ℹ️ Microsoft Exchange Hafnium Attacks (2021): Attackers exploited Exchange zero-day vulnerabilities and deployed web shells on thousands of servers worldwide to maintain persistent remote access.
+
+👉 A **web shell** is a malicious program uploaded to a target web server, enabling adversaries to execute commands remotely. Web shells often serve as both an initial access method (via file upload vulnerabilities) and a persistence mechanism.
+
+Once access has been gained on a compromised server, attackers can use a web shell to move through the kill chain, performing reconnaissance, escalating privileges, moving laterally, and exfiltrating data.
+
+Below is a simple example of a web shell named awebshell.php that can run commands remotely through the web interface. Note that the web shell is located in the /uploads directory of the target server, 10.10.10.100.
+
+<img width="1339" height="698" alt="Screenshot (1763)" src="https://github.com/user-attachments/assets/df2b9e00-5c79-4241-897a-c29560505282" />
+
 
 ## 9.Man-in-the-Middle (MITM) Attacks
 👉 An attacker secretly intercepts, relays, or alters communication between two parties who believe they’re communicating directly.
