@@ -124,6 +124,24 @@ Below is a simple example of a web shell named awebshell.php that can run comman
 
 <img width="1339" height="698" alt="Screenshot (1763)" src="https://github.com/user-attachments/assets/df2b9e00-5c79-4241-897a-c29560505282" />
 
+**Anatomy of a Web Shell** <br>
+**Legitimate Function Abuse** <br>
+Web shells rely on the abuse of legitimate functions within programs.
+System execution functions in PHP, such as shell_exec(), exec(), system(), and passthru(), can be abused to gain command execution.
+
+**Under the Hood** <br>
+Here is a simple web shell written in PHP. Let's take a look at its functionality. <br>
+
+1. Checks if the cmd parameter is present in the URL ?cmd=whoami
+2. Stores the user supplied command in the variable $cmd
+3. Executes the command using shell_exec()
+4. Displays the output
+5. HTML for the user interface
+6. Command to execute
+7. Output
+<img width="1901" height="528" alt="Screenshot (1764)" src="https://github.com/user-attachments/assets/c2fce94c-8d48-460b-ad39-5b78bd1e0eef" />
+
+Web shells vary in complexity and capabilities. They can range from simple one-liners that execute commands via a URL, to fully-featured interfaces with graphical user interfaces (GUIs), password protection, and built-in file managers.
 
 ## 9.Man-in-the-Middle (MITM) Attacks
 👉 An attacker secretly intercepts, relays, or alters communication between two parties who believe they’re communicating directly.
